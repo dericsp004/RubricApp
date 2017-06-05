@@ -22,10 +22,6 @@ public class Assignment {
         }
     }
 
-    public float getGrade() {
-        return 0.0f;
-    }
-
     public void save() {
     }
 
@@ -35,13 +31,31 @@ public class Assignment {
     public void exportToGoogleSheets() {
     }
 
+    /**
+     * Create a new student with this Assignment's Rubric
+     * @param first
+     * @param last
+     */
     public void addStudent(String first, String last) {
         students.add(new Student(first, last, this.rubric));
     }
 
-    public boolean removeStudent(Student stu) {
-        return students.remove(stu);
+
+    /**
+     * Remove a student of the provided name
+     * @param first
+     * @param last
+     * @return
+     */
+    public boolean removeStudent(String first, String last) {
+        return students.remove(new Student(first, last, this.rubric));
     }
+
+    /**
+     * Remove a student of X place in the list
+     * @param stu
+     * @return The result of students.remove()
+     */
     public Student removeStudent(int stu) {
         return students.remove(stu);
     }

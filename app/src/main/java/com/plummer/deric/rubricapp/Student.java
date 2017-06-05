@@ -18,4 +18,8 @@ class Student {
     public void replaceRubric(Rubric rubric) {
         this.rubric = rubric;
     }
+
+    public float getGrade() {
+        return 0.0f;
+    }
 }
