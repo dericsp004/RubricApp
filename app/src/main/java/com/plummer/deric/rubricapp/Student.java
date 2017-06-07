@@ -22,4 +22,8 @@ class Student {
     public float getGrade() {
         return 0.0f;
     }
+
+    public Rubric getRubric() {
+        return rubric;
+    }
 }
