@@ -10,10 +10,14 @@ public class Assignment {
         this.rubric = rubric;
     }
 
+    public List<Student> getStudents() {
+        return students;
+    }
+
     /*
-     * Change the rubric for the entire assignment
-     */
-    public void replaceRubric(Rubric rubric) {
+         * Change the rubric for the entire assignment
+         */
+    public void setRubric(Rubric rubric) {
         //Replace own rubric
         this.rubric = rubric;
         //Replace children rubrics
