@@ -55,6 +55,10 @@ public class Assignment {
         return students.remove(new Student(first, last, this.rubric));
     }
 
+    public Rubric getRubric() {
+        return rubric;
+    }
+
     /**
      * Remove a student of X place in the list
      * @param stu
