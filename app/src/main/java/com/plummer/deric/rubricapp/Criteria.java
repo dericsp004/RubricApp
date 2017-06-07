@@ -10,7 +10,5 @@ class Criteria {
 
     public void sort() {
         Collections.sort(grades);
-        //When this is written Points should implement Comparable and
-        //this should just call Collections.sort()
     }
 }
