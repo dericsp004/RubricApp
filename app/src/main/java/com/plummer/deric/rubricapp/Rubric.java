@@ -6,6 +6,11 @@ public class Rubric {
     private List<Criteria> criteria;
 
     public Rubric() {
+
+    }
+
+    public List<Criteria> getCriteria() {
+        return criteria;
     }
 
     public void addCriteria(Criteria newCriteria) {

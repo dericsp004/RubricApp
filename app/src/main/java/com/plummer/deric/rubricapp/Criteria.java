@@ -11,4 +11,8 @@ class Criteria {
     public void sort() {
         Collections.sort(grades);
     }
+
+    public void addGrade(Points grade) {
+        grades.add(grade);
+    }
 }
