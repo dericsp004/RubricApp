@@ -1,14 +1,24 @@
 package com.plummer.deric.rubricapp;
 
+import android.content.Context;
+import android.content.SharedPreferences;
+import android.util.Log;
+
+import com.google.gson.Gson;
+
 import java.text.Format;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
+
+import static android.content.Context.MODE_PRIVATE;
 
 public class Assignment {
     private String _assignmentName;
     private Rubric _rubric;
     private List<Student> _students;
+    private static final String prefs_file = "com.plummer.deric.rubricapp.Assignments";
 
     /********************************************************
      *  Constructors
@@ -115,16 +125,58 @@ public class Assignment {
         _students.remove(stu);
     }
 
-    public void save() {
+    public void save(Context context) {
+        Gson gson = new Gson();
+
+        String assignment = gson.toJson(this);
+        SharedPreferences prefs = context.getSharedPreferences(prefs_file, Context.MODE_PRIVATE);
+        SharedPreferences.Editor edit = prefs.edit();
+        edit.putString(this.toString(), assignment);
+        edit.commit();
     }
 
-    public void loadRubric() {
+    public Assignment load(Context context, String key) {
+        Gson gson = new Gson();
+
+        SharedPreferences prefs = context.getSharedPreferences(prefs_file, Context.MODE_PRIVATE);
+        String assignmentString = prefs.getString(key, null);
+        Assignment assignment = gson.fromJson(assignmentString, Assignment.class);
+        return assignment;
+    }
+
+    public static List<Assignment> loadAllAssignments(Context context) {
+
+
+        List<Assignment> assignments = new ArrayList<>();
+        Assignment assignment;
+        Gson gson = new Gson();
+
+        Log.d("loadAllAssignments()", "Create SharedPrefs");
+        SharedPreferences prefs = context.getSharedPreferences(prefs_file, Context.MODE_PRIVATE);
+        Log.d("loadAllAssignments()", "Get all keys");
+        Map<String, ?> keys = prefs.getAll();
+        for(Map.Entry<String, ?> entry : keys.entrySet()) {
+            Log.d("loadAllAssignments()","Loading: " + entry.getKey());
+            String temp = entry.getValue().toString();
+            assignment = gson.fromJson(temp, Assignment.class);
+            assignments.add(assignment);
+            Log.d("loadAllAssignments()", "Loaded: " + assignment.toString());
+        }
+        return assignments;
     }
 
     public void exportToGoogleSheets() {
     }
 
     public String toString() {
+
+        return this._assignmentName;
+    }
+
+    /*
+     * Used for testing
+     */
+    public String getData() {
         String studentsString = "";
         for(Student student : _students){
             studentsString += "\t" + student.getLastName() + ", " + student.getFirstName() + "\n";
@@ -132,3 +184,4 @@ public class Assignment {
         return String.format("Assignment Name: %s \nEnrollemnts: \n %s", _assignmentName, studentsString);
     }
 }
+

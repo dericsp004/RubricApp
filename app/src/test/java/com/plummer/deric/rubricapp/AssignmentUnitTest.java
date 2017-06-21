@@ -27,7 +27,8 @@ public class AssignmentUnitTest {
     @Test
     public void SaveAssingmentTest () {
         Assignment assignment =  new Assignment(new Rubric());
-        assignment.save();
+        assignment.setAssignmentName("English 101 - Moby Dick Essay");
+        //assignment.save(new Context());
 
         //Check assingment is saved correctly
 
@@ -53,6 +54,6 @@ public class AssignmentUnitTest {
         boolean result3 = assignment.containsStudent("Jane", "Doe");
         assertTrue(result3);
 
-        System.out.println(assignment.toString());
+        System.out.println(assignment.getData());
     }
 }
