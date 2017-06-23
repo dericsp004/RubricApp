@@ -1,18 +1,27 @@
 package com.plummer.deric.rubricapp;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.TextView;
 
 public class AssignmentActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main);
+
+        // Get the Intent that started this activity and extract the string
+        Intent intent = getIntent();
+        String assignmentName = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
+
+        //Get the assignment
+        Assignment.load(this, assignmentName);
     }
 
     /**

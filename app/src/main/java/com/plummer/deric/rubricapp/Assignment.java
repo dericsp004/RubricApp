@@ -137,7 +137,7 @@ public class Assignment {
         edit.commit();
     }
 
-    public Assignment load(Context context, String key) {
+    public static Assignment load(Context context, String key) {
         Gson gson = new Gson();
 
         SharedPreferences prefs = context.getSharedPreferences(prefs_file, Context.MODE_PRIVATE);

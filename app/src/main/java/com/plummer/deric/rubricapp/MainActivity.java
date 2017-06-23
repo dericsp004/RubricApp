@@ -13,9 +13,8 @@ import android.widget.TextView;
 
 import java.util.List;
 
-import static android.provider.AlarmClock.EXTRA_MESSAGE;
-
 public class MainActivity extends AppCompatActivity {
+    public static final String EXTRA_MESSAGE = "com.example.myfirstapp.FROM_MAIN_ACTIVITY";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
