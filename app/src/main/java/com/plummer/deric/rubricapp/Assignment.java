@@ -16,6 +16,7 @@ import static android.content.Context.MODE_PRIVATE;
 
 public class Assignment {
     private String _assignmentName;
+    private String _className;
     private Rubric _rubric;
     private List<Student> _students;
     private static final String prefs_file = "com.plummer.deric.rubricapp.Assignments";
@@ -27,8 +28,9 @@ public class Assignment {
      * @param assignmentName
      * @param rubric
      */
-    public Assignment(String assignmentName, Rubric rubric) {
+    public Assignment(String assignmentName, String _className, Rubric rubric) {
         this._assignmentName = assignmentName;
+        this._className = _className;
         this._rubric = rubric;
         this._students = new ArrayList<>();
     }
@@ -131,7 +133,7 @@ public class Assignment {
         String assignment = gson.toJson(this);
         SharedPreferences prefs = context.getSharedPreferences(prefs_file, Context.MODE_PRIVATE);
         SharedPreferences.Editor edit = prefs.edit();
-        edit.putString(this.toString(), assignment);
+        edit.putString(this._className + " - " + this._assignmentName, assignment);
         edit.commit();
     }
 
