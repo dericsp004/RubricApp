@@ -33,8 +33,12 @@ class Student implements Comparable<Student> {
         return _lastName;
     }
 
-    public float getGrade() {
-        return 0.0f;
+    public double getAverageGrade() {
+        double sum = 0;
+        for(Criteria criteria : _rubric.getCriteria()) {
+            sum += criteria.getGrade();
+        }
+        return sum / _rubric.getCriteria().size();
     }
 
     public Rubric getRubric() {
