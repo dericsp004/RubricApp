@@ -147,8 +147,6 @@ public class Assignment {
     }
 
     public static List<Assignment> loadAllAssignments(Context context) {
-
-
         List<Assignment> assignments = new ArrayList<>();
         Assignment assignment;
         Gson gson = new Gson();
