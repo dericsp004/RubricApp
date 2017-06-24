@@ -3,16 +3,84 @@ package com.plummer.deric.rubricapp;
 import java.util.Collections;
 import java.util.List;
 
-class Criteria {
-    String name;
-    List<Points> grades;
+public class Criteria {
+    private String _name;
+    private double _grade;
+    private double _maxGrade;
+    private String _description;
 
-
-    public void sort() {
-        Collections.sort(grades);
+    /********************************************************
+     *  Constructors
+     ********************************************************/
+    public Criteria(String name, int maxGrade, String description) {
+        this._name = name;
+        this._maxGrade = maxGrade;
+        this._description = description;
     }
 
-    public void addGrade(Points grade) {
-        grades.add(grade);
+    /********************************************************
+     *  Getters
+     ********************************************************/
+    public String getName() {
+        return this._name;
     }
+
+    public double getGrade() {
+        return this._grade;
+    }
+
+    public String getMaxGrade() {
+        return this.getMaxGrade();
+    }
+
+    public String get_description() {
+        return this._description;
+
+    }
+
+    /********************************************************
+     *  Setters
+     ********************************************************/
+    public void setName(String _name) {
+        this._name = _name;
+    }
+
+    public void setMaxGrade(int _maxGrade) {
+        this._maxGrade = _maxGrade;
+    }
+
+    public void setDescription(String _description) {
+        this._description = _description;
+    }
+
+    public void setGrade(int grade) {
+        if (grade >= _maxGrade)
+        {
+            this._grade = _maxGrade;
+        }
+        else {
+            this._grade = grade;
+        }
+    }
+
+    /********************************************************
+     *  Member Methods
+     ********************************************************/
+    @Override
+    public String toString() {
+        return "Criteria{" +
+                "_name='" + _name + '\'' +
+                ", _grade=" + _grade +
+                ", _maxGrade=" + _maxGrade +
+                ", _description='" + _description + '\'' +
+                '}';
+    }
+
+    //public void sort() {
+    //    Collections.sort(grades);
+    //}
+
+    //public void addGrade(Points grade) {
+    //    grades.add(grade);
+    //}
 }
