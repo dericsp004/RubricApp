@@ -17,6 +17,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".MakeRubric"></activity>
+        <activity android:name=".Student_Activity" />
+        <activity android:name=".Grade_Activity"></activity>
+
     </application>
 
 </manifest>

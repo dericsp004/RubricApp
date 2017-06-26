@@ -20,7 +20,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         assignments = Assignment.loadAllAssignments(this);
     }
 
@@ -60,10 +59,10 @@ public class MainActivity extends AppCompatActivity {
                                 // edit text
                                 String title = assignName.getText().toString();
                                 String classTitle = className.getText().toString();
-/*TODO: READ COMMENT*/          Assignment newAssign = new Assignment(title, classTitle, /*HARDCODED NEW RUBRIC. TODO: REPLACE THIS!!!!*/ new Rubric());
+                                Assignment newAssign = new Assignment(title, classTitle, /*HARDCODED NEW RUBRIC. TODO: REPLACE THIS!!!!*/ new Rubric());
                                 newAssign.save(MainActivity.this);  //Save the assignment
-                                assignments.add(newAssign);
-                                //TODO: reload the list
+                                //assignments.add(newAssign);
+
                             }
                         })
                 .setNegativeButton("Cancel",
