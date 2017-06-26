@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
      * Adds a new assignment to the list.
      * Asks user for assignment name and rubric to link.
      */
-    public void addAssignment() {
+    public void addAssignment(View v) {
         //The following is modified from:
         //https://www.mkyong.com/android/android-prompt-user-input-dialog-example/
         // get add_student_promptdent_prompt.xml view
