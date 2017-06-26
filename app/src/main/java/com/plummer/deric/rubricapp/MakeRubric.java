@@ -47,7 +47,7 @@ public class MakeRubric extends AppCompatActivity {
                                 // get user input and set it to result
                                 // edit text
                                 String desc = assignName.getText().toString() + " - " + className.getText().toString();
-/*TODO: READ COMMENT*/          rubric.addCriteria(new Criteria()); //TODO: add Criteria based on Criteria Constructor
+/*TODO: READ COMMENT*/          rubric.addCriteria("Hardcode Test", 10, "Test criteria. REMOVE THIS");
                             }
                         })
                 .setNegativeButton("Cancel",

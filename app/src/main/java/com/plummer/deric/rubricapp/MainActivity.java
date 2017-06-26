@@ -59,7 +59,8 @@ public class MainActivity extends AppCompatActivity {
                                 // edit text
                                 String title = assignName.getText().toString();
                                 String classTitle = className.getText().toString();
-                                Assignment newAssign = new Assignment(title, classTitle, /*HARDCODED NEW RUBRIC. TODO: REPLACE THIS!!!!*/ new Rubric());
+                                Assignment newAssign = new Assignment(title, classTitle, /*HARDCODED NEW RUBRIC. TODO: REPLACE THIS!!!!*/ new Rubric("Hardcode Rubric",
+                                        "A test rubric in MainActivity.java, addAssignment(). If you're seeing this, that's a problem."));
                                 newAssign.save(MainActivity.this);  //Save the assignment
                                 //assignments.add(newAssign);
 
