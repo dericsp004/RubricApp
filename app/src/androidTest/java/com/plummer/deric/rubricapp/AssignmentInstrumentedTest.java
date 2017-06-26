@@ -22,7 +22,7 @@ public class AssignmentInstrumentedTest {
     public void SaveLoadAssignments() throws Exception {
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        Assignment assignment1 =  new Assignment("Midterm", new Rubric());
+        Assignment assignment1 =  new Assignment("Midterm", "English Section 1", new Rubric("MidtermRubric", "description"));
         for (Integer i = 0; i < 10; i++) {
             assignment1.addStudent("John", i.toString());
         }
@@ -30,7 +30,7 @@ public class AssignmentInstrumentedTest {
         Log.d("SaveLoadAssignments", "Begin to Save Assignment 1");
         assignment1.save(appContext);
 
-        Assignment assignment2 =  new Assignment("Final", new Rubric());
+        Assignment assignment2 =  new Assignment("Final", "English Section 1", new Rubric("Final", "Description"));
         for (Integer i = 0; i < 5; i++) {
             assignment2.addStudent("John", i.toString());
         }
@@ -51,7 +51,7 @@ public class AssignmentInstrumentedTest {
 
         for(int i = 0; i < newAssigment2.getStudents().size(); i++){
             Student newStudent = newAssigment2.getStudents().get(i);
-            Student oldStudent = assignment2.getStudents().get(i);
+            Student oldStudent = assignment2.getStudents().get(i - 1);
             assertEquals(oldStudent.getFirstName(), newStudent.getFirstName());
             assertEquals(oldStudent.getLastName(), newStudent.getLastName());
         }
