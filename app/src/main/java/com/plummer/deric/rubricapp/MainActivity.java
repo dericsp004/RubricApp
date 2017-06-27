@@ -5,25 +5,60 @@ import android.content.Intent;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ListView;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
     public static final String EXTRA_MESSAGE = "com.example.myfirstapp.FROM_MAIN_ACTIVITY";
+    private List<Assignment> assignments;
+    private ListView mainListView ;
+    private ArrayAdapter<String> listAdapter ;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        assignments = Assignment.loadAllAssignments(this);
+        //Initialize the List to avoid null reference pointer errors
+        assignments = new ArrayList<>();
+        Log.d("loadAssignments()", "Preload size: " + String.valueOf(assignments.size()));
+        //Populate the list
+        loadAssignments();
     }
 
-    private List<Assignment> assignments;
+    /**
+     * Loads and displays all assignments saved on this device
+     */
+    private void loadAssignments() {
+        Log.d("loadAssignments()", "Preload size: " + String.valueOf(assignments.size()));
+        assignments = Assignment.loadAllAssignments(this);
+        Log.d("loadAssignments()", "Postload size: " + String.valueOf(assignments.size()));
+
+        // Find the ListView resource.
+        mainListView = (ListView) findViewById( R.id.RubricList );
+
+        //Convert all assignments to their names
+        List<String> assignmentNames = new ArrayList<String>();
+        for (Assignment assign : assignments) {
+            assignmentNames.add(assign.getClass() + " - " + assign.getAssignmentName());
+        }
+
+        // Create ArrayAdapter using the planet list.
+        listAdapter = new ArrayAdapter<String>(this, R.layout.rubricrow, assignmentNames);
+
+        // Set the ArrayAdapter as the ListView's adapter.
+        mainListView.setAdapter(listAdapter);
+    }
 
     /**
      * Adds a new assignment to the list.
@@ -62,8 +97,7 @@ public class MainActivity extends AppCompatActivity {
                                 Assignment newAssign = new Assignment(title, classTitle, /*HARDCODED NEW RUBRIC. TODO: REPLACE THIS!!!!*/ new Rubric("Hardcode Rubric",
                                         "A test rubric in MainActivity.java, addAssignment(). If you're seeing this, that's a problem."));
                                 newAssign.save(MainActivity.this);  //Save the assignment
-                                //assignments.add(newAssign);
-
+                                loadAssignments();
                             }
                         })
                 .setNegativeButton("Cancel",
