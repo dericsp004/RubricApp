@@ -79,9 +79,9 @@ public class MainActivity extends AppCompatActivity {
 
         //Get the text fields
         final EditText assignName = (EditText) promptsView
-                .findViewById(R.id.newStudentPromptEditText1);
+                .findViewById(R.id.newAssignmentPromptEditText1);
         final EditText className = (EditText) promptsView
-                .findViewById(R.id.newStudentPromptEditText2);
+                .findViewById(R.id.newAssignmentPromptEditText2);
         //TODO: Add a rubric selection list
 
         // set dialog message
