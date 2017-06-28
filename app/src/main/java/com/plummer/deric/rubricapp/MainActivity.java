@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
         //https://www.mkyong.com/android/android-prompt-user-input-dialog-example/
         // get add_student_promptdent_prompt.xml view
         LayoutInflater li = LayoutInflater.from(this);
-        View promptsView = li.inflate(R.layout.add_student_prompt, null);
+        View promptsView = li.inflate(R.layout.add_assignment_prompt, null);
 
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
                 this);
@@ -96,6 +96,10 @@ public class MainActivity extends AppCompatActivity {
                                 String classTitle = className.getText().toString();
                                 Assignment newAssign = new Assignment(title, classTitle, /*HARDCODED NEW RUBRIC. TODO: REPLACE THIS!!!!*/ new Rubric("Hardcode Rubric",
                                         "A test rubric in MainActivity.java, addAssignment(). If you're seeing this, that's a problem."));
+                                Log.d("addAssignment()", "Raw title: " + title);
+                                Log.d("addAssignment()", "Assignment title: " + newAssign.getAssignmentName());
+                                Log.d("addAssignment()", "Raw class name: " + title);
+                                Log.d("addAssignment()", "Assignment class name: " + newAssign);
                                 newAssign.save(MainActivity.this);  //Save the assignment
                                 loadAssignments();
                             }
