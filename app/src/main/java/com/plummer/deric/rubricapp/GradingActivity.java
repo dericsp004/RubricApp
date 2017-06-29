@@ -1,4 +1,4 @@
-package com.plummer.deric.rubricapp;
+/*package com.plummer.deric.rubricapp;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -14,7 +14,7 @@ public class GradingActivity extends AppCompatActivity {
     /**
      * Called when radio button is pressed or unpressed
      * Gets the total available points and the selected points to calculate percentage grade
-     */
+     *
     public void calcGrade() {
         int total = 0;
         int achieved = 0;
@@ -30,7 +30,7 @@ public class GradingActivity extends AppCompatActivity {
     /**
      * Shows or hides the selected view
      * @param v
-     */
+     *
     public void showHide(View v) {
         //TODO: get the text description associated with the button, not the button itself
         v.setVisibility((v.getVisibility() == View.VISIBLE)
@@ -40,7 +40,7 @@ public class GradingActivity extends AppCompatActivity {
     /**
      * Shows all hideable textViews
      * @param v
-     */
+     *
     public void showAll(View v) {
         //TODO: Get all textviews
         //foreach v.setVisibility(View.VISIBLE);
@@ -49,9 +49,10 @@ public class GradingActivity extends AppCompatActivity {
     /**
      * Hides all hideable textViews
      * @param v
-     */
+     *
     public void hideAll(View v) {
         //TODO: Get all textviews
         //foreach v.setVisibility(View.GONE);
     }
 }
+*/
