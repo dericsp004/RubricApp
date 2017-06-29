@@ -37,7 +37,7 @@
         app:layout_constraintHorizontal_bias="0.8" />
 
     <ListView
-        android:id="@+id/RubricList"
+        android:id="@+id/AssignmentList"
         android:layout_width="248dp"
         android:layout_height="390dp"
         app:layout_constraintBottom_toBottomOf="parent"

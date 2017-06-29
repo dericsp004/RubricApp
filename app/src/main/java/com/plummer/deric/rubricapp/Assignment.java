@@ -14,6 +14,9 @@ import java.util.Map;
 
 import static android.content.Context.MODE_PRIVATE;
 
+/**
+ *  This class represents a school assignment
+ */
 public class Assignment {
     private String _assignmentName;
     private String _className;
@@ -25,12 +28,15 @@ public class Assignment {
      *  Constructors
      ********************************************************/
     /**
+     * Creates a new assignment. Generates an empty ArrayList for students.
+     *
      * @param assignmentName
+     * @param className
      * @param rubric
      */
-    public Assignment(String assignmentName, String _className, Rubric rubric) {
+    public Assignment(String assignmentName, String className, Rubric rubric) {
         this._assignmentName = assignmentName;
-        this._className = _className;
+        this._className = className;
         this._rubric = rubric;
         this._students = new ArrayList<>();
     }
@@ -94,7 +100,7 @@ public class Assignment {
      * Remove a student of the provided name
      * @param firstName
      * @param lastName
-     * @return
+     * @return boolean
      */
     public boolean containsStudent(String firstName, String lastName) {
         boolean contains = false;
@@ -108,6 +114,11 @@ public class Assignment {
         return contains;
     }
 
+    /**
+     * Remove a student from the student list
+     * @param firstName
+     * @param lastName
+     */
     public void removeStudent(String firstName, String lastName) {
         Iterator<Student> it = _students.iterator();
         while (it.hasNext()) {
@@ -127,6 +138,10 @@ public class Assignment {
         _students.remove(stu);
     }
 
+    /**
+     * Save the assignment to Shared Preferences
+     * @param context
+     */
     public void save(Context context) {
         Gson gson = new Gson();
 
@@ -137,6 +152,12 @@ public class Assignment {
         edit.commit();
     }
 
+    /**
+     * Load a specified Assignment from SharedPreferences
+     * @param context
+     * @param key
+     * @return Assignment
+     */
     public static Assignment load(Context context, String key) {
         Gson gson = new Gson();
 
@@ -146,6 +167,11 @@ public class Assignment {
         return assignment;
     }
 
+    /**
+     * loads all saved Assignments from Shared Preferences
+     * @param context
+     * @return List<Assignment>
+     */
     public static List<Assignment> loadAllAssignments(Context context) {
         List<Assignment> assignments = new ArrayList<>();
         Assignment assignment;
@@ -170,7 +196,7 @@ public class Assignment {
 
     public String toString() {
 
-        return this._assignmentName;
+        return this._className + " - " + this._assignmentName;
     }
 
     /*

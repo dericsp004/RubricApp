@@ -8,6 +8,8 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.AdapterView.OnItemClickListener;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
@@ -27,34 +29,53 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        Log.d("Main Activtity", "Activty Started");
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         //Initialize the List to avoid null reference pointer errors
         assignments = new ArrayList<>();
         Log.d("loadAssignments()", "Preload size: " + String.valueOf(assignments.size()));
-        //Populate the list
-        loadAssignments();
+        mainListView = (ListView) findViewById( R.id.AssignmentList );
+        loadAssignments(mainListView);
+
+        mainListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                //Make the intent
+                Log.d("Main Activtity", "Started Intent");
+                Intent intent = new Intent(MainActivity.this, Student_Activity.class);
+                //Pass the text from the button clicked
+                Log.d("Main Activtity", "get Item Position");
+                intent.putExtra(EXTRA_MESSAGE, mainListView.getItemAtPosition(position).toString());
+                Log.d("Main Activtity", "Start next Activity");
+                startActivity(intent);
+                Log.d("Main Activtity", "Finished Activity");
+
+            }
+        });
     }
 
     /**
      * Loads and displays all assignments saved on this device
      */
-    private void loadAssignments() {
+    private void loadAssignments(ListView mainListView) {
         Log.d("loadAssignments()", "Preload size: " + String.valueOf(assignments.size()));
         assignments = Assignment.loadAllAssignments(this);
         Log.d("loadAssignments()", "Postload size: " + String.valueOf(assignments.size()));
 
         // Find the ListView resource.
-        mainListView = (ListView) findViewById( R.id.RubricList );
+        mainListView = (ListView) findViewById( R.id.AssignmentList );
 
         //Convert all assignments to their names
         List<String> assignmentNames = new ArrayList<String>();
         for (Assignment assign : assignments) {
-            assignmentNames.add(assign.getClass() + " - " + assign.getAssignmentName());
+            assignmentNames.add(assign.toString());
         }
 
         // Create ArrayAdapter using the planet list.
-        listAdapter = new ArrayAdapter<String>(this, R.layout.rubricrow, assignmentNames);
+        listAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, assignmentNames);
 
         // Set the ArrayAdapter as the ListView's adapter.
         mainListView.setAdapter(listAdapter);
@@ -98,10 +119,10 @@ public class MainActivity extends AppCompatActivity {
                                         "A test rubric in MainActivity.java, addAssignment(). If you're seeing this, that's a problem."));
                                 Log.d("addAssignment()", "Raw title: " + title);
                                 Log.d("addAssignment()", "Assignment title: " + newAssign.getAssignmentName());
-                                Log.d("addAssignment()", "Raw class name: " + title);
+                                Log.d("addAssignment()", "Raw class name: " + classTitle);
                                 Log.d("addAssignment()", "Assignment class name: " + newAssign);
                                 newAssign.save(MainActivity.this);  //Save the assignment
-                                loadAssignments();
+                                loadAssignments(mainListView);
                             }
                         })
                 .setNegativeButton("Cancel",
@@ -122,11 +143,11 @@ public class MainActivity extends AppCompatActivity {
      * Retrieve the Assignment object by the selected ID and pass
      * it to the next activity
      */
-    public void selectAssignment(View v) {
+    /*public void selectAssignment(View v) {
         //Make the intent
         Intent intent = new Intent(this, AssignmentActivity.class);
         //Pass the text from the button clicked
         intent.putExtra(EXTRA_MESSAGE, ((TextView)v).getText().toString());
         startActivity(intent);
-    }
+    }*/
 }
