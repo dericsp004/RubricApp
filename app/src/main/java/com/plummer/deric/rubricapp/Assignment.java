@@ -148,7 +148,7 @@ public class Assignment {
         String assignment = gson.toJson(this);
         SharedPreferences prefs = context.getSharedPreferences(prefs_file, Context.MODE_PRIVATE);
         SharedPreferences.Editor edit = prefs.edit();
-        edit.putString(this._className + " - " + this._assignmentName, assignment);
+        edit.putString(this.toString(), assignment);
         edit.commit();
     }
 

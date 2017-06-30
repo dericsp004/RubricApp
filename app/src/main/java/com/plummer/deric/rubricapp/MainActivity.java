@@ -52,7 +52,6 @@ public class MainActivity extends AppCompatActivity {
                 Log.d("Main Activtity", "Start next Activity");
                 startActivity(intent);
                 Log.d("Main Activtity", "Finished Activity");
-
             }
         });
     }
