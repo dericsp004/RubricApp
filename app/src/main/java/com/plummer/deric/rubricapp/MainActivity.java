@@ -141,7 +141,7 @@ public class MainActivity extends AppCompatActivity {
     public void createRubric(View v) {
         //Make the intent
         Log.d("Main Activtity", "Started Intent");
-        Intent intent = new Intent(MainActivity.this, Student_Activity.class);
+        Intent intent = new Intent(MainActivity.this, MakeRubricActivity.class);
         //Pass the text from the button clicked
         intent.putExtra(EXTRA_MESSAGE, "");
         Log.d("Main Activtity", "Start rubric Activity");
