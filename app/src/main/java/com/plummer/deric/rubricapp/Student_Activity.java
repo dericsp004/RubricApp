@@ -39,7 +39,10 @@ public class Student_Activity extends AppCompatActivity {
 
 
     public void displayStudents(String assignmentName) {
+        Log.d("Student_Activity", "load Assignment");
         _assignment = Assignment.load(this, assignmentName);
+        Log.d("Student_Activity", _assignment.getData());
+
         _lv = (ListView) findViewById(R.id.StudentList);
         List<String> studentNames = new ArrayList<>();
         for(Student student : _assignment.getStudents()) {
@@ -47,6 +50,7 @@ public class Student_Activity extends AppCompatActivity {
         }
 
         _listAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, studentNames);
+        _lv.setAdapter(_listAdapter);
     }
 
     //
@@ -92,8 +96,11 @@ public class Student_Activity extends AppCompatActivity {
                                 //Log.d("addAssignment()", "Assignment title: " + newAssign.getAssignmentName());
                                 //Log.d("addAssignment()", "Raw class name: " + classTitle);
                                 //Log.d("addAssignment()", "Assignment class name: " + newAssign);
+                                Log.d("Student_Activity", "adding student");
                                 _assignment.addStudent(firstName, lastName);  //Save the assignment
+                                Log.d("Student_Activity", "save student");
                                 _assignment.save(Student_Activity.this);
+                                Log.d("Student_Activity", "call display students");
                                 displayStudents(_assignment.toString());
                             }
                         })
