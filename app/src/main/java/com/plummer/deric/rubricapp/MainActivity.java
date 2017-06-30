@@ -138,6 +138,17 @@ public class MainActivity extends AppCompatActivity {
         alertDialog.show();
     }
 
+    public void createRubric(View v) {
+        //Make the intent
+        Log.d("Main Activtity", "Started Intent");
+        Intent intent = new Intent(MainActivity.this, Student_Activity.class);
+        //Pass the text from the button clicked
+        intent.putExtra(EXTRA_MESSAGE, "");
+        Log.d("Main Activtity", "Start rubric Activity");
+        startActivity(intent);
+        Log.d("Main Activtity", "Finished rubric Activity");
+    }
+
     /**
      * Retrieve the Assignment object by the selected ID and pass
      * it to the next activity
