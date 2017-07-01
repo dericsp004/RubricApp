@@ -1,6 +1,6 @@
 <!-- Does not display. Gets imported to add items to listview -->
 <TextView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/RubricRow"
+    android:id="@+id/CriteriaRow"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:padding="10dp"

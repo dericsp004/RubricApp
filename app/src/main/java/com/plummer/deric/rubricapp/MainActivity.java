@@ -24,7 +24,8 @@ public class MainActivity extends AppCompatActivity {
     public static final String EXTRA_MESSAGE = "com.example.myfirstapp.FROM_MAIN_ACTIVITY";
     private List<Assignment> assignments;
     private ListView mainListView ;
-    private ArrayAdapter<String> listAdapter ;
+    private ArrayAdapter<String> listAdapter;
+    private Rubric selectedRubric;
 
 
     @Override
@@ -37,8 +38,7 @@ public class MainActivity extends AppCompatActivity {
         //Initialize the List to avoid null reference pointer errors
         assignments = new ArrayList<>();
         Log.d("loadAssignments()", "Preload size: " + String.valueOf(assignments.size()));
-        mainListView = (ListView) findViewById( R.id.AssignmentList );
-        loadAssignments(mainListView);
+        loadAssignments();
 
         mainListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Loads and displays all assignments saved on this device
      */
-    private void loadAssignments(ListView mainListView) {
+    private void loadAssignments() {
         Log.d("loadAssignments()", "Preload size: " + String.valueOf(assignments.size()));
         assignments = Assignment.loadAllAssignments(this);
         Log.d("loadAssignments()", "Postload size: " + String.valueOf(assignments.size()));
@@ -73,11 +73,30 @@ public class MainActivity extends AppCompatActivity {
             assignmentNames.add(assign.toString());
         }
 
-        // Create ArrayAdapter using the planet list.
+        // Create ArrayAdapter
         listAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, assignmentNames);
 
         // Set the ArrayAdapter as the ListView's adapter.
         mainListView.setAdapter(listAdapter);
+    }
+
+    private void loadRubrics() {
+        List<Rubric> rubrics = Rubric.loadAllRubric(MainActivity.this);
+
+        // Find the ListView resource.
+        ListView rubricListView = (ListView) findViewById( R.id.RubricList );
+
+        //Convert all assignments to their names
+        List<String> rubricNames = new ArrayList<String>();
+        for (Rubric rubric : rubrics) {
+            rubricNames.add(rubric.get_name() + " - ");
+        }
+
+        // Create ArrayAdapter
+        ArrayAdapter<String> listAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, rubricNames);
+
+        // Set the ArrayAdapter as the ListView's adapter.
+        rubricListView.setAdapter(listAdapter);
     }
 
     /**
@@ -97,12 +116,16 @@ public class MainActivity extends AppCompatActivity {
         // set add_student_prompt.xml_prompt.xml to alertdialog builder
         alertDialogBuilder.setView(promptsView);
 
+        //Add the available rubric rows
+        loadRubrics();
+
         //Get the text fields
         final EditText assignName = (EditText) promptsView
                 .findViewById(R.id.newAssignmentPromptEditText1);
         final EditText className = (EditText) promptsView
                 .findViewById(R.id.newAssignmentPromptEditText2);
         //TODO: Add a rubric selection list
+
 
         // set dialog message
         alertDialogBuilder
@@ -121,7 +144,7 @@ public class MainActivity extends AppCompatActivity {
                                 Log.d("addAssignment()", "Raw class name: " + classTitle);
                                 Log.d("addAssignment()", "Assignment class name: " + newAssign);
                                 newAssign.save(MainActivity.this);  //Save the assignment
-                                loadAssignments(mainListView);
+                                loadAssignments();
                             }
                         })
                 .setNegativeButton("Cancel",
