@@ -96,8 +96,8 @@ public class MainActivity extends AppCompatActivity {
                                 String classTitle = className.getText().toString();
 
                                 Assignment newAssign = new Assignment(title, classTitle, /*HARDCODED NEW RUBRIC. TODO: REPLACE THIS!!!!*/ new Rubric( "name",  "description"));
-                                Assignment newAssign = new Assignment(title, classTitle, /*HARDCODED NEW RUBRIC. TODO: REPLACE THIS!!!!*/ new Rubric("Hardcode Rubric",
-                                        "A test rubric in MainActivity.java, addAssignment(). If you're seeing this, that's a problem."));
+                                //Assignment newAssign = new Assignment(title, classTitle, /*HARDCODED NEW RUBRIC. TODO: REPLACE THIS!!!!*/ new Rubric("Hardcode Rubric",
+
                                 Log.d("addAssignment()", "Raw title: " + title);
                                 Log.d("addAssignment()", "Assignment title: " + newAssign.getAssignmentName());
                                 Log.d("addAssignment()", "Raw class name: " + title);
@@ -119,12 +119,13 @@ public class MainActivity extends AppCompatActivity {
 
         // show it
         alertDialog.show();
-    }
+    }}//extra parenthese added to resolve error
 
     /**
      * Retrieve the Assignment object by the selected ID and pass
      * it to the next activity
      */
+    /*
     public void selectAssignment(View v) {
         //Make the intent
         Intent intent = new Intent(this, AssignmentActivity.class);
@@ -133,3 +134,4 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 }
+*/
