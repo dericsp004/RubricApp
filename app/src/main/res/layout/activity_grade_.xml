@@ -28,21 +28,6 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:text="collapse" />
 
-    <ExpandableListView
-        android:id="@+id/GradeList"
-        android:layout_width="223dp"
-        android:layout_height="333dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginBottom="8dp"
-
-        />
-
     <TextView
         android:id="@+id/textView"
         android:layout_width="114dp"
@@ -66,13 +51,43 @@
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="182dp"
-        android:layout_height="42dp"
+        android:layout_width="220dp"
+        android:layout_height="46dp"
         android:text="Comments"
-        app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        tools:layout_editor_absoluteY="439dp" />
+        tools:layout_editor_absoluteY="426dp"
+        tools:layout_editor_absoluteX="63dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="93dp"
+        android:layout_height="38dp"
+        android:layout_marginRight="147dp"
+        android:text="Submit"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteY="469dp"
+        tools:text="Submit"
+        android:layout_marginLeft="147dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_editor_absoluteX="144dp"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <ExpandableListView
+        android:id="@+id/GradeList"
+        android:layout_width="223dp"
+        android:layout_height="333dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.445" />
 
 
 </android.support.constraint.ConstraintLayout>

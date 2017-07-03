@@ -7,6 +7,7 @@ import android.util.Log;
 import com.google.gson.Gson;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 
@@ -64,6 +65,11 @@ public class Rubric {
         _criteriaList.add(new Criteria(name, maxGrade, description));
     }
 
+    /**
+     * Saves the rubric contents to shared preferences
+     * @param context
+     *
+     */
     public void saveRubric(Context context) {
         Gson gson = new Gson();
 
@@ -74,10 +80,17 @@ public class Rubric {
         edit.commit();
     }
 
+    /**
+     *Loop through and display all rubrics
+     * @param context
+     * @return List Rubric
+     */
+
     public static List<Rubric> loadAllRubric(Context context) {
         List<Rubric> rubrics = new ArrayList<>();
         Rubric rubric;
         Gson gson = new Gson();
+
 
         Log.d("loadAllRubrics", "Create SharedPrefs");
         SharedPreferences prefs = context.getSharedPreferences(prefs_file, Context.MODE_PRIVATE);
@@ -93,6 +106,10 @@ public class Rubric {
         return rubrics;
     }
 
+    /**
+     *Returns a specific rubric
+     * @return Rubric
+     */
     @Override
     public String toString() {
         return "Rubric{" +
