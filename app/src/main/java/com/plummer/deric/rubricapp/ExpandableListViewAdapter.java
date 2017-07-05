@@ -7,7 +7,7 @@ import android.view.ViewGroup;
 import android.widget.BaseExpandableListAdapter;
 import android.widget.TextView;
 
-import static com.plummer.deric.rubricapp.R.id.textView;
+//import static com.plummer.deric.rubricapp.R.id.textView;
 
 /**
  * Created by Sterling on 6/21/2017.
