@@ -81,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void loadRubrics() {
-        /*List<Rubric> rubrics = Rubric.loadAllRubric(MainActivity.this);
+        List<Rubric> rubrics = Rubric.loadAllRubric(MainActivity.this);
 
         // Find the ListView resource.
         ListView rubricListView = (ListView) findViewById( R.id.RubricList );
@@ -96,8 +96,7 @@ public class MainActivity extends AppCompatActivity {
         ArrayAdapter<String> listAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, rubricNames);
 
         // Set the ArrayAdapter as the ListView's adapter.
-        rubricListView.setAdapter(listAdapter);
-        */
+        //rubricListView.setAdapter(listAdapter);
     }
 
     /**

@@ -11,6 +11,7 @@ import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.NumberPicker;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -28,8 +29,11 @@ public class MakeRubricActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_make_rubric);
 
+        this.name = "DebugName";
         rubric = new Rubric(name, "Debug description");
         displayRubric();
+
+        ((TextView)findViewById(R.id.AssignmentName)).setText(this.name);
     }
 
     private void displayRubric() {
@@ -72,6 +76,8 @@ public class MakeRubricActivity extends AppCompatActivity {
         final EditText descBox = (EditText) promptsView
                 .findViewById(R.id.newCriteiaPromptEditText2);
 
+        populateNumberPicker(maxValueBox, 50);
+
         // set dialog message
         alertDialogBuilder
                 .setCancelable(false)
@@ -105,4 +111,15 @@ public class MakeRubricActivity extends AppCompatActivity {
         //TODO: add
     }
 
+    private void populateNumberPicker(NumberPicker np, int max) {
+        String[] nums = new String[max+1];
+        for(int i=0; i<nums.length; i++)
+            nums[i] = Integer.toString(i);
+
+        np.setMinValue(0);
+        np.setMaxValue(max);
+        np.setWrapSelectorWheel(false);
+        np.setDisplayedValues(nums);
+        np.setValue(1);
+    }
 }
