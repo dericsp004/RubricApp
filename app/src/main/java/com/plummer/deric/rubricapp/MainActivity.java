@@ -2,19 +2,17 @@ package com.plummer.deric.rubricapp;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Color;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.AdapterView.OnItemClickListener;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
-import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -25,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
     private List<Assignment> assignments;
     private ListView mainListView ;
     private ArrayAdapter<String> listAdapter;
-    private Rubric selectedRubric;
+    private String selectedRubric;
 
 
     @Override
@@ -80,11 +78,8 @@ public class MainActivity extends AppCompatActivity {
         mainListView.setAdapter(listAdapter);
     }
 
-    private void loadRubrics() {
+    private ListView loadRubrics(View promptsView) {
         List<Rubric> rubrics = Rubric.loadAllRubric(MainActivity.this);
-
-        // Find the ListView resource.
-        ListView rubricListView = (ListView) findViewById( R.id.RubricList );
 
         //Convert all assignments to their names
         List<String> rubricNames = new ArrayList<String>();
@@ -95,8 +90,27 @@ public class MainActivity extends AppCompatActivity {
         // Create ArrayAdapter
         ArrayAdapter<String> listAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, rubricNames);
 
+        // Find the ListView resource.
+        final ListView rubricListView = (ListView) promptsView.findViewById( R.id.RubricList );
         // Set the ArrayAdapter as the ListView's adapter.
-        //rubricListView.setAdapter(listAdapter);
+        rubricListView.setAdapter(listAdapter);
+
+        //Give the list cool features
+        rubricListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                //Set the selection color
+                rubricListView.setFocusableInTouchMode(true);
+                rubricListView.setBackgroundColor(Color.DKGRAY);
+                rubricListView.setSelector(R.color.colorPrimary);
+
+                selectedRubric = rubricListView.getItemAtPosition(position).toString();
+            }
+        });
+
+        //Return the view so that the calling method doesn't have
+        //to search it serparetely
+        return rubricListView;
     }
 
     /**
@@ -116,16 +130,15 @@ public class MainActivity extends AppCompatActivity {
         // set add_student_prompt.xml_prompt.xml to alertdialog builder
         alertDialogBuilder.setView(promptsView);
 
-        //Add the available rubric rows
-        loadRubrics();
+
 
         //Get the text fields
         final EditText assignName = (EditText) promptsView
                 .findViewById(R.id.newAssignmentPromptEditText1);
         final EditText className = (EditText) promptsView
                 .findViewById(R.id.newAssignmentPromptEditText2);
-        //TODO: Add a rubric selection list
-
+        //Add the available rubric rows
+        final ListView rubrics = loadRubrics(promptsView);
 
         // set dialog message
         alertDialogBuilder
