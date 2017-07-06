@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.plummer.deric.rubricapp.MakeRubricActivity">
+    tools:context="com.plummer.deric.rubricapp.MainActivity">
     <ListView
         android:id="@+id/CriteriaList"
         android:layout_width="234dp"

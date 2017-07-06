@@ -2,7 +2,6 @@ package com.plummer.deric.rubricapp;
 
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.graphics.Color;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -15,7 +14,6 @@ import android.widget.EditText;
 import android.widget.ListView;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
@@ -121,12 +119,12 @@ public class MainActivity extends AppCompatActivity {
         //https://www.mkyong.com/android/android-prompt-user-input-dialog-example/
         // get add_student_promptdent_prompt.xml view
         LayoutInflater li = LayoutInflater.from(this);
-        View promptsView = li.inflate(R.layout.add_assignment_prompt, null);
+        View promptsView = li.inflate(R.layout.prompt_add_assignment, null);
 
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
                 this);
 
-        // set add_student_prompt.xml_prompt.xml to alertdialog builder
+        // set prompt_add_student.xml_prompt.xml to alertdialog builder
         alertDialogBuilder.setView(promptsView);
 
         //Get the text fields
@@ -178,7 +176,7 @@ public class MainActivity extends AppCompatActivity {
         //https://www.mkyong.com/android/android-prompt-user-input-dialog-example/
         // get add_student_promptdent_prompt.xml view
         LayoutInflater li = LayoutInflater.from(this);
-        View promptsView = li.inflate(R.layout.rubric_name_prompt, null);
+        View promptsView = li.inflate(R.layout.prompt_rubric_name, null);
 
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
                 this);

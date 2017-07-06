@@ -29,8 +29,8 @@ public class Criteria {
         return this._grade;
     }
 
-    public String getMaxGrade() {
-        return this.getMaxGrade();
+    public double getMaxGrade() {
+        return this._maxGrade;
     }
 
     public String get_description() {

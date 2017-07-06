@@ -13,7 +13,6 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
-import android.widget.ExpandableListView;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -125,12 +124,12 @@ public class Student_Activity extends AppCompatActivity {
         //https://www.mkyong.com/android/android-prompt-user-input-dialog-example/
         // get add_student_promptdent_prompt.xml view
         LayoutInflater li = LayoutInflater.from(this);
-        View promptsView = li.inflate(R.layout.add_student_prompt, null);
+        View promptsView = li.inflate(R.layout.prompt_add_student, null);
 
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
                 this);
 
-        // set add_student_prompt.xml_prompt.xml to alertdialog builder
+        // set prompt_add_student.xml_prompt.xml to alertdialog builder
         alertDialogBuilder.setView(promptsView);
 
         //Get the text fields

@@ -5,7 +5,6 @@ import android.content.Intent;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -51,8 +50,13 @@ public class MakeRubricActivity extends AppCompatActivity {
         //Convert all criteria to its data
         List<String> critStrings = new ArrayList<>();
         for (Criteria crit : _rubric.getCriteria()) {
+            //Setup fancy text
+            String line = crit.getName() + " - " + crit.get_description();
+            if (line.length() > 33) { line = line.substring(0, 30) + "..."; }
+
+            //Add the criteria to the list
             critStrings.add(
-                    crit.getName() + " - " //TODO: why does .getMaxGrade break this? Like HORRIBLY! //  + String.valueOf(crit.getMaxGrade())
+                    String.valueOf((int)crit.getMaxGrade()) + ": " + line
             );
         }
 
@@ -68,12 +72,12 @@ public class MakeRubricActivity extends AppCompatActivity {
         //https://www.mkyong.com/android/android-prompt-user-input-dialog-example/
         // get add_student_promptdent_prompt.xml view
         LayoutInflater li = LayoutInflater.from(this);
-        View promptsView = li.inflate(R.layout.add_criteria_prompt, null);
+        View promptsView = li.inflate(R.layout.prompt_add_criteria, null);
 
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
                 this);
 
-        // set add_student_prompt.xml_prompt.xml to alertdialog builder
+        // set prompt_add_student.xml_prompt.xml to alertdialog builder
         alertDialogBuilder.setView(promptsView);
 
         //Get the text fields
@@ -116,7 +120,6 @@ public class MakeRubricActivity extends AppCompatActivity {
 
         // show it
         alertDialog.show();
-        //TODO: add
     }
 
     private void populateNumberPicker(NumberPicker np, int max) {
