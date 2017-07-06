@@ -175,7 +175,7 @@ public class Student_Activity extends AppCompatActivity {
         // show it
         alertDialog.show();
     }
-
+/*
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -187,5 +187,5 @@ public class Student_Activity extends AppCompatActivity {
             }
         }
         Log.d("Student_Activity", "End onActivityResult()");
-    }
+    }*/
 }
