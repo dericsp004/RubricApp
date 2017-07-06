@@ -1,6 +1,7 @@
 package com.plummer.deric.rubricapp;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 
@@ -24,7 +25,7 @@ import org.w3c.dom.Text;
 
 public class Grade_Activity extends AppCompatActivity {
 
-    public ExpandableListView expandableListView;
+    public ExpandableListView _expandableListView;
     public Assignment _assignment;
     public TextView _tvAssignment;
     public TextView _tvStudent;
@@ -60,11 +61,17 @@ public class Grade_Activity extends AppCompatActivity {
         Log.d("Grade_Activity", "set assignment name to text view");
         _tvAssignment.setText(_assignment.getAssignmentName());
         Log.d("Grade_Activity", "Finished loading data");
-        //expandableListView = (ExpandableListView) findViewById(R.id.GradeList);
 
-        //ExpandableListViewAdapter adapter = new ExpandableListViewAdapter(Grade_Activity.this);
-
-        //expandableListView.setAdapter(adapter);
+        _expandableListView = (ExpandableListView) findViewById(R.id.GradeList);
+        ExpandableListViewAdapter adapter = new ExpandableListViewAdapter(Grade_Activity.this,
+                new Rubric("Midterm Rubric", "This rubric is for the paper midterm",
+                        new ArrayList<Criteria>(Arrays.asList(
+                            new Criteria("Plot", 4, "Student accurately describes the plot"),
+                            new Criteria("Characters", 4, "Student accurately presents the characters"),
+                            new Criteria("Extra Credit", 3, "Student goes above and beyond")
+                        ))
+                ));
+        _expandableListView.setAdapter(adapter);
     }
 
    /* @Override
@@ -76,12 +83,4 @@ public class Grade_Activity extends AppCompatActivity {
         finish();
     }*/
 
-    @Override
-    public void onBackPressed() {
-        //super.onBackPressed();
-        Intent i = new Intent();
-        i.putExtra("ASSIGNMENT_NAME", _assignment.toString());
-        setResult(RESULT_OK, i);
-        finish();
-    }
 }
