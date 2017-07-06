@@ -101,7 +101,6 @@ public class MainActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 //Set the selection color
                 rubricListView.setFocusableInTouchMode(true);
-                rubricListView.setBackgroundColor(Color.DKGRAY);
                 rubricListView.setSelector(R.color.colorPrimary);
 
                 selectedRubric = rubricListView.getItemAtPosition(position).toString();
@@ -129,8 +128,6 @@ public class MainActivity extends AppCompatActivity {
 
         // set add_student_prompt.xml_prompt.xml to alertdialog builder
         alertDialogBuilder.setView(promptsView);
-
-
 
         //Get the text fields
         final EditText assignName = (EditText) promptsView
@@ -177,12 +174,54 @@ public class MainActivity extends AppCompatActivity {
     public void createRubric(View v) {
         //Make the intent
         Log.d("Main Activtity", "Started Intent");
-        Intent intent = new Intent(MainActivity.this, MakeRubricActivity.class);
-        //Pass the text from the button clicked
-        intent.putExtra(EXTRA_MESSAGE, "");
-        Log.d("Main Activtity", "Start rubric Activity");
-        startActivity(intent);
-        Log.d("Main Activtity", "Finished rubric Activity");
+        //The following is modified from:
+        //https://www.mkyong.com/android/android-prompt-user-input-dialog-example/
+        // get add_student_promptdent_prompt.xml view
+        LayoutInflater li = LayoutInflater.from(this);
+        View promptsView = li.inflate(R.layout.rubric_name_prompt, null);
+
+        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
+                this);
+
+        // set xml to alertdialog builder
+        alertDialogBuilder.setView(promptsView);
+
+        //Get the text fields
+        final EditText rubricName = (EditText) promptsView
+                .findViewById(R.id.newRubricPromptEditText1);
+        final EditText rubricDesc = (EditText) promptsView
+                .findViewById(R.id.newRubricPromptEditText2);
+
+        // set dialog message
+        alertDialogBuilder
+                .setCancelable(false)
+                .setPositiveButton("OK",
+                        new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog,int id) {
+                                // get user input and set it to result
+                                // edit text
+                                String rName = rubricName.getText().toString();
+                                String rDesc = rubricDesc.getText().toString();
+
+                                //Start the Make Rubric Activity
+                                Intent intent = new Intent(MainActivity.this, MakeRubricActivity.class);
+                                //Pass the name and description with a :: deliminator
+                                intent.putExtra(EXTRA_MESSAGE, rName + "::" + rDesc);
+                                startActivity(intent);
+                            }
+                        })
+                .setNegativeButton("Cancel",
+                        new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog,int id) {
+                                dialog.cancel();
+                            }
+                        });
+
+        // create alert dialog
+        AlertDialog alertDialog = alertDialogBuilder.create();
+
+        // show it
+        alertDialog.show();
     }
 
     /**

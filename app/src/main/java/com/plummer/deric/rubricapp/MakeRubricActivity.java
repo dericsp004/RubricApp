@@ -1,6 +1,7 @@
 package com.plummer.deric.rubricapp;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -17,8 +18,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MakeRubricActivity extends AppCompatActivity {
-    private String name;
-    private Rubric rubric;
+    private String _name;
+    private String _desc;
+    private Rubric _rubric;
 
     //Member variables for displaying criteria
     private ListView mainListView ;
@@ -29,11 +31,17 @@ public class MakeRubricActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_make_rubric);
 
-        this.name = "DebugName";
-        rubric = new Rubric(name, "Debug description");
+        // Get the Intent that started this activity and extract the string
+        Intent intent = getIntent();
+        //First part should be name, second should be description. :: delimiter
+        String[] intentMessage = intent.getStringExtra(MainActivity.EXTRA_MESSAGE).split("::");
+        _name = intentMessage[0];
+        _desc = intentMessage[1];
+
+        _rubric = new Rubric(_name, "Debug description");
         displayRubric();
 
-        ((TextView)findViewById(R.id.AssignmentName)).setText(this.name);
+        ((TextView)findViewById(R.id.AssignmentName)).setText(_name);
     }
 
     private void displayRubric() {
@@ -42,7 +50,7 @@ public class MakeRubricActivity extends AppCompatActivity {
 
         //Convert all criteria to its data
         List<String> critStrings = new ArrayList<>();
-        for (Criteria crit : rubric.getCriteria()) {
+        for (Criteria crit : _rubric.getCriteria()) {
             critStrings.add(
                     crit.getName() + " - " //TODO: why does .getMaxGrade break this? Like HORRIBLY! //  + String.valueOf(crit.getMaxGrade())
             );
@@ -89,9 +97,9 @@ public class MakeRubricActivity extends AppCompatActivity {
                                 int maxValue = maxValueBox.getValue();
                                 String desc = descBox.getText().toString();
                                 //Append to the rubric
-                                rubric.addCriteria(critName, maxValue, desc);
+                                _rubric.addCriteria(critName, maxValue, desc);
                                 //Save this copy of the rubric TODO: This should probably be moved to onPause
-                                rubric.saveRubric(MakeRubricActivity.this);
+                                _rubric.saveRubric(MakeRubricActivity.this);
                                 //Display the rubric criteria to the user
                                 displayRubric();
                             }
