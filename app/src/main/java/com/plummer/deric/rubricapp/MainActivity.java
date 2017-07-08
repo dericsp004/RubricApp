@@ -156,8 +156,8 @@ public class MainActivity extends AppCompatActivity {
                                 Rubric rubric = Rubric.load(MainActivity.this, selectedRubric);
                                 String title = assignName.getText().toString();
                                 String classTitle = className.getText().toString();
-                                Assignment newAssign = new Assignment(title, classTitle, new Rubric("test name", "test description"));
-                                //Assignment newAssign = new Assignment(title, classTitle, rubric);
+                                //Assignment newAssign = new Assignment(title, classTitle, new Rubric("test name", "test description"));
+                                Assignment newAssign = new Assignment(title, classTitle, rubric);
                                 Log.d("addAssignment()", "Assignment title: " + newAssign.getAssignmentName());
                                 Log.d("addAssignment()", "Raw class name: " + classTitle);
                                 Log.d("addAssignment()", "Assignment class name: " + newAssign);
