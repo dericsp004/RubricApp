@@ -50,6 +50,16 @@ public class MainActivity extends AppCompatActivity {
                 Log.d("Main Activtity", "Finished Activity");
             }
         });
+
+        mainListView.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View v) {
+                Integer index = (Integer) v.getTag();
+                assignments.remove(index);
+                loadAssignments();
+                return false;
+            }
+        });
     }
 
     /**
@@ -82,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
         //Convert all assignments to their names
         List<String> rubricNames = new ArrayList<String>();
         for (Rubric rubric : rubrics) {
-            rubricNames.add(rubric.get_name() + " - ");
+            rubricNames.add(rubric.get_name() + ": " + rubric.get_description());
         }
 
         // Create ArrayAdapter
