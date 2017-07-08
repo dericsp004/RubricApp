@@ -187,6 +187,11 @@ public class Assignment {
             assignment = gson.fromJson(temp, Assignment.class);
             assignments.add(assignment);
             Log.d("loadAllAssignments()", "Loaded: " + assignment.toString());
+            Log.d("loadAllAssignments()", "Rubric Name: " + assignment.getRubric().get_name());
+            for (Criteria criteria: assignment.getRubric().getCriteria()) {
+                Log.d("loadAllAssignments()", "Criteria Name: " + criteria.getName());
+            }
+
         }
         return assignments;
     }

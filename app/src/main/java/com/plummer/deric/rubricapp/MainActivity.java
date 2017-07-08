@@ -143,11 +143,11 @@ public class MainActivity extends AppCompatActivity {
                             public void onClick(DialogInterface dialog,int id) {
                                 // get user input and set it to result
                                 // edit text
+                                Rubric rubric = Rubric.load(MainActivity.this, selectedRubric);
                                 String title = assignName.getText().toString();
                                 String classTitle = className.getText().toString();
-                                Assignment newAssign = new Assignment(title, classTitle, /*HARDCODED NEW RUBRIC. TODO: REPLACE THIS!!!!*/ new Rubric("Hardcode Rubric",
-                                        "A test rubric in MainActivity.java, addAssignment(). If you're seeing this, that's a problem."));
-                                Log.d("addAssignment()", "Raw title: " + title);
+                                Assignment newAssign = new Assignment(title, classTitle, new Rubric("test name", "test description"));
+                                //Assignment newAssign = new Assignment(title, classTitle, rubric);
                                 Log.d("addAssignment()", "Assignment title: " + newAssign.getAssignmentName());
                                 Log.d("addAssignment()", "Raw class name: " + classTitle);
                                 Log.d("addAssignment()", "Assignment class name: " + newAssign);

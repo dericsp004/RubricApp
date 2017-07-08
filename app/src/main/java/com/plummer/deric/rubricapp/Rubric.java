@@ -70,8 +70,17 @@ public class Rubric {
         String rubric = gson.toJson(this);
         SharedPreferences prefs = context.getSharedPreferences(prefs_file, Context.MODE_PRIVATE);
         SharedPreferences.Editor edit = prefs.edit();
-        edit.putString(this._name + ": " + this._description, rubric);
+        edit.putString(this.toString(), rubric);
         edit.commit();
+    }
+
+    public static Rubric load(Context context, String key) {
+        Gson gson = new Gson();
+
+        SharedPreferences prefs = context.getSharedPreferences(prefs_file, Context.MODE_PRIVATE);
+        String rubricString = prefs.getString(key, null);
+        Rubric rubric = gson.fromJson(rubricString, Rubric.class);
+        return rubric;
     }
 
     public static List<Rubric> loadAllRubric(Context context) {
@@ -95,6 +104,10 @@ public class Rubric {
 
     @Override
     public String toString() {
+        return this._name + ": " + this._description;
+    }
+
+    public String getData() {
         return "Rubric{" +
                 "_name='" + _name + '\'' +
                 ", _description='" + _description + '\'' +

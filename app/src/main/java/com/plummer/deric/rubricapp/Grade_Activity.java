@@ -63,14 +63,15 @@ public class Grade_Activity extends AppCompatActivity {
         Log.d("Grade_Activity", "Finished loading data");
 
         _expandableListView = (ExpandableListView) findViewById(R.id.GradeList);
-        ExpandableListViewAdapter adapter = new ExpandableListViewAdapter(Grade_Activity.this,
+        /*ExpandableListViewAdapter adapter = new ExpandableListViewAdapter(Grade_Activity.this,
                 new Rubric("Midterm Rubric", "This rubric is for the paper midterm",
                         new ArrayList<Criteria>(Arrays.asList(
                             new Criteria("Plot", 4, "Student accurately describes the plot"),
                             new Criteria("Characters", 4, "Student accurately presents the characters"),
                             new Criteria("Extra Credit", 3, "Student goes above and beyond")
                         ))
-                ));
+                ));*/
+        ExpandableListViewAdapter adapter = new ExpandableListViewAdapter(Grade_Activity.this, _assignment.getRubric());
         _expandableListView.setAdapter(adapter);
     }
 
