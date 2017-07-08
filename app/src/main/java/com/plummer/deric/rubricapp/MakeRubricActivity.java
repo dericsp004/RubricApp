@@ -37,7 +37,7 @@ public class MakeRubricActivity extends AppCompatActivity {
         _name = intentMessage[0];
         _desc = intentMessage[1];
 
-        _rubric = new Rubric(_name, "Debug description");
+        _rubric = new Rubric(_name, _desc);
         displayRubric();
 
         ((TextView)findViewById(R.id.AssignmentName)).setText(_name);
