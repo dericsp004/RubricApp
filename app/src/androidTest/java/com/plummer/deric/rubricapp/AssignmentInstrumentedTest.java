@@ -1,5 +1,6 @@
 package com.plummer.deric.rubricapp;
 
+import android.content.SharedPreferences;
 import android.support.test.InstrumentationRegistry;
 import android.support.test.runner.AndroidJUnit4;
 import android.content.Context;
@@ -55,6 +56,16 @@ public class AssignmentInstrumentedTest {
             assertEquals(oldStudent.getFirstName(), newStudent.getFirstName());
             assertEquals(oldStudent.getLastName(), newStudent.getLastName());
         }
-
     }
+
+    @Test
+    public void DeleteAssignments() throws Exception {
+        Context appContext = InstrumentationRegistry.getTargetContext();
+
+        SharedPreferences prefs = appContext.getSharedPreferences("com.plummer.deric.rubricapp.Assignments", Context.MODE_PRIVATE);
+        SharedPreferences.Editor edit = prefs.edit();
+        edit.clear();
+        edit.commit();
+    }
+
 }
