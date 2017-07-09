@@ -2,10 +2,13 @@ package com.plummer.deric.rubricapp;
 
 import android.content.Context;
 import android.graphics.Color;
+import android.graphics.Typeface;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseExpandableListAdapter;
+import android.widget.NumberPicker;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -29,14 +32,28 @@ public class ExpandableListViewAdapter extends BaseExpandableListAdapter {
     Context context;
     List<String> _rubricItemName;
     HashMap<String, String> _rubricSubItem;
+    HashMap<String, Integer> _CriteriaMaxGrade;
+    HashMap<String, Integer> _CriteriaGrade;
+
     public ExpandableListViewAdapter(Context context, Rubric rubric) {
+        Log.d("ExpandableListView", "Start Constructor");
+
         this.context = context;
         _rubricItemName = new ArrayList<>();
         _rubricSubItem = new HashMap<>();
+        _CriteriaGrade = new HashMap<>();
+        _CriteriaMaxGrade = new HashMap<>();
         for (Criteria criteria : rubric.getCriteria()) {
+            Log.d("ExpandableListView", "Add Criteria Name: " + criteria.getName());
             _rubricItemName.add(criteria.getName());
+            Log.d("ExpandableListView", "Add Criteria Description: " + criteria.get_description());
             _rubricSubItem.put(criteria.getName(), criteria.get_description());
+            Log.d("ExpandableListView", "Add Grade Value Name: " + criteria.getGrade());
+            _CriteriaGrade.put(criteria.getName(), criteria.getGrade());
+            Log.d("ExpandableListView", "Add Grade Max Grade Value Name: " + criteria.getMaxGrade());
+            _CriteriaMaxGrade.put(criteria.getName(), criteria.getMaxGrade());
         }
+        Log.d("ExpandableListView", "End Constructor");
     }
 
     @Override
@@ -76,33 +93,73 @@ public class ExpandableListViewAdapter extends BaseExpandableListAdapter {
 
     @Override
     public View getGroupView(int groupPosition, boolean isExpanded, View convertView, ViewGroup parent) {
-        //String criteriaName = (String) this.getGroup(groupPosition);
-        //if (convertView == null) {
-        //    LayoutInflater layoutInflator = (LayoutInflater) this.context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        Log.d("ExpandableListView", "Get Group View Start");
+        String criteriaName = (String) this.getGroup(groupPosition);
+        if (convertView == null) {
+            LayoutInflater layoutInflator = (LayoutInflater) this.context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+            convertView = layoutInflator.inflate(R.layout.parent_exp_layout,null);
 
-        //}
-        TextView textView = new TextView(context);
+        }
+
+
+        TextView textView = (TextView) convertView.findViewById(R.id.headingExpTextView);
+        textView.setTypeface(null, Typeface.BOLD);
+        textView.setText(_rubricItemName.get(groupPosition));
+        /*TextView textView = new TextView(context);
         textView.setText(_rubricItemName.get(groupPosition));
         textView.setPadding(100, 0, 0, 0);
         textView.setTextColor(Color.BLUE);
-        textView.setTextSize(25);
-        return textView;
-
+        textView.setTextSize(25);*/
+        Log.d("ExpandableListView", "Get Group View End");
+        //return textView;
+        return convertView;
     }
 
     @Override
     public View getChildView(int groupPosition, int childPosition, boolean isLastChild, View convertView, ViewGroup parent) {
-        TextView textView = new TextView(context);
+        Log.d("ExpandableListView", "Get Child View Start");
+        String criteriaDescription = (String) _rubricSubItem.get(_rubricItemName.get(groupPosition));
+        if (convertView == null) {
+            LayoutInflater layoutInflator = (LayoutInflater) this.context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+            convertView = layoutInflator.inflate(R.layout.child_exp_layout,null);
+
+        }
+        Log.d("ExpandableListView", "Created Layout Inflator");
+
+        TextView textView = (TextView) convertView.findViewById(R.id.childtextView);
+        textView.setText(criteriaDescription);
+        Log.d("ExpandableListView", "Created and Set TextView");
+
+        NumberPicker numberPicker = (NumberPicker) convertView.findViewById(R.id.numberPicker);
+        numberPicker.setMinValue(0);
+        numberPicker.setMaxValue(_CriteriaMaxGrade.get(_rubricItemName.get(groupPosition)));
+        String [] numbers = new String[numberPicker.getMaxValue()];
+
+
+        for (int i = numberPicker.getMinValue(); i < numbers.length; i++) {
+            numbers[i] = Integer.toString(i);
+        }
+        Log.d("ExpandableListView", "Created possible grade range");
+
+        //numberPicker.setWrapSelectorWheel(false);
+        //numberPicker.setDisplayedValues(numbers);
+        numberPicker.setValue(_CriteriaGrade.get(_rubricItemName.get(groupPosition)));
+        Log.d("ExpandableListView", "Created and Set NumberPicker");
+
+
+        /*TextView textView = new TextView(context);
         textView.setText(_rubricSubItem.get(_rubricItemName.get(groupPosition)));
         textView.setPadding(100, 0, 0, 0);
         textView.setTextColor(Color.DKGRAY);
-        textView.setTextSize(20);
-        return textView;
+        textView.setTextSize(20);*/
+        Log.d("ExpandableListView", "Get Child View End");
+        //return textView;
+        return convertView;
 
     }
 
     @Override
     public boolean isChildSelectable(int groupPosition, int childPosition) {
-        return false;
+        return true;
     }
 }
