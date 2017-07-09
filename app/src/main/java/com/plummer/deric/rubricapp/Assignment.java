@@ -190,6 +190,8 @@ public class Assignment {
             Log.d("loadAllAssignments()", "Rubric Name: " + assignment.getRubric().get_name());
             for (Criteria criteria: assignment.getRubric().getCriteria()) {
                 Log.d("loadAllAssignments()", "Criteria Name: " + criteria.getName());
+                Log.d("loadAllAssignments()", "Max Value: " + criteria.getMaxGrade());
+                Log.d("loadAllAssignments()", "Grade Value: " + criteria.getGrade());
             }
 
         }
