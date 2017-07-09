@@ -68,4 +68,13 @@ public class AssignmentInstrumentedTest {
         edit.commit();
     }
 
+    public void DeleteRubrics() throws Exception {
+        Context appContext = InstrumentationRegistry.getTargetContext();
+
+        SharedPreferences prefs = appContext.getSharedPreferences("com.plummer.deric.rubricapp.Rubrics", Context.MODE_PRIVATE);
+        SharedPreferences.Editor edit = prefs.edit();
+        edit.clear();
+        edit.commit();
+    }
+
 }
