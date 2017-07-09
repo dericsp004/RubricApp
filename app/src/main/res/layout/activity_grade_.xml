@@ -5,33 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.plummer.deric.rubricapp.Grade_Activity">
-
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="16dp"
-        android:background="@android:drawable/ic_input_add"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:text="expand" />
-
-    <Button
-        android:id="@+id/button6"
-        android:layout_width="72dp"
-        android:layout_height="44dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginTop="16dp"
-        android:background="@android:drawable/presence_busy"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:text="collapse" />
-
     <ExpandableListView
         android:id="@+id/GradeList"
-        android:layout_width="223dp"
-        android:layout_height="333dp"
+        android:layout_height="358dp"
+        android:layout_width="277dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -40,28 +17,31 @@
         android:layout_marginRight="16dp"
         android:layout_marginTop="24dp"
         android:layout_marginBottom="8dp"
-
-        />
+        tools:layout_editor_absoluteY="161dp"
+        tools:layout_editor_absoluteX="108dp" />
 
     <TextView
         android:id="@+id/textViewStudentName"
-        android:layout_width="113dp"
-        android:layout_height="19dp"
+        android:layout_width="175dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
         android:layout_marginTop="16dp"
-        app:layout_constraintHorizontal_bias="0.553"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintRight_toLeftOf="@+id/textViewAssignmentName"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteY="15dp" />
 
     <TextView
         android:id="@+id/textViewAssignmentName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        app:layout_constraintHorizontal_bias="0.553"
-        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="165dp"
+        android:layout_height="30dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewStudentName"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewStudentName" />
+        tools:layout_editor_absoluteY="16dp"
+        tools:layout_editor_absoluteX="203dp" />
 
     <TextView
         android:id="@+id/textViewComments"

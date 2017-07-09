@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:layout_editor_absoluteY="81dp"
+    app:layout_constraintLeft_toRightOf="@+id/childtextView"
+    android:layout_marginLeft="0dp">
+
+
+
+    <TextView
+        android:id="@+id/childtextView"
+        android:layout_height="0dp"
+        android:layout_width="0dp"
+        android:layout_marginLeft="8dp"
+        android:gravity="center_vertical"
+        android:text="HelloWorld"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintRight_toLeftOf="@+id/numberPicker"
+        android:layout_marginRight="8dp" />
+
+    <NumberPicker
+        android:id="@+id/numberPicker"
+        android:layout_width="100dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="8dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.537" />
+</android.support.constraint.ConstraintLayout>
