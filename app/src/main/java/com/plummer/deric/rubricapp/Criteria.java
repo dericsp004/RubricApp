@@ -5,8 +5,8 @@ import java.util.List;
 
 public class Criteria {
     private String _name;
-    private double _grade;
-    private double _maxGrade;
+    private int _grade;
+    private int _maxGrade;
     private String _description;
 
     /********************************************************
@@ -15,6 +15,7 @@ public class Criteria {
     public Criteria(String name, int maxGrade, String description) {
         this._name = name;
         this._maxGrade = maxGrade;
+        this._grade = maxGrade;
         this._description = description;
     }
 
@@ -25,11 +26,11 @@ public class Criteria {
         return this._name;
     }
 
-    public double getGrade() {
+    public int getGrade() {
         return this._grade;
     }
 
-    public double getMaxGrade() {
+    public int getMaxGrade() {
         return this._maxGrade;
     }
 
