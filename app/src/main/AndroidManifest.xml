@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.plummer.deric.rubricapp">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -16,10 +20,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MakeRubric"></activity>
-        <activity android:name=".Student_Activity" />
-        <activity android:name=".Grade_Activity"></activity>
-
+        <activity android:name=".Student_Activity"
+            android:parentActivityName="com.plummer.deric.rubricapp.MainActivity" >
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.plummer.deric.rubricapp.MainActivity" />
+        </activity>
+        <activity android:name=".Grade_Activity" />
+        <activity android:name=".MakeRubricActivity"></activity>
     </application>
 
 </manifest>
+
+

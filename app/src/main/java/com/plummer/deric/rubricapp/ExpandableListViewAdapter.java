@@ -7,6 +7,9 @@ import android.view.ViewGroup;
 import android.widget.BaseExpandableListAdapter;
 import android.widget.TextView;
 
+// added for listview styling
+import android.widget.BaseAdapter;
+
 import static com.plummer.deric.rubricapp.R.id.textView;
 
 /**

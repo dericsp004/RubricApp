@@ -1,5 +1,5 @@
-package com.plummer.deric.rubricapp;
-/*
+/*package com.plummer.deric.rubricapp;
+
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
@@ -21,14 +21,14 @@ public class AssignmentActivity extends AppCompatActivity {
         String assignmentName = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
 
         //Get the assignment
-        Assignment.load(this, assignmentName);
+        //Assignment.load(this, assignmentName);
     }
 
     /**
      * Adds a new student to the list.
      * Asks user for student name.
      * @param v: Only takes this because buttons pass it
-
+     *
     public void addAssignment(View v) {
         //The following is modified from:
         //https://www.mkyong.com/android/android-prompt-user-input-dialog-example/
@@ -75,7 +75,7 @@ public class AssignmentActivity extends AppCompatActivity {
 
     /**
      * Exports the assignment data
-
+     *
     public void export() {
         //TODO: Connect to google drive
     }

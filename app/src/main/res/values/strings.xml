@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">RubricApp</string>
+    <string name="title_activity_create_rubric">CreateRubric</string>
+    <string name="title_activity_make_rubric">MakeRubric</string>
 </resources>

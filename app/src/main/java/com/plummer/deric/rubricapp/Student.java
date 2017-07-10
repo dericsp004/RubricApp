@@ -68,4 +68,9 @@ class Student implements Comparable<Student> {
             return 0;
         }
     }
+
+    @Override
+    public String toString() {
+        return _lastName + ", " + _firstName;
+    }
 }
