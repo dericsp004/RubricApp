@@ -30,20 +30,22 @@ public class ExpandableListViewAdapter extends BaseExpandableListAdapter {
             {"Irony item 1", "Irony item 2", "Irony item 3", "Irony item 4", "Irony item 5"}, {"Extra Credit item 1",
             "Extra Credit item 2", "Extra Credit item 3", "Extra Credit item 4", "Extra Credit item 5",}};*/
     Context context;
+    Assignment _assignment;
     List<String> _rubricItemName;
     HashMap<String, String> _rubricSubItem;
     HashMap<String, Integer> _CriteriaMaxGrade;
     HashMap<String, Integer> _CriteriaGrade;
 
-    public ExpandableListViewAdapter(Context context, Rubric rubric) {
+    public ExpandableListViewAdapter(Context context, Assignment assignment) {
         Log.d("ExpandableListView", "Start Constructor");
 
         this.context = context;
+        _assignment = assignment;
         _rubricItemName = new ArrayList<>();
         _rubricSubItem = new HashMap<>();
         _CriteriaGrade = new HashMap<>();
         _CriteriaMaxGrade = new HashMap<>();
-        for (Criteria criteria : rubric.getCriteria()) {
+        for (Criteria criteria : assignment.getRubric().getCriteria()) {
             Log.d("ExpandableListView", "Add Criteria Name: " + criteria.getName());
             _rubricItemName.add(criteria.getName());
             Log.d("ExpandableListView", "Add Criteria Description: " + criteria.get_description());
@@ -116,7 +118,7 @@ public class ExpandableListViewAdapter extends BaseExpandableListAdapter {
     }
 
     @Override
-    public View getChildView(int groupPosition, int childPosition, boolean isLastChild, View convertView, ViewGroup parent) {
+    public View getChildView(final int groupPosition, int childPosition, boolean isLastChild, View convertView, ViewGroup parent) {
         Log.d("ExpandableListView", "Get Child View Start");
         String criteriaDescription = (String) _rubricSubItem.get(_rubricItemName.get(groupPosition));
         if (convertView == null) {
@@ -130,20 +132,30 @@ public class ExpandableListViewAdapter extends BaseExpandableListAdapter {
         textView.setText(criteriaDescription);
         Log.d("ExpandableListView", "Created and Set TextView");
 
+
         NumberPicker numberPicker = (NumberPicker) convertView.findViewById(R.id.numberPicker);
         numberPicker.setMinValue(0);
         numberPicker.setMaxValue(_CriteriaMaxGrade.get(_rubricItemName.get(groupPosition)));
-        String [] numbers = new String[numberPicker.getMaxValue()];
+        numberPicker.setValue(_CriteriaGrade.get(_rubricItemName.get(groupPosition)));
 
+        numberPicker.setOnValueChangedListener(new NumberPicker.OnValueChangeListener() {
+            @Override
+            public void onValueChange(NumberPicker picker, int oldVal, int newVal) {
+                picker.setValue(newVal);
+                _assignment.getRubric().getCriteria().get(groupPosition).setGrade(newVal);
+                _assignment.save(context);
+                _CriteriaGrade.put(_rubricItemName.get(groupPosition), newVal);
+            }
+        });
 
+        /*String [] numbers = new String[numberPicker.getMaxValue()];
         for (int i = numberPicker.getMinValue(); i < numbers.length; i++) {
             numbers[i] = Integer.toString(i);
         }
-        Log.d("ExpandableListView", "Created possible grade range");
+        Log.d("ExpandableListView", "Created possible grade range");*/
 
-        //numberPicker.setWrapSelectorWheel(false);
+        numberPicker.setWrapSelectorWheel(true);
         //numberPicker.setDisplayedValues(numbers);
-        numberPicker.setValue(_CriteriaGrade.get(_rubricItemName.get(groupPosition)));
         Log.d("ExpandableListView", "Created and Set NumberPicker");
 
 

@@ -71,7 +71,7 @@ public class Grade_Activity extends AppCompatActivity {
                             new Criteria("Extra Credit", 3, "Student goes above and beyond")
                         ))
                 ));*/
-        ExpandableListViewAdapter adapter = new ExpandableListViewAdapter(Grade_Activity.this, _assignment.getRubric());
+        ExpandableListViewAdapter adapter = new ExpandableListViewAdapter(Grade_Activity.this, _assignment);
         _expandableListView.setAdapter(adapter);
     }
 
