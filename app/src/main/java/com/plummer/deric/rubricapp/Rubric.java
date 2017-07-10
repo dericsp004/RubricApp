@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-public class Rubric {
+public class Rubric implements Cloneable {
     private String _name;
     private String _description;
     private List<Criteria> _criteriaList;
@@ -30,6 +30,16 @@ public class Rubric {
         this._name = name;
         this._description = description;
         this._criteriaList = new ArrayList(criteriaList);
+    }
+
+    public Rubric(Rubric rubric) {
+        this._name = rubric.get_name();
+        this._description = rubric.get_description();
+        this._criteriaList = new ArrayList();
+
+        for (int i = 0; i < rubric.getCriteria().size(); i++) {
+            _criteriaList.add(new Criteria(rubric.getCriteria().get(i)));
+        }
     }
     /********************************************************
      *  Getters
@@ -113,5 +123,28 @@ public class Rubric {
                 ", _description='" + _description + '\'' +
                 ", _criteriaList=" + _criteriaList +
                 '}';
+    }
+
+    /* found pseodocode at
+    https://stackoverflow.com/questions/14795199/how-to-deep-clone-an-object-list-that-contains-several-objects-in-java */
+    public Rubric clone() {
+        Log.d("Rubric", "start clone");
+
+        try {
+            Rubric copy = (Rubric) super.clone();
+            if (_criteriaList != null) {
+                copy._criteriaList = new ArrayList<>(_criteriaList.size());
+                for (int i = 0; i < _criteriaList.size(); i++) {
+                    copy._criteriaList.add((Criteria) _criteriaList.get(i).clone());
+                }
+            } else {
+                copy._criteriaList = new ArrayList<Criteria>();
+            }
+            Log.d("Rubric", "end clone");
+            return copy;
+        } catch (CloneNotSupportedException e) {
+            Log.d("Rubric", "rubric clone failed: " + e.getMessage());
+            return null;
+        }
     }
 }

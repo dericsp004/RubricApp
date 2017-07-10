@@ -79,7 +79,9 @@ public class Assignment {
         this._rubric = rubric;
         //Replace children rubrics
         for (Student student : _students) {
-            student.replaceRubric(rubric);
+            student.replaceRubric(new Rubric(_rubric));
+
+
         }
     }
 
@@ -92,7 +94,8 @@ public class Assignment {
      * @param last
      */
     public void addStudent(String first, String last) {
-        _students.add(new Student(first, last, this._rubric));
+
+        _students.add(new Student(first, last, new Rubric(_rubric)));
     }
 
 
@@ -105,7 +108,7 @@ public class Assignment {
     public boolean containsStudent(String firstName, String lastName) {
         boolean contains = false;
         for (Student student : _students) {
-            int result = student.compareTo(new Student(firstName, lastName, _rubric));
+            int result = student.compareTo(new Student(firstName, lastName, _rubric.clone() ));
             if (result == 1) {
                 contains = true;
             }

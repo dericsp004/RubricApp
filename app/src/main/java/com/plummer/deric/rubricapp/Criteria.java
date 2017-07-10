@@ -1,9 +1,11 @@
 package com.plummer.deric.rubricapp;
 
+import android.util.Log;
+
 import java.util.Collections;
 import java.util.List;
 
-public class Criteria {
+public class Criteria implements Cloneable {
     private String _name;
     private int _grade;
     private int _maxGrade;
@@ -17,6 +19,13 @@ public class Criteria {
         this._maxGrade = maxGrade;
         this._grade = maxGrade;
         this._description = description;
+    }
+
+    public Criteria(Criteria criteria) {
+        _name = criteria.getName();
+        _grade = criteria.getMaxGrade();
+        _maxGrade = criteria.getMaxGrade();
+        _description = criteria.get_description();
     }
 
     /********************************************************
@@ -62,6 +71,14 @@ public class Criteria {
         else {
             this._grade = grade;
         }
+    }
+
+    @Override
+    protected Criteria clone() throws CloneNotSupportedException {
+        Log.d("Rubric", "Criteria clone start");
+        Criteria clone = (Criteria) super.clone();
+        Log.d("Rubric", "Criteria clone end");
+        return clone;
     }
 
     /********************************************************
