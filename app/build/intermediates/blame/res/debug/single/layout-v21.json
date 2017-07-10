@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "C:\\Users\\Sterling\\Desktop\\RubricAppRepo\\RubricApp\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_custom_big.xml",
+        "source": "C:\\Users\\Sterling\\.android\\build-cache\\679738451aca700c60d2e112b8f45d038493f611\\output\\res\\layout-v21\\notification_template_custom_big.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sterling\\Desktop\\RubricAppRepo\\RubricApp\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action.xml",
+        "source": "C:\\Users\\Sterling\\.android\\build-cache\\679738451aca700c60d2e112b8f45d038493f611\\output\\res\\layout-v21\\notification_action.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sterling\\Desktop\\RubricAppRepo\\RubricApp\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action_tombstone.xml",
+        "source": "C:\\Users\\Sterling\\.android\\build-cache\\679738451aca700c60d2e112b8f45d038493f611\\output\\res\\layout-v21\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sterling\\Desktop\\RubricAppRepo\\RubricApp\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\place_autocomplete_fragment.xml",
+        "source": "C:\\Users\\Sterling\\.android\\build-cache\\2b63e093a2858b738ee0fd08f771d9e08abd1770\\output\\res\\layout-v21\\place_autocomplete_fragment.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sterling\\Desktop\\RubricAppRepo\\RubricApp\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_icon_group.xml",
+        "source": "C:\\Users\\Sterling\\.android\\build-cache\\679738451aca700c60d2e112b8f45d038493f611\\output\\res\\layout-v21\\notification_template_icon_group.xml"
+    }
+]

@@ -8,16 +8,12 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.AdapterView.OnItemClickListener;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
-import android.widget.TextView;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
@@ -25,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     private List<Assignment> assignments;
     private ListView mainListView ;
     private ArrayAdapter<String> listAdapter;
-    private Rubric selectedRubric;
+    private String selectedRubric;
 
 
     @Override
@@ -54,6 +50,16 @@ public class MainActivity extends AppCompatActivity {
                 Log.d("Main Activtity", "Finished Activity");
             }
         });
+
+        mainListView.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View v) {
+                Integer index = (Integer) v.getTag();
+                assignments.remove(index);
+                loadAssignments();
+                return false;
+            }
+        });
     }
 
     /**
@@ -80,24 +86,38 @@ public class MainActivity extends AppCompatActivity {
         mainListView.setAdapter(listAdapter);
     }
 
-    private void loadRubrics() {
-        /*List<Rubric> rubrics = Rubric.loadAllRubric(MainActivity.this);
-
-        // Find the ListView resource.
-        ListView rubricListView = (ListView) findViewById( R.id.RubricList );
+    private ListView loadRubrics(View promptsView) {
+        List<Rubric> rubrics = Rubric.loadAllRubric(MainActivity.this);
 
         //Convert all assignments to their names
         List<String> rubricNames = new ArrayList<String>();
         for (Rubric rubric : rubrics) {
-            rubricNames.add(rubric.get_name() + " - ");
+            rubricNames.add(rubric.get_name() + ": " + rubric.get_description());
         }
 
         // Create ArrayAdapter
         ArrayAdapter<String> listAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, rubricNames);
 
+        // Find the ListView resource.
+        final ListView rubricListView = (ListView) promptsView.findViewById( R.id.RubricList );
         // Set the ArrayAdapter as the ListView's adapter.
         rubricListView.setAdapter(listAdapter);
-        */
+
+        //Give the list cool features
+        rubricListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                //Set the selection color
+                rubricListView.setFocusableInTouchMode(true);
+                rubricListView.setSelector(R.color.colorPrimary);
+
+                selectedRubric = rubricListView.getItemAtPosition(position).toString();
+            }
+        });
+
+        //Return the view so that the calling method doesn't have
+        //to search it serparetely
+        return rubricListView;
     }
 
     /**
@@ -109,24 +129,21 @@ public class MainActivity extends AppCompatActivity {
         //https://www.mkyong.com/android/android-prompt-user-input-dialog-example/
         // get add_student_promptdent_prompt.xml view
         LayoutInflater li = LayoutInflater.from(this);
-        View promptsView = li.inflate(R.layout.add_assignment_prompt, null);
+        View promptsView = li.inflate(R.layout.prompt_add_assignment, null);
 
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
                 this);
 
-        // set add_student_prompt.xml_prompt.xml to alertdialog builder
+        // set prompt_add_student.xml_prompt.xml to alertdialog builder
         alertDialogBuilder.setView(promptsView);
-
-        //Add the available rubric rows
-        loadRubrics();
 
         //Get the text fields
         final EditText assignName = (EditText) promptsView
                 .findViewById(R.id.newAssignmentPromptEditText1);
         final EditText className = (EditText) promptsView
                 .findViewById(R.id.newAssignmentPromptEditText2);
-        //TODO: Add a rubric selection list
-
+        //Add the available rubric rows
+        final ListView rubrics = loadRubrics(promptsView);
 
         // set dialog message
         alertDialogBuilder
@@ -136,11 +153,11 @@ public class MainActivity extends AppCompatActivity {
                             public void onClick(DialogInterface dialog,int id) {
                                 // get user input and set it to result
                                 // edit text
+                                Rubric rubric = Rubric.load(MainActivity.this, selectedRubric);
                                 String title = assignName.getText().toString();
                                 String classTitle = className.getText().toString();
-                                Assignment newAssign = new Assignment(title, classTitle, /*HARDCODED NEW RUBRIC. TODO: REPLACE THIS!!!!*/ new Rubric("Hardcode Rubric",
-                                        "A test rubric in MainActivity.java, addAssignment(). If you're seeing this, that's a problem."));
-                                Log.d("addAssignment()", "Raw title: " + title);
+                                //Assignment newAssign = new Assignment(title, classTitle, new Rubric("test name", "test description"));
+                                Assignment newAssign = new Assignment(title, classTitle, rubric);
                                 Log.d("addAssignment()", "Assignment title: " + newAssign.getAssignmentName());
                                 Log.d("addAssignment()", "Raw class name: " + classTitle);
                                 Log.d("addAssignment()", "Assignment class name: " + newAssign);
@@ -165,12 +182,54 @@ public class MainActivity extends AppCompatActivity {
     public void createRubric(View v) {
         //Make the intent
         Log.d("Main Activtity", "Started Intent");
-        Intent intent = new Intent(MainActivity.this, MakeRubricActivity.class);
-        //Pass the text from the button clicked
-        intent.putExtra(EXTRA_MESSAGE, "");
-        Log.d("Main Activtity", "Start rubric Activity");
-        startActivity(intent);
-        Log.d("Main Activtity", "Finished rubric Activity");
+        //The following is modified from:
+        //https://www.mkyong.com/android/android-prompt-user-input-dialog-example/
+        // get add_student_promptdent_prompt.xml view
+        LayoutInflater li = LayoutInflater.from(this);
+        View promptsView = li.inflate(R.layout.prompt_rubric_name, null);
+
+        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
+                this);
+
+        // set xml to alertdialog builder
+        alertDialogBuilder.setView(promptsView);
+
+        //Get the text fields
+        final EditText rubricName = (EditText) promptsView
+                .findViewById(R.id.newRubricPromptEditText1);
+        final EditText rubricDesc = (EditText) promptsView
+                .findViewById(R.id.newRubricPromptEditText2);
+
+        // set dialog message
+        alertDialogBuilder
+                .setCancelable(false)
+                .setPositiveButton("OK",
+                        new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog,int id) {
+                                // get user input and set it to result
+                                // edit text
+                                String rName = rubricName.getText().toString();
+                                String rDesc = rubricDesc.getText().toString();
+
+                                //Start the Make Rubric Activity
+                                Intent intent = new Intent(MainActivity.this, MakeRubricActivity.class);
+                                //Pass the name and description with a :: deliminator
+                                intent.putExtra(EXTRA_MESSAGE, rName + "::" + rDesc);
+                                startActivity(intent);
+                            }
+                        })
+                .setNegativeButton("Cancel",
+                        new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog,int id) {
+                                dialog.cancel();
+                            }
+                        });
+
+        // create alert dialog
+        AlertDialog alertDialog = alertDialogBuilder.create();
+
+        // show it
+        alertDialog.show();
     }
 
     /**

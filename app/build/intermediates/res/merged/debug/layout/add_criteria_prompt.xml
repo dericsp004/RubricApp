@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:id="@+id/layout_root"
+    android:layout_height="fill_parent"
+    android:padding="10dp"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/newCriteriaPromptTextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Grading Criteria Title : "
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    <EditText
+        android:id="@+id/newCriteiaPromptEditText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/newCriteriaPromptTextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Max points available : "
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    <NumberPicker
+        android:id="@+id/newCriteiaPromptNumberPicker1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </NumberPicker>
+
+    <TextView
+        android:id="@+id/newCriteriaPromptTextView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Perfect score description : "
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/newCriteiaPromptEditText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:layout_weight="0.21" />
+
+</LinearLayout>

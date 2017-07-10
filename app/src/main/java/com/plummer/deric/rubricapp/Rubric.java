@@ -11,7 +11,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 
-public class Rubric {
+public class Rubric implements Cloneable {
     private String _name;
     private String _description;
     private List<Criteria> _criteriaList;
@@ -31,6 +31,16 @@ public class Rubric {
         this._name = name;
         this._description = description;
         this._criteriaList = new ArrayList(criteriaList);
+    }
+
+    public Rubric(Rubric rubric) {
+        this._name = rubric.get_name();
+        this._description = rubric.get_description();
+        this._criteriaList = new ArrayList();
+
+        for (int i = 0; i < rubric.getCriteria().size(); i++) {
+            _criteriaList.add(new Criteria(rubric.getCriteria().get(i)));
+        }
     }
     /********************************************************
      *  Getters
@@ -76,15 +86,26 @@ public class Rubric {
         String rubric = gson.toJson(this);
         SharedPreferences prefs = context.getSharedPreferences(prefs_file, Context.MODE_PRIVATE);
         SharedPreferences.Editor edit = prefs.edit();
-        edit.putString(this._name + ": " + this._description, rubric);
+        edit.putString(this.toString(), rubric);
         edit.commit();
     }
 
+<<<<<<< HEAD
     /**
      *Loop through and display all rubrics
      * @param context
      * @return List Rubric
      */
+=======
+    public static Rubric load(Context context, String key) {
+        Gson gson = new Gson();
+
+        SharedPreferences prefs = context.getSharedPreferences(prefs_file, Context.MODE_PRIVATE);
+        String rubricString = prefs.getString(key, null);
+        Rubric rubric = gson.fromJson(rubricString, Rubric.class);
+        return rubric;
+    }
+>>>>>>> 28c1ddc65d478ee53a3607f2689e18d42f596049
 
     public static List<Rubric> loadAllRubric(Context context) {
         List<Rubric> rubrics = new ArrayList<>();
@@ -112,10 +133,37 @@ public class Rubric {
      */
     @Override
     public String toString() {
+        return this._name + ": " + this._description;
+    }
+
+    public String getData() {
         return "Rubric{" +
                 "_name='" + _name + '\'' +
                 ", _description='" + _description + '\'' +
                 ", _criteriaList=" + _criteriaList +
                 '}';
+    }
+
+    /* found pseodocode at
+    https://stackoverflow.com/questions/14795199/how-to-deep-clone-an-object-list-that-contains-several-objects-in-java */
+    public Rubric clone() {
+        Log.d("Rubric", "start clone");
+
+        try {
+            Rubric copy = (Rubric) super.clone();
+            if (_criteriaList != null) {
+                copy._criteriaList = new ArrayList<>(_criteriaList.size());
+                for (int i = 0; i < _criteriaList.size(); i++) {
+                    copy._criteriaList.add((Criteria) _criteriaList.get(i).clone());
+                }
+            } else {
+                copy._criteriaList = new ArrayList<Criteria>();
+            }
+            Log.d("Rubric", "end clone");
+            return copy;
+        } catch (CloneNotSupportedException e) {
+            Log.d("Rubric", "rubric clone failed: " + e.getMessage());
+            return null;
+        }
     }
 }

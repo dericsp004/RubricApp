@@ -1,0 +1,483 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\Sterling\Desktop\RubricAppRepo\RubricApp\app\src\main\AndroidManifest.xml:2:1-34:12
+	package
+		ADDED from C:\Users\Sterling\Desktop\RubricAppRepo\RubricApp\app\src\main\AndroidManifest.xml:3:5-42
+		INJECTED from C:\Users\Sterling\Desktop\RubricAppRepo\RubricApp\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Sterling\Desktop\RubricAppRepo\RubricApp\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\Sterling\Desktop\RubricAppRepo\RubricApp\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Sterling\Desktop\RubricAppRepo\RubricApp\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\Sterling\Desktop\RubricAppRepo\RubricApp\app\src\main\AndroidManifest.xml:2:11-69
+	android:versionCode
+		INJECTED from C:\Users\Sterling\Desktop\RubricAppRepo\RubricApp\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Sterling\Desktop\RubricAppRepo\RubricApp\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\Sterling\Desktop\RubricAppRepo\RubricApp\app\src\main\AndroidManifest.xml:5:5-67
+MERGED from [com.google.android.gms:play-services-ads-lite:10.2.6] C:\Users\Sterling\.android\build-cache\c70bbe7e1fb9037f65088b9f35e455fadf3d7099\output\AndroidManifest.xml:19:5-66
+MERGED from [com.google.android.gms:play-services-analytics:10.2.6] C:\Users\Sterling\.android\build-cache\fc3692f5264bdca3c8403469595e0743099ab046\output\AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-appinvite:10.2.6] C:\Users\Sterling\.android\build-cache\d1a1d824ce8fa83d28b9fde836fc1b6d0826ed58\output\AndroidManifest.xml:18:5-66
+MERGED from [com.google.firebase:firebase-crash:10.2.6] C:\Users\Sterling\.android\build-cache\00711c90ad728c61c582099d4c0e6f9ba49b8ebd\output\AndroidManifest.xml:18:5-66
+MERGED from [com.google.android.gms:play-services-gcm:10.2.6] C:\Users\Sterling\.android\build-cache\14e381d523ae8b5e7b5a4fc47577d0ae54a17df7\output\AndroidManifest.xml:21:5-66
+MERGED from [com.google.android.gms:play-services-iid:10.2.6] C:\Users\Sterling\.android\build-cache\e219960fdc9bbd6bc1e519d2ec02e7b4a9138d15\output\AndroidManifest.xml:21:5-66
+MERGED from [com.google.android.gms:play-services-tagmanager-api:10.2.6] C:\Users\Sterling\.android\build-cache\9732289f8b47504dbbebab92b0cf3c8940e27192\output\AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-analytics:10.2.6] C:\Users\Sterling\.android\build-cache\56cf4cae4d95cce853685273e5aaece97527f9f2\output\AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-analytics-impl:10.2.6] C:\Users\Sterling\.android\build-cache\87f6298086c4fdccfa8f7d2ffb7787fdf24bbaf8\output\AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-iid:10.2.6] C:\Users\Sterling\.android\build-cache\d4abf7d83b3a5f00167c1f7ed088ed3d95379df2\output\AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-analytics-impl:10.2.6] C:\Users\Sterling\.android\build-cache\2e61fb720a83c4870cc832aae94d7a79e8b5d44b\output\AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-maps:10.2.6] C:\Users\Sterling\.android\build-cache\c6650e482e8560a65cfd869132e965a422198894\output\AndroidManifest.xml:20:5-66
+	android:name
+		ADDED from C:\Users\Sterling\Desktop\RubricAppRepo\RubricApp\app\src\main\AndroidManifest.xml:5:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from C:\Users\Sterling\Desktop\RubricAppRepo\RubricApp\app\src\main\AndroidManifest.xml:6:5-79
+MERGED from [com.google.android.gms:play-services-ads-lite:10.2.6] C:\Users\Sterling\.android\build-cache\c70bbe7e1fb9037f65088b9f35e455fadf3d7099\output\AndroidManifest.xml:20:5-78
+MERGED from [com.google.android.gms:play-services-analytics:10.2.6] C:\Users\Sterling\.android\build-cache\fc3692f5264bdca3c8403469595e0743099ab046\output\AndroidManifest.xml:21:5-78
+MERGED from [com.google.android.gms:play-services-nearby:10.2.6] C:\Users\Sterling\.android\build-cache\e5f43b934db8cfcdef9e9abca79212382832cce1\output\AndroidManifest.xml:4:5-78
+MERGED from [com.google.android.gms:play-services-tagmanager-api:10.2.6] C:\Users\Sterling\.android\build-cache\9732289f8b47504dbbebab92b0cf3c8940e27192\output\AndroidManifest.xml:21:5-78
+MERGED from [com.google.firebase:firebase-analytics:10.2.6] C:\Users\Sterling\.android\build-cache\56cf4cae4d95cce853685273e5aaece97527f9f2\output\AndroidManifest.xml:21:5-78
+MERGED from [com.google.firebase:firebase-analytics-impl:10.2.6] C:\Users\Sterling\.android\build-cache\87f6298086c4fdccfa8f7d2ffb7787fdf24bbaf8\output\AndroidManifest.xml:21:5-78
+MERGED from [com.google.firebase:firebase-iid:10.2.6] C:\Users\Sterling\.android\build-cache\d4abf7d83b3a5f00167c1f7ed088ed3d95379df2\output\AndroidManifest.xml:19:5-78
+MERGED from [com.google.android.gms:play-services-analytics-impl:10.2.6] C:\Users\Sterling\.android\build-cache\2e61fb720a83c4870cc832aae94d7a79e8b5d44b\output\AndroidManifest.xml:21:5-78
+MERGED from [com.google.android.gms:play-services-maps:10.2.6] C:\Users\Sterling\.android\build-cache\c6650e482e8560a65cfd869132e965a422198894\output\AndroidManifest.xml:19:5-78
+	android:name
+		ADDED from C:\Users\Sterling\Desktop\RubricAppRepo\RubricApp\app\src\main\AndroidManifest.xml:6:22-76
+uses-permission#android.permission.GET_ACCOUNTS
+ADDED from C:\Users\Sterling\Desktop\RubricAppRepo\RubricApp\app\src\main\AndroidManifest.xml:7:5-71
+	android:name
+		ADDED from C:\Users\Sterling\Desktop\RubricAppRepo\RubricApp\app\src\main\AndroidManifest.xml:7:22-68
+application
+ADDED from C:\Users\Sterling\Desktop\RubricAppRepo\RubricApp\app\src\main\AndroidManifest.xml:9:5-32:19
+MERGED from [com.android.support.constraint:constraint-layout:1.0.0-beta5] C:\Users\Sterling\.android\build-cache\15ac8eac0b5a551de9b09ce51c8c75ab5a4b7930\output\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:design:25.3.1] C:\Users\Sterling\.android\build-cache\088d701cf074372f3ab6819ce0cc7c0fbcd2dc1c\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:transition:25.3.1] C:\Users\Sterling\.android\build-cache\b96ae41a90c25c54554528c3ebec04f1d12ebce9\output\AndroidManifest.xml:26:5-20
+MERGED from [pub.devrel:easypermissions:0.3.0] C:\Users\Sterling\.android\build-cache\90dcfa22cec41f6e76be2aa69355c183604d66f0\output\AndroidManifest.xml:11:5-17:19
+MERGED from [com.google.android.gms:play-services:10.2.6] C:\Users\Sterling\.android\build-cache\fe68ff5146286d999c0a892e55bb56d2d2b0833a\output\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-ads-lite:10.2.6] C:\Users\Sterling\.android\build-cache\c70bbe7e1fb9037f65088b9f35e455fadf3d7099\output\AndroidManifest.xml:23:5-27:19
+MERGED from [com.google.android.gms:play-services-analytics:10.2.6] C:\Users\Sterling\.android\build-cache\fc3692f5264bdca3c8403469595e0743099ab046\output\AndroidManifest.xml:26:5-19
+MERGED from [com.google.android.gms:play-services-appinvite:10.2.6] C:\Users\Sterling\.android\build-cache\d1a1d824ce8fa83d28b9fde836fc1b6d0826ed58\output\AndroidManifest.xml:19:5-26:19
+MERGED from [com.google.android.gms:play-services-auth:10.2.6] C:\Users\Sterling\.android\build-cache\6ac2fb3a524041ddb8f8539a8cb974267807de36\output\AndroidManifest.xml:19:5-25:19
+MERGED from [com.google.android.gms:play-services-cast-framework:10.2.6] C:\Users\Sterling\.android\build-cache\201925a926032b5d92339b906f799d09c5efc81a\output\AndroidManifest.xml:4:5-8:19
+MERGED from [com.google.android.gms:play-services-cast:10.2.6] C:\Users\Sterling\.android\build-cache\65610901ecf4bdd61ea6638f9e96bb32dad262eb\output\AndroidManifest.xml:18:5-19
+MERGED from [com.android.support:mediarouter-v7:25.3.1] C:\Users\Sterling\.android\build-cache\795d0d5bbb1d7e026bf9bfeb64af66d7691d0d2d\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Sterling\.android\build-cache\679738451aca700c60d2e112b8f45d038493f611\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Sterling\.android\build-cache\c077ce4a8ddedb874cfa9fa825e4ee2f379e59c9\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Sterling\.android\build-cache\c69877e4ef28c4cab9ba25e5d54dc7509c776fc0\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:palette-v7:25.3.1] C:\Users\Sterling\.android\build-cache\33bddb6bed4b8375c6a7f5465e187667e6b01e30\output\AndroidManifest.xml:26:5-20
+MERGED from [com.google.android.gms:play-services-clearcut:10.2.6] C:\Users\Sterling\.android\build-cache\355b5b657154cbc6dd72e088e1b8ddc07615486c\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.firebase:firebase-config:10.2.6] C:\Users\Sterling\.android\build-cache\f9c58156cf765977f461a66a76d66dc3ca64241e\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-awareness:10.2.6] C:\Users\Sterling\.android\build-cache\d8d20ec4ea808149280fff25c3f167fa5616d8d5\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.firebase:firebase-crash:10.2.6] C:\Users\Sterling\.android\build-cache\00711c90ad728c61c582099d4c0e6f9ba49b8ebd\output\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-auth:10.2.6] C:\Users\Sterling\.android\build-cache\1aefdbf5bade35e6cb6d94c574a6900c148ec157\output\AndroidManifest.xml:19:5-20:19
+MERGED from [com.google.firebase:firebase-messaging:10.2.6] C:\Users\Sterling\.android\build-cache\8b64e2a9f489e56aca3c238b5c8a0013e559c43f\output\AndroidManifest.xml:19:5-29:19
+MERGED from [com.google.android.gms:play-services-fitness:10.2.6] C:\Users\Sterling\.android\build-cache\34ae5bc7e58eeef3db96020a07de625ea31f64f9\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-games:10.2.6] C:\Users\Sterling\.android\build-cache\25c42f447c51283c0cdf2963b450250d4406d599\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-drive:10.2.6] C:\Users\Sterling\.android\build-cache\80fa9694bbae2b73ee8a348d0c56205742e5484f\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-gass:10.2.6] C:\Users\Sterling\.android\build-cache\aed757099c28aebe94febe3fc6995ecd20b434b9\output\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-gcm:10.2.6] C:\Users\Sterling\.android\build-cache\14e381d523ae8b5e7b5a4fc47577d0ae54a17df7\output\AndroidManifest.xml:23:5-19
+MERGED from [com.google.firebase:firebase-appindexing:10.2.6] C:\Users\Sterling\.android\build-cache\ca24fdf2bd289abf404e0e9649b0368188814830\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-iid:10.2.6] C:\Users\Sterling\.android\build-cache\e219960fdc9bbd6bc1e519d2ec02e7b4a9138d15\output\AndroidManifest.xml:23:5-19
+MERGED from [com.google.android.gms:play-services-location:10.2.6] C:\Users\Sterling\.android\build-cache\eb3bfa36071904609c00bd8d6ee6e3252673eeb6\output\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-nearby:10.2.6] C:\Users\Sterling\.android\build-cache\e5f43b934db8cfcdef9e9abca79212382832cce1\output\AndroidManifest.xml:5:5-19
+MERGED from [com.google.android.gms:play-services-panorama:10.2.6] C:\Users\Sterling\.android\build-cache\2e702cbf83d70b5d8b5fc7691e7ee8dad5a1d662\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-places:10.2.6] C:\Users\Sterling\.android\build-cache\2b63e093a2858b738ee0fd08f771d9e08abd1770\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-plus:10.2.6] C:\Users\Sterling\.android\build-cache\1b2789670ee160d5b09c1bf1a5d645466d824f16\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-safetynet:10.2.6] C:\Users\Sterling\.android\build-cache\4ffc7979f21f76860c1c6801247d70dcf0f04001\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-tagmanager-api:10.2.6] C:\Users\Sterling\.android\build-cache\9732289f8b47504dbbebab92b0cf3c8940e27192\output\AndroidManifest.xml:23:5-33:19
+MERGED from [com.google.firebase:firebase-analytics:10.2.6] C:\Users\Sterling\.android\build-cache\56cf4cae4d95cce853685273e5aaece97527f9f2\output\AndroidManifest.xml:24:5-33:19
+MERGED from [com.google.firebase:firebase-analytics-impl:10.2.6] C:\Users\Sterling\.android\build-cache\87f6298086c4fdccfa8f7d2ffb7787fdf24bbaf8\output\AndroidManifest.xml:24:5-28:19
+MERGED from [com.google.firebase:firebase-iid:10.2.6] C:\Users\Sterling\.android\build-cache\d4abf7d83b3a5f00167c1f7ed088ed3d95379df2\output\AndroidManifest.xml:28:5-49:19
+MERGED from [com.google.firebase:firebase-common:10.2.6] C:\Users\Sterling\.android\build-cache\5876079e355ad968cf4c73e67179d64f0e7ffa84\output\AndroidManifest.xml:4:5-7:19
+MERGED from [com.google.android.gms:play-services-tagmanager-v4-impl:10.2.6] C:\Users\Sterling\.android\build-cache\dadad171ac35f3c1f8b4f478b0c780baec650f56\output\AndroidManifest.xml:19:5-19
+MERGED from [com.google.android.gms:play-services-analytics-impl:10.2.6] C:\Users\Sterling\.android\build-cache\2e61fb720a83c4870cc832aae94d7a79e8b5d44b\output\AndroidManifest.xml:26:5-19
+MERGED from [com.google.android.gms:play-services-vision:10.2.6] C:\Users\Sterling\.android\build-cache\ae304b0607a351ee8f478cd8bf01439480fff506\output\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-identity:10.2.6] C:\Users\Sterling\.android\build-cache\7aaa0971c9d14d9da74619856aa12e572e1efc8e\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-maps:10.2.6] C:\Users\Sterling\.android\build-cache\c6650e482e8560a65cfd869132e965a422198894\output\AndroidManifest.xml:24:5-19
+MERGED from [com.google.android.gms:play-services-wearable:10.2.6] C:\Users\Sterling\.android\build-cache\202e1a94bd6bb9506c863d87654575162ca3a293\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-base:10.2.6] C:\Users\Sterling\.android\build-cache\ff1bec2221a2459c886cb356cd35c4e14ab9dcd2\output\AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.android.gms:play-services-tasks:10.2.6] C:\Users\Sterling\.android\build-cache\945855d1b2da51d29ce8ec134e9d7f7d65588759\output\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-basement:10.2.6] C:\Users\Sterling\.android\build-cache\b22a93a06594134bcf5ce8ce50205f5fdb8c6339\output\AndroidManifest.xml:19:5-21:19
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Sterling\.android\build-cache\2ab1b69208e5e848dac95e56932b2f17e129b485\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Sterling\.android\build-cache\2f325fac8cb5a1c918f0174d024ff0581c5d829d\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Sterling\.android\build-cache\909b2886d5b482e3b4bfe02da58457c334466485\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Sterling\.android\build-cache\ea2de7184af4b7844966f733126ce3bf3f4e964f\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Sterling\.android\build-cache\7e883ebb8d5e9b390a0bca80c0adf63612dc14d2\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Sterling\.android\build-cache\6a45c5ecf8b06103de37e8db2eba5fb0e72c8ce1\output\AndroidManifest.xml:29:5-20
+	android:label
+		ADDED from C:\Users\Sterling\Desktop\RubricAppRepo\RubricApp\app\src\main\AndroidManifest.xml:12:9-41
+	android:supportsRtl
+		ADDED from C:\Users\Sterling\Desktop\RubricAppRepo\RubricApp\app\src\main\AndroidManifest.xml:14:9-35
+	android:roundIcon
+		ADDED from C:\Users\Sterling\Desktop\RubricAppRepo\RubricApp\app\src\main\AndroidManifest.xml:13:9-54
+	android:allowBackup
+		ADDED from C:\Users\Sterling\Desktop\RubricAppRepo\RubricApp\app\src\main\AndroidManifest.xml:10:9-35
+	android:icon
+		ADDED from C:\Users\Sterling\Desktop\RubricAppRepo\RubricApp\app\src\main\AndroidManifest.xml:11:9-43
+	android:theme
+		ADDED from C:\Users\Sterling\Desktop\RubricAppRepo\RubricApp\app\src\main\AndroidManifest.xml:15:9-40
+activity#com.plummer.deric.rubricapp.MainActivity
+ADDED from C:\Users\Sterling\Desktop\RubricAppRepo\RubricApp\app\src\main\AndroidManifest.xml:16:9-22:20
+	android:name
+		ADDED from C:\Users\Sterling\Desktop\RubricAppRepo\RubricApp\app\src\main\AndroidManifest.xml:16:19-47
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from C:\Users\Sterling\Desktop\RubricAppRepo\RubricApp\app\src\main\AndroidManifest.xml:17:13-21:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\Sterling\Desktop\RubricAppRepo\RubricApp\app\src\main\AndroidManifest.xml:18:17-69
+	android:name
+		ADDED from C:\Users\Sterling\Desktop\RubricAppRepo\RubricApp\app\src\main\AndroidManifest.xml:18:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\Sterling\Desktop\RubricAppRepo\RubricApp\app\src\main\AndroidManifest.xml:20:17-77
+	android:name
+		ADDED from C:\Users\Sterling\Desktop\RubricAppRepo\RubricApp\app\src\main\AndroidManifest.xml:20:27-74
+activity#com.plummer.deric.rubricapp.Student_Activity
+ADDED from C:\Users\Sterling\Desktop\RubricAppRepo\RubricApp\app\src\main\AndroidManifest.xml:23:9-29:20
+	android:parentActivityName
+		ADDED from C:\Users\Sterling\Desktop\RubricAppRepo\RubricApp\app\src\main\AndroidManifest.xml:24:13-82
+	android:name
+		ADDED from C:\Users\Sterling\Desktop\RubricAppRepo\RubricApp\app\src\main\AndroidManifest.xml:23:19-51
+meta-data#android.support.PARENT_ACTIVITY
+ADDED from C:\Users\Sterling\Desktop\RubricAppRepo\RubricApp\app\src\main\AndroidManifest.xml:26:13-28:76
+	android:value
+		ADDED from C:\Users\Sterling\Desktop\RubricAppRepo\RubricApp\app\src\main\AndroidManifest.xml:28:17-73
+	android:name
+		ADDED from C:\Users\Sterling\Desktop\RubricAppRepo\RubricApp\app\src\main\AndroidManifest.xml:27:17-63
+activity#com.plummer.deric.rubricapp.Grade_Activity
+ADDED from C:\Users\Sterling\Desktop\RubricAppRepo\RubricApp\app\src\main\AndroidManifest.xml:30:9-52
+	android:name
+		ADDED from C:\Users\Sterling\Desktop\RubricAppRepo\RubricApp\app\src\main\AndroidManifest.xml:30:19-49
+activity#com.plummer.deric.rubricapp.MakeRubricActivity
+ADDED from C:\Users\Sterling\Desktop\RubricAppRepo\RubricApp\app\src\main\AndroidManifest.xml:31:9-65
+	android:name
+		ADDED from C:\Users\Sterling\Desktop\RubricAppRepo\RubricApp\app\src\main\AndroidManifest.xml:31:19-53
+uses-sdk
+INJECTED from C:\Users\Sterling\Desktop\RubricAppRepo\RubricApp\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support.constraint:constraint-layout:1.0.0-beta5] C:\Users\Sterling\.android\build-cache\15ac8eac0b5a551de9b09ce51c8c75ab5a4b7930\output\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:design:25.3.1] C:\Users\Sterling\.android\build-cache\088d701cf074372f3ab6819ce0cc7c0fbcd2dc1c\output\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\Sterling\.android\build-cache\4035374de496831604758b4ecfe4312e666d5858\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:transition:25.3.1] C:\Users\Sterling\.android\build-cache\b96ae41a90c25c54554528c3ebec04f1d12ebce9\output\AndroidManifest.xml:20:5-44
+MERGED from [pub.devrel:easypermissions:0.3.0] C:\Users\Sterling\.android\build-cache\90dcfa22cec41f6e76be2aa69355c183604d66f0\output\AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.android.gms:play-services:10.2.6] C:\Users\Sterling\.android\build-cache\fe68ff5146286d999c0a892e55bb56d2d2b0833a\output\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-ads:10.2.6] C:\Users\Sterling\.android\build-cache\deb5564b59bfffe5e8f071e4fd03227cae27aba5\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-ads-lite:10.2.6] C:\Users\Sterling\.android\build-cache\c70bbe7e1fb9037f65088b9f35e455fadf3d7099\output\AndroidManifest.xml:22:5-43
+MERGED from [com.google.android.gms:play-services-analytics:10.2.6] C:\Users\Sterling\.android\build-cache\fc3692f5264bdca3c8403469595e0743099ab046\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-appinvite:10.2.6] C:\Users\Sterling\.android\build-cache\d1a1d824ce8fa83d28b9fde836fc1b6d0826ed58\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-auth:10.2.6] C:\Users\Sterling\.android\build-cache\6ac2fb3a524041ddb8f8539a8cb974267807de36\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-auth-base:10.2.6] C:\Users\Sterling\.android\build-cache\55d072b2f85d645bcae2c27525f6d83a51feab05\output\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-cast-framework:10.2.6] C:\Users\Sterling\.android\build-cache\201925a926032b5d92339b906f799d09c5efc81a\output\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-cast:10.2.6] C:\Users\Sterling\.android\build-cache\65610901ecf4bdd61ea6638f9e96bb32dad262eb\output\AndroidManifest.xml:17:5-43
+MERGED from [com.android.support:mediarouter-v7:25.3.1] C:\Users\Sterling\.android\build-cache\795d0d5bbb1d7e026bf9bfeb64af66d7691d0d2d\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Sterling\.android\build-cache\679738451aca700c60d2e112b8f45d038493f611\output\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Sterling\.android\build-cache\c077ce4a8ddedb874cfa9fa825e4ee2f379e59c9\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Sterling\.android\build-cache\c69877e4ef28c4cab9ba25e5d54dc7509c776fc0\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:palette-v7:25.3.1] C:\Users\Sterling\.android\build-cache\33bddb6bed4b8375c6a7f5465e187667e6b01e30\output\AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-clearcut:10.2.6] C:\Users\Sterling\.android\build-cache\355b5b657154cbc6dd72e088e1b8ddc07615486c\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-config:10.2.6] C:\Users\Sterling\.android\build-cache\f9c58156cf765977f461a66a76d66dc3ca64241e\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-awareness:10.2.6] C:\Users\Sterling\.android\build-cache\d8d20ec4ea808149280fff25c3f167fa5616d8d5\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-crash:10.2.6] C:\Users\Sterling\.android\build-cache\00711c90ad728c61c582099d4c0e6f9ba49b8ebd\output\AndroidManifest.xml:20:5-43
+MERGED from [com.google.firebase:firebase-auth:10.2.6] C:\Users\Sterling\.android\build-cache\1aefdbf5bade35e6cb6d94c574a6900c148ec157\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-database:10.2.6] C:\Users\Sterling\.android\build-cache\287e9c44ed89b3f75f51750f93af1e725fa77059\output\AndroidManifest.xml:3:5-43
+MERGED from [com.google.firebase:firebase-database-connection:10.2.6] C:\Users\Sterling\.android\build-cache\11cd557e0750943c0af8fc8931b57d4e9aaed5bb\output\AndroidManifest.xml:3:5-43
+MERGED from [com.google.firebase:firebase-messaging:10.2.6] C:\Users\Sterling\.android\build-cache\8b64e2a9f489e56aca3c238b5c8a0013e559c43f\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-storage:10.2.6] C:\Users\Sterling\.android\build-cache\a7911b3926fcc50c478eee797518eb44e2f272fe\output\AndroidManifest.xml:3:5-43
+MERGED from [com.google.firebase:firebase-storage-common:10.2.6] C:\Users\Sterling\.android\build-cache\749a74ed8fcfb5f4b5f11a03166dd29a28a518fd\output\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-fitness:10.2.6] C:\Users\Sterling\.android\build-cache\34ae5bc7e58eeef3db96020a07de625ea31f64f9\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-games:10.2.6] C:\Users\Sterling\.android\build-cache\25c42f447c51283c0cdf2963b450250d4406d599\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-drive:10.2.6] C:\Users\Sterling\.android\build-cache\80fa9694bbae2b73ee8a348d0c56205742e5484f\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-gass:10.2.6] C:\Users\Sterling\.android\build-cache\aed757099c28aebe94febe3fc6995ecd20b434b9\output\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-gcm:10.2.6] C:\Users\Sterling\.android\build-cache\14e381d523ae8b5e7b5a4fc47577d0ae54a17df7\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-appindexing:10.2.6] C:\Users\Sterling\.android\build-cache\ca24fdf2bd289abf404e0e9649b0368188814830\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-iid:10.2.6] C:\Users\Sterling\.android\build-cache\e219960fdc9bbd6bc1e519d2ec02e7b4a9138d15\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-instantapps:10.2.6] C:\Users\Sterling\.android\build-cache\fd60192a501139044c3d502c3bcec653816fd3a4\output\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-location:10.2.6] C:\Users\Sterling\.android\build-cache\eb3bfa36071904609c00bd8d6ee6e3252673eeb6\output\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-nearby:10.2.6] C:\Users\Sterling\.android\build-cache\e5f43b934db8cfcdef9e9abca79212382832cce1\output\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-panorama:10.2.6] C:\Users\Sterling\.android\build-cache\2e702cbf83d70b5d8b5fc7691e7ee8dad5a1d662\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-places:10.2.6] C:\Users\Sterling\.android\build-cache\2b63e093a2858b738ee0fd08f771d9e08abd1770\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-plus:10.2.6] C:\Users\Sterling\.android\build-cache\1b2789670ee160d5b09c1bf1a5d645466d824f16\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-safetynet:10.2.6] C:\Users\Sterling\.android\build-cache\4ffc7979f21f76860c1c6801247d70dcf0f04001\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-tagmanager:10.2.6] C:\Users\Sterling\.android\build-cache\1438ca591c62b7bc3f4e74790d1cb72c5c4e6cab\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-tagmanager-api:10.2.6] C:\Users\Sterling\.android\build-cache\9732289f8b47504dbbebab92b0cf3c8940e27192\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-analytics:10.2.6] C:\Users\Sterling\.android\build-cache\56cf4cae4d95cce853685273e5aaece97527f9f2\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-analytics-impl:10.2.6] C:\Users\Sterling\.android\build-cache\87f6298086c4fdccfa8f7d2ffb7787fdf24bbaf8\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-iid:10.2.6] C:\Users\Sterling\.android\build-cache\d4abf7d83b3a5f00167c1f7ed088ed3d95379df2\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-common:10.2.6] C:\Users\Sterling\.android\build-cache\5876079e355ad968cf4c73e67179d64f0e7ffa84\output\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-tagmanager-v4-impl:10.2.6] C:\Users\Sterling\.android\build-cache\dadad171ac35f3c1f8b4f478b0c780baec650f56\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-analytics-impl:10.2.6] C:\Users\Sterling\.android\build-cache\2e61fb720a83c4870cc832aae94d7a79e8b5d44b\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-vision:10.2.6] C:\Users\Sterling\.android\build-cache\ae304b0607a351ee8f478cd8bf01439480fff506\output\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-wallet:10.2.6] C:\Users\Sterling\.android\build-cache\510d958ff81e3a7ed06a9bfcc4b634fbb210faae\output\AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-identity:10.2.6] C:\Users\Sterling\.android\build-cache\7aaa0971c9d14d9da74619856aa12e572e1efc8e\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-maps:10.2.6] C:\Users\Sterling\.android\build-cache\c6650e482e8560a65cfd869132e965a422198894\output\AndroidManifest.xml:23:5-43
+MERGED from [com.google.android.gms:play-services-wearable:10.2.6] C:\Users\Sterling\.android\build-cache\202e1a94bd6bb9506c863d87654575162ca3a293\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-base:10.2.6] C:\Users\Sterling\.android\build-cache\ff1bec2221a2459c886cb356cd35c4e14ab9dcd2\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-tasks:10.2.6] C:\Users\Sterling\.android\build-cache\945855d1b2da51d29ce8ec134e9d7f7d65588759\output\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-basement:10.2.6] C:\Users\Sterling\.android\build-cache\b22a93a06594134bcf5ce8ce50205f5fdb8c6339\output\AndroidManifest.xml:17:5-43
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Sterling\.android\build-cache\2ab1b69208e5e848dac95e56932b2f17e129b485\output\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Sterling\.android\build-cache\2f325fac8cb5a1c918f0174d024ff0581c5d829d\output\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Sterling\.android\build-cache\909b2886d5b482e3b4bfe02da58457c334466485\output\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Sterling\.android\build-cache\ea2de7184af4b7844966f733126ce3bf3f4e964f\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Sterling\.android\build-cache\7e883ebb8d5e9b390a0bca80c0adf63612dc14d2\output\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Sterling\.android\build-cache\6a45c5ecf8b06103de37e8db2eba5fb0e72c8ce1\output\AndroidManifest.xml:21:5-23:58
+	tools:overrideLibrary
+		ADDED from [com.android.support:design:25.3.1] C:\Users\Sterling\.android\build-cache\088d701cf074372f3ab6819ce0cc7c0fbcd2dc1c\output\AndroidManifest.xml:23:9-59
+	android:targetSdkVersion
+		INJECTED from C:\Users\Sterling\Desktop\RubricAppRepo\RubricApp\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Sterling\Desktop\RubricAppRepo\RubricApp\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\Sterling\Desktop\RubricAppRepo\RubricApp\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Sterling\Desktop\RubricAppRepo\RubricApp\app\src\main\AndroidManifest.xml
+meta-data#android.support.VERSION
+ADDED from [com.android.support:design:25.3.1] C:\Users\Sterling\.android\build-cache\088d701cf074372f3ab6819ce0cc7c0fbcd2dc1c\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\Sterling\.android\build-cache\4035374de496831604758b4ecfe4312e666d5858\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:transition:25.3.1] C:\Users\Sterling\.android\build-cache\b96ae41a90c25c54554528c3ebec04f1d12ebce9\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:mediarouter-v7:25.3.1] C:\Users\Sterling\.android\build-cache\795d0d5bbb1d7e026bf9bfeb64af66d7691d0d2d\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Sterling\.android\build-cache\679738451aca700c60d2e112b8f45d038493f611\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Sterling\.android\build-cache\c077ce4a8ddedb874cfa9fa825e4ee2f379e59c9\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Sterling\.android\build-cache\c69877e4ef28c4cab9ba25e5d54dc7509c776fc0\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:palette-v7:25.3.1] C:\Users\Sterling\.android\build-cache\33bddb6bed4b8375c6a7f5465e187667e6b01e30\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Sterling\.android\build-cache\2ab1b69208e5e848dac95e56932b2f17e129b485\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Sterling\.android\build-cache\2f325fac8cb5a1c918f0174d024ff0581c5d829d\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Sterling\.android\build-cache\909b2886d5b482e3b4bfe02da58457c334466485\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Sterling\.android\build-cache\ea2de7184af4b7844966f733126ce3bf3f4e964f\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Sterling\.android\build-cache\7e883ebb8d5e9b390a0bca80c0adf63612dc14d2\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Sterling\.android\build-cache\6a45c5ecf8b06103de37e8db2eba5fb0e72c8ce1\output\AndroidManifest.xml:25:5-27:34
+	android:value
+		ADDED from [com.android.support:design:25.3.1] C:\Users\Sterling\.android\build-cache\088d701cf074372f3ab6819ce0cc7c0fbcd2dc1c\output\AndroidManifest.xml:27:9-31
+	android:name
+		ADDED from [com.android.support:design:25.3.1] C:\Users\Sterling\.android\build-cache\088d701cf074372f3ab6819ce0cc7c0fbcd2dc1c\output\AndroidManifest.xml:26:9-47
+activity#pub.devrel.easypermissions.AppSettingsDialogHolderActivity
+ADDED from [pub.devrel:easypermissions:0.3.0] C:\Users\Sterling\.android\build-cache\90dcfa22cec41f6e76be2aa69355c183604d66f0\output\AndroidManifest.xml:12:9-16:66
+	android:label
+		ADDED from [pub.devrel:easypermissions:0.3.0] C:\Users\Sterling\.android\build-cache\90dcfa22cec41f6e76be2aa69355c183604d66f0\output\AndroidManifest.xml:15:13-29
+	android:exported
+		ADDED from [pub.devrel:easypermissions:0.3.0] C:\Users\Sterling\.android\build-cache\90dcfa22cec41f6e76be2aa69355c183604d66f0\output\AndroidManifest.xml:14:13-37
+	android:theme
+		ADDED from [pub.devrel:easypermissions:0.3.0] C:\Users\Sterling\.android\build-cache\90dcfa22cec41f6e76be2aa69355c183604d66f0\output\AndroidManifest.xml:16:13-63
+	android:name
+		ADDED from [pub.devrel:easypermissions:0.3.0] C:\Users\Sterling\.android\build-cache\90dcfa22cec41f6e76be2aa69355c183604d66f0\output\AndroidManifest.xml:13:13-86
+activity#com.google.android.gms.ads.AdActivity
+ADDED from [com.google.android.gms:play-services-ads-lite:10.2.6] C:\Users\Sterling\.android\build-cache\c70bbe7e1fb9037f65088b9f35e455fadf3d7099\output\AndroidManifest.xml:25:9-232
+	android:configChanges
+		ADDED from [com.google.android.gms:play-services-ads-lite:10.2.6] C:\Users\Sterling\.android\build-cache\c70bbe7e1fb9037f65088b9f35e455fadf3d7099\output\AndroidManifest.xml:25:72-181
+	android:theme
+		ADDED from [com.google.android.gms:play-services-ads-lite:10.2.6] C:\Users\Sterling\.android\build-cache\c70bbe7e1fb9037f65088b9f35e455fadf3d7099\output\AndroidManifest.xml:25:182-230
+	android:name
+		ADDED from [com.google.android.gms:play-services-ads-lite:10.2.6] C:\Users\Sterling\.android\build-cache\c70bbe7e1fb9037f65088b9f35e455fadf3d7099\output\AndroidManifest.xml:25:19-71
+activity#com.google.android.gms.ads.purchase.InAppPurchaseActivity
+ADDED from [com.google.android.gms:play-services-ads-lite:10.2.6] C:\Users\Sterling\.android\build-cache\c70bbe7e1fb9037f65088b9f35e455fadf3d7099\output\AndroidManifest.xml:26:9-131
+	android:theme
+		ADDED from [com.google.android.gms:play-services-ads-lite:10.2.6] C:\Users\Sterling\.android\build-cache\c70bbe7e1fb9037f65088b9f35e455fadf3d7099\output\AndroidManifest.xml:26:92-129
+	android:name
+		ADDED from [com.google.android.gms:play-services-ads-lite:10.2.6] C:\Users\Sterling\.android\build-cache\c70bbe7e1fb9037f65088b9f35e455fadf3d7099\output\AndroidManifest.xml:26:19-91
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [com.google.android.gms:play-services-analytics:10.2.6] C:\Users\Sterling\.android\build-cache\fc3692f5264bdca3c8403469595e0743099ab046\output\AndroidManifest.xml:24:5-67
+MERGED from [com.google.firebase:firebase-analytics:10.2.6] C:\Users\Sterling\.android\build-cache\56cf4cae4d95cce853685273e5aaece97527f9f2\output\AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:10.2.6] C:\Users\Sterling\.android\build-cache\87f6298086c4fdccfa8f7d2ffb7787fdf24bbaf8\output\AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-iid:10.2.6] C:\Users\Sterling\.android\build-cache\d4abf7d83b3a5f00167c1f7ed088ed3d95379df2\output\AndroidManifest.xml:21:5-67
+MERGED from [com.google.android.gms:play-services-analytics-impl:10.2.6] C:\Users\Sterling\.android\build-cache\2e61fb720a83c4870cc832aae94d7a79e8b5d44b\output\AndroidManifest.xml:24:5-67
+	android:name
+		ADDED from [com.google.android.gms:play-services-analytics:10.2.6] C:\Users\Sterling\.android\build-cache\fc3692f5264bdca3c8403469595e0743099ab046\output\AndroidManifest.xml:24:22-65
+activity#com.google.android.gms.appinvite.PreviewActivity
+ADDED from [com.google.android.gms:play-services-appinvite:10.2.6] C:\Users\Sterling\.android\build-cache\d1a1d824ce8fa83d28b9fde836fc1b6d0826ed58\output\AndroidManifest.xml:20:9-25:20
+	android:exported
+		ADDED from [com.google.android.gms:play-services-appinvite:10.2.6] C:\Users\Sterling\.android\build-cache\d1a1d824ce8fa83d28b9fde836fc1b6d0826ed58\output\AndroidManifest.xml:20:51-74
+	android:theme
+		ADDED from [com.google.android.gms:play-services-appinvite:10.2.6] C:\Users\Sterling\.android\build-cache\d1a1d824ce8fa83d28b9fde836fc1b6d0826ed58\output\AndroidManifest.xml:20:75-121
+	android:name
+		ADDED from [com.google.android.gms:play-services-appinvite:10.2.6] C:\Users\Sterling\.android\build-cache\d1a1d824ce8fa83d28b9fde836fc1b6d0826ed58\output\AndroidManifest.xml:20:19-50
+intent-filter#android.intent.category.DEFAULT+com.google.android.gms.appinvite.ACTION_PREVIEW
+ADDED from [com.google.android.gms:play-services-appinvite:10.2.6] C:\Users\Sterling\.android\build-cache\d1a1d824ce8fa83d28b9fde836fc1b6d0826ed58\output\AndroidManifest.xml:21:13-24:29
+action#com.google.android.gms.appinvite.ACTION_PREVIEW
+ADDED from [com.google.android.gms:play-services-appinvite:10.2.6] C:\Users\Sterling\.android\build-cache\d1a1d824ce8fa83d28b9fde836fc1b6d0826ed58\output\AndroidManifest.xml:22:17-89
+	android:name
+		ADDED from [com.google.android.gms:play-services-appinvite:10.2.6] C:\Users\Sterling\.android\build-cache\d1a1d824ce8fa83d28b9fde836fc1b6d0826ed58\output\AndroidManifest.xml:22:25-87
+category#android.intent.category.DEFAULT
+ADDED from [com.google.android.gms:play-services-appinvite:10.2.6] C:\Users\Sterling\.android\build-cache\d1a1d824ce8fa83d28b9fde836fc1b6d0826ed58\output\AndroidManifest.xml:23:17-75
+	android:name
+		ADDED from [com.google.android.gms:play-services-appinvite:10.2.6] C:\Users\Sterling\.android\build-cache\d1a1d824ce8fa83d28b9fde836fc1b6d0826ed58\output\AndroidManifest.xml:23:27-73
+activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
+ADDED from [com.google.android.gms:play-services-auth:10.2.6] C:\Users\Sterling\.android\build-cache\6ac2fb3a524041ddb8f8539a8cb974267807de36\output\AndroidManifest.xml:20:9-189
+	android:excludeFromRecents
+		ADDED from [com.google.android.gms:play-services-auth:10.2.6] C:\Users\Sterling\.android\build-cache\6ac2fb3a524041ddb8f8539a8cb974267807de36\output\AndroidManifest.xml:20:129-162
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:10.2.6] C:\Users\Sterling\.android\build-cache\6ac2fb3a524041ddb8f8539a8cb974267807de36\output\AndroidManifest.xml:20:163-187
+	android:theme
+		ADDED from [com.google.android.gms:play-services-auth:10.2.6] C:\Users\Sterling\.android\build-cache\6ac2fb3a524041ddb8f8539a8cb974267807de36\output\AndroidManifest.xml:20:69-128
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:10.2.6] C:\Users\Sterling\.android\build-cache\6ac2fb3a524041ddb8f8539a8cb974267807de36\output\AndroidManifest.xml:20:19-68
+service#com.google.android.gms.auth.api.signin.RevocationBoundService
+ADDED from [com.google.android.gms:play-services-auth:10.2.6] C:\Users\Sterling\.android\build-cache\6ac2fb3a524041ddb8f8539a8cb974267807de36\output\AndroidManifest.xml:24:9-184
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:10.2.6] C:\Users\Sterling\.android\build-cache\6ac2fb3a524041ddb8f8539a8cb974267807de36\output\AndroidManifest.xml:24:64-87
+	android:permission
+		ADDED from [com.google.android.gms:play-services-auth:10.2.6] C:\Users\Sterling\.android\build-cache\6ac2fb3a524041ddb8f8539a8cb974267807de36\output\AndroidManifest.xml:24:88-182
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:10.2.6] C:\Users\Sterling\.android\build-cache\6ac2fb3a524041ddb8f8539a8cb974267807de36\output\AndroidManifest.xml:24:18-63
+receiver#com.google.android.gms.cast.framework.media.MediaIntentReceiver
+ADDED from [com.google.android.gms:play-services-cast-framework:10.2.6] C:\Users\Sterling\.android\build-cache\201925a926032b5d92339b906f799d09c5efc81a\output\AndroidManifest.xml:5:9-99
+	android:name
+		ADDED from [com.google.android.gms:play-services-cast-framework:10.2.6] C:\Users\Sterling\.android\build-cache\201925a926032b5d92339b906f799d09c5efc81a\output\AndroidManifest.xml:5:19-97
+service#com.google.android.gms.cast.framework.media.MediaNotificationService
+ADDED from [com.google.android.gms:play-services-cast-framework:10.2.6] C:\Users\Sterling\.android\build-cache\201925a926032b5d92339b906f799d09c5efc81a\output\AndroidManifest.xml:6:9-103
+	android:name
+		ADDED from [com.google.android.gms:play-services-cast-framework:10.2.6] C:\Users\Sterling\.android\build-cache\201925a926032b5d92339b906f799d09c5efc81a\output\AndroidManifest.xml:6:18-101
+service#com.google.android.gms.cast.framework.ReconnectionService
+ADDED from [com.google.android.gms:play-services-cast-framework:10.2.6] C:\Users\Sterling\.android\build-cache\201925a926032b5d92339b906f799d09c5efc81a\output\AndroidManifest.xml:7:9-92
+	android:name
+		ADDED from [com.google.android.gms:play-services-cast-framework:10.2.6] C:\Users\Sterling\.android\build-cache\201925a926032b5d92339b906f799d09c5efc81a\output\AndroidManifest.xml:7:18-90
+service#com.google.firebase.messaging.FirebaseMessagingService
+ADDED from [com.google.firebase:firebase-messaging:10.2.6] C:\Users\Sterling\.android\build-cache\8b64e2a9f489e56aca3c238b5c8a0013e559c43f\output\AndroidManifest.xml:23:9-27:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-messaging:10.2.6] C:\Users\Sterling\.android\build-cache\8b64e2a9f489e56aca3c238b5c8a0013e559c43f\output\AndroidManifest.xml:23:88-111
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:10.2.6] C:\Users\Sterling\.android\build-cache\8b64e2a9f489e56aca3c238b5c8a0013e559c43f\output\AndroidManifest.xml:23:18-87
+intent-filter#com.google.firebase.MESSAGING_EVENT
+ADDED from [com.google.firebase:firebase-messaging:10.2.6] C:\Users\Sterling\.android\build-cache\8b64e2a9f489e56aca3c238b5c8a0013e559c43f\output\AndroidManifest.xml:24:13-26:29
+	android:priority
+		ADDED from [com.google.firebase:firebase-messaging:10.2.6] C:\Users\Sterling\.android\build-cache\8b64e2a9f489e56aca3c238b5c8a0013e559c43f\output\AndroidManifest.xml:24:28-51
+action#com.google.firebase.MESSAGING_EVENT
+ADDED from [com.google.firebase:firebase-messaging:10.2.6] C:\Users\Sterling\.android\build-cache\8b64e2a9f489e56aca3c238b5c8a0013e559c43f\output\AndroidManifest.xml:25:17-77
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:10.2.6] C:\Users\Sterling\.android\build-cache\8b64e2a9f489e56aca3c238b5c8a0013e559c43f\output\AndroidManifest.xml:25:25-75
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from [com.google.android.gms:play-services-gcm:10.2.6] C:\Users\Sterling\.android\build-cache\14e381d523ae8b5e7b5a4fc47577d0ae54a17df7\output\AndroidManifest.xml:20:5-81
+MERGED from [com.google.android.gms:play-services-iid:10.2.6] C:\Users\Sterling\.android\build-cache\e219960fdc9bbd6bc1e519d2ec02e7b4a9138d15\output\AndroidManifest.xml:20:5-81
+MERGED from [com.google.firebase:firebase-iid:10.2.6] C:\Users\Sterling\.android\build-cache\d4abf7d83b3a5f00167c1f7ed088ed3d95379df2\output\AndroidManifest.xml:22:5-81
+	android:name
+		ADDED from [com.google.android.gms:play-services-gcm:10.2.6] C:\Users\Sterling\.android\build-cache\14e381d523ae8b5e7b5a4fc47577d0ae54a17df7\output\AndroidManifest.xml:20:22-79
+service#com.google.android.gms.tagmanager.TagManagerService
+ADDED from [com.google.android.gms:play-services-tagmanager-api:10.2.6] C:\Users\Sterling\.android\build-cache\9732289f8b47504dbbebab92b0cf3c8940e27192\output\AndroidManifest.xml:24:9-134
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:10.2.6] C:\Users\Sterling\.android\build-cache\9732289f8b47504dbbebab92b0cf3c8940e27192\output\AndroidManifest.xml:24:110-132
+	android:exported
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:10.2.6] C:\Users\Sterling\.android\build-cache\9732289f8b47504dbbebab92b0cf3c8940e27192\output\AndroidManifest.xml:24:85-109
+	android:name
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:10.2.6] C:\Users\Sterling\.android\build-cache\9732289f8b47504dbbebab92b0cf3c8940e27192\output\AndroidManifest.xml:24:18-84
+activity#com.google.android.gms.tagmanager.TagManagerPreviewActivity
+ADDED from [com.google.android.gms:play-services-tagmanager-api:10.2.6] C:\Users\Sterling\.android\build-cache\9732289f8b47504dbbebab92b0cf3c8940e27192\output\AndroidManifest.xml:25:9-32:20
+	android:noHistory
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:10.2.6] C:\Users\Sterling\.android\build-cache\9732289f8b47504dbbebab92b0cf3c8940e27192\output\AndroidManifest.xml:25:94-118
+	android:name
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:10.2.6] C:\Users\Sterling\.android\build-cache\9732289f8b47504dbbebab92b0cf3c8940e27192\output\AndroidManifest.xml:25:19-93
+intent-filter#android.intent.action.VIEW+android.intent.category.BROWSABLE+android.intent.category.DEFAULT
+ADDED from [com.google.android.gms:play-services-tagmanager-api:10.2.6] C:\Users\Sterling\.android\build-cache\9732289f8b47504dbbebab92b0cf3c8940e27192\output\AndroidManifest.xml:26:13-31:29
+data
+ADDED from [com.google.android.gms:play-services-tagmanager-api:10.2.6] C:\Users\Sterling\.android\build-cache\9732289f8b47504dbbebab92b0cf3c8940e27192\output\AndroidManifest.xml:27:17-71
+	android:scheme
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:10.2.6] C:\Users\Sterling\.android\build-cache\9732289f8b47504dbbebab92b0cf3c8940e27192\output\AndroidManifest.xml:27:23-69
+action#android.intent.action.VIEW
+ADDED from [com.google.android.gms:play-services-tagmanager-api:10.2.6] C:\Users\Sterling\.android\build-cache\9732289f8b47504dbbebab92b0cf3c8940e27192\output\AndroidManifest.xml:28:17-68
+	android:name
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:10.2.6] C:\Users\Sterling\.android\build-cache\9732289f8b47504dbbebab92b0cf3c8940e27192\output\AndroidManifest.xml:28:25-66
+category#android.intent.category.BROWSABLE
+ADDED from [com.google.android.gms:play-services-tagmanager-api:10.2.6] C:\Users\Sterling\.android\build-cache\9732289f8b47504dbbebab92b0cf3c8940e27192\output\AndroidManifest.xml:30:17-77
+	android:name
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:10.2.6] C:\Users\Sterling\.android\build-cache\9732289f8b47504dbbebab92b0cf3c8940e27192\output\AndroidManifest.xml:30:27-75
+receiver#com.google.android.gms.measurement.AppMeasurementReceiver
+ADDED from [com.google.firebase:firebase-analytics:10.2.6] C:\Users\Sterling\.android\build-cache\56cf4cae4d95cce853685273e5aaece97527f9f2\output\AndroidManifest.xml:25:7-26:18
+MERGED from [com.google.firebase:firebase-analytics-impl:10.2.6] C:\Users\Sterling\.android\build-cache\87f6298086c4fdccfa8f7d2ffb7787fdf24bbaf8\output\AndroidManifest.xml:25:7-26:18
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:10.2.6] C:\Users\Sterling\.android\build-cache\56cf4cae4d95cce853685273e5aaece97527f9f2\output\AndroidManifest.xml:25:90-112
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:10.2.6] C:\Users\Sterling\.android\build-cache\56cf4cae4d95cce853685273e5aaece97527f9f2\output\AndroidManifest.xml:25:113-137
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:10.2.6] C:\Users\Sterling\.android\build-cache\56cf4cae4d95cce853685273e5aaece97527f9f2\output\AndroidManifest.xml:25:17-89
+receiver#com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver
+ADDED from [com.google.firebase:firebase-analytics:10.2.6] C:\Users\Sterling\.android\build-cache\56cf4cae4d95cce853685273e5aaece97527f9f2\output\AndroidManifest.xml:27:7-31:18
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:10.2.6] C:\Users\Sterling\.android\build-cache\56cf4cae4d95cce853685273e5aaece97527f9f2\output\AndroidManifest.xml:27:162-184
+	android:permission
+		ADDED from [com.google.firebase:firebase-analytics:10.2.6] C:\Users\Sterling\.android\build-cache\56cf4cae4d95cce853685273e5aaece97527f9f2\output\AndroidManifest.xml:27:105-161
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:10.2.6] C:\Users\Sterling\.android\build-cache\56cf4cae4d95cce853685273e5aaece97527f9f2\output\AndroidManifest.xml:27:17-104
+intent-filter#com.android.vending.INSTALL_REFERRER
+ADDED from [com.google.firebase:firebase-analytics:10.2.6] C:\Users\Sterling\.android\build-cache\56cf4cae4d95cce853685273e5aaece97527f9f2\output\AndroidManifest.xml:28:11-30:27
+action#com.android.vending.INSTALL_REFERRER
+ADDED from [com.google.firebase:firebase-analytics:10.2.6] C:\Users\Sterling\.android\build-cache\56cf4cae4d95cce853685273e5aaece97527f9f2\output\AndroidManifest.xml:29:15-76
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:10.2.6] C:\Users\Sterling\.android\build-cache\56cf4cae4d95cce853685273e5aaece97527f9f2\output\AndroidManifest.xml:29:23-74
+service#com.google.android.gms.measurement.AppMeasurementService
+ADDED from [com.google.firebase:firebase-analytics:10.2.6] C:\Users\Sterling\.android\build-cache\56cf4cae4d95cce853685273e5aaece97527f9f2\output\AndroidManifest.xml:32:7-137
+MERGED from [com.google.firebase:firebase-analytics-impl:10.2.6] C:\Users\Sterling\.android\build-cache\87f6298086c4fdccfa8f7d2ffb7787fdf24bbaf8\output\AndroidManifest.xml:27:7-137
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:10.2.6] C:\Users\Sterling\.android\build-cache\56cf4cae4d95cce853685273e5aaece97527f9f2\output\AndroidManifest.xml:32:88-110
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:10.2.6] C:\Users\Sterling\.android\build-cache\56cf4cae4d95cce853685273e5aaece97527f9f2\output\AndroidManifest.xml:32:111-135
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:10.2.6] C:\Users\Sterling\.android\build-cache\56cf4cae4d95cce853685273e5aaece97527f9f2\output\AndroidManifest.xml:32:16-87
+permission#${applicationId}.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:10.2.6] C:\Users\Sterling\.android\build-cache\d4abf7d83b3a5f00167c1f7ed088ed3d95379df2\output\AndroidManifest.xml:24:5-109
+	android:protectionLevel
+		ADDED from [com.google.firebase:firebase-iid:10.2.6] C:\Users\Sterling\.android\build-cache\d4abf7d83b3a5f00167c1f7ed088ed3d95379df2\output\AndroidManifest.xml:24:72-107
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:10.2.6] C:\Users\Sterling\.android\build-cache\d4abf7d83b3a5f00167c1f7ed088ed3d95379df2\output\AndroidManifest.xml:24:17-71
+uses-permission#${applicationId}.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:10.2.6] C:\Users\Sterling\.android\build-cache\d4abf7d83b3a5f00167c1f7ed088ed3d95379df2\output\AndroidManifest.xml:26:5-78
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:10.2.6] C:\Users\Sterling\.android\build-cache\d4abf7d83b3a5f00167c1f7ed088ed3d95379df2\output\AndroidManifest.xml:26:22-76
+receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
+ADDED from [com.google.firebase:firebase-iid:10.2.6] C:\Users\Sterling\.android\build-cache\d4abf7d83b3a5f00167c1f7ed088ed3d95379df2\output\AndroidManifest.xml:30:9-35:20
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:10.2.6] C:\Users\Sterling\.android\build-cache\d4abf7d83b3a5f00167c1f7ed088ed3d95379df2\output\AndroidManifest.xml:30:85-108
+	android:permission
+		ADDED from [com.google.firebase:firebase-iid:10.2.6] C:\Users\Sterling\.android\build-cache\d4abf7d83b3a5f00167c1f7ed088ed3d95379df2\output\AndroidManifest.xml:30:109-169
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:10.2.6] C:\Users\Sterling\.android\build-cache\d4abf7d83b3a5f00167c1f7ed088ed3d95379df2\output\AndroidManifest.xml:30:19-84
+intent-filter#${applicationId}+com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:10.2.6] C:\Users\Sterling\.android\build-cache\d4abf7d83b3a5f00167c1f7ed088ed3d95379df2\output\AndroidManifest.xml:31:13-34:29
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:10.2.6] C:\Users\Sterling\.android\build-cache\d4abf7d83b3a5f00167c1f7ed088ed3d95379df2\output\AndroidManifest.xml:32:17-80
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:10.2.6] C:\Users\Sterling\.android\build-cache\d4abf7d83b3a5f00167c1f7ed088ed3d95379df2\output\AndroidManifest.xml:32:25-78
+category#${applicationId}
+ADDED from [com.google.firebase:firebase-iid:10.2.6] C:\Users\Sterling\.android\build-cache\d4abf7d83b3a5f00167c1f7ed088ed3d95379df2\output\AndroidManifest.xml:33:17-60
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:10.2.6] C:\Users\Sterling\.android\build-cache\d4abf7d83b3a5f00167c1f7ed088ed3d95379df2\output\AndroidManifest.xml:33:27-58
+receiver#com.google.firebase.iid.FirebaseInstanceIdInternalReceiver
+ADDED from [com.google.firebase:firebase-iid:10.2.6] C:\Users\Sterling\.android\build-cache\d4abf7d83b3a5f00167c1f7ed088ed3d95379df2\output\AndroidManifest.xml:39:9-119
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:10.2.6] C:\Users\Sterling\.android\build-cache\d4abf7d83b3a5f00167c1f7ed088ed3d95379df2\output\AndroidManifest.xml:39:93-117
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:10.2.6] C:\Users\Sterling\.android\build-cache\d4abf7d83b3a5f00167c1f7ed088ed3d95379df2\output\AndroidManifest.xml:39:19-92
+service#com.google.firebase.iid.FirebaseInstanceIdService
+ADDED from [com.google.firebase:firebase-iid:10.2.6] C:\Users\Sterling\.android\build-cache\d4abf7d83b3a5f00167c1f7ed088ed3d95379df2\output\AndroidManifest.xml:43:9-47:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:10.2.6] C:\Users\Sterling\.android\build-cache\d4abf7d83b3a5f00167c1f7ed088ed3d95379df2\output\AndroidManifest.xml:43:83-106
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:10.2.6] C:\Users\Sterling\.android\build-cache\d4abf7d83b3a5f00167c1f7ed088ed3d95379df2\output\AndroidManifest.xml:43:18-82
+intent-filter#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from [com.google.firebase:firebase-iid:10.2.6] C:\Users\Sterling\.android\build-cache\d4abf7d83b3a5f00167c1f7ed088ed3d95379df2\output\AndroidManifest.xml:44:13-46:29
+	android:priority
+		ADDED from [com.google.firebase:firebase-iid:10.2.6] C:\Users\Sterling\.android\build-cache\d4abf7d83b3a5f00167c1f7ed088ed3d95379df2\output\AndroidManifest.xml:44:28-51
+action#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from [com.google.firebase:firebase-iid:10.2.6] C:\Users\Sterling\.android\build-cache\d4abf7d83b3a5f00167c1f7ed088ed3d95379df2\output\AndroidManifest.xml:45:17-79
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:10.2.6] C:\Users\Sterling\.android\build-cache\d4abf7d83b3a5f00167c1f7ed088ed3d95379df2\output\AndroidManifest.xml:45:25-77
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:10.2.6] C:\Users\Sterling\.android\build-cache\5876079e355ad968cf4c73e67179d64f0e7ffa84\output\AndroidManifest.xml:6:9-194
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:10.2.6] C:\Users\Sterling\.android\build-cache\5876079e355ad968cf4c73e67179d64f0e7ffa84\output\AndroidManifest.xml:6:19-78
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:10.2.6] C:\Users\Sterling\.android\build-cache\5876079e355ad968cf4c73e67179d64f0e7ffa84\output\AndroidManifest.xml:6:144-168
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:10.2.6] C:\Users\Sterling\.android\build-cache\5876079e355ad968cf4c73e67179d64f0e7ffa84\output\AndroidManifest.xml:6:169-192
+	android:name
+		ADDED from [com.google.firebase:firebase-common:10.2.6] C:\Users\Sterling\.android\build-cache\5876079e355ad968cf4c73e67179d64f0e7ffa84\output\AndroidManifest.xml:6:79-143
+uses-feature#0x00020000
+ADDED from [com.google.android.gms:play-services-maps:10.2.6] C:\Users\Sterling\.android\build-cache\c6650e482e8560a65cfd869132e965a422198894\output\AndroidManifest.xml:21:5-77
+	android:glEsVersion
+		ADDED from [com.google.android.gms:play-services-maps:10.2.6] C:\Users\Sterling\.android\build-cache\c6650e482e8560a65cfd869132e965a422198894\output\AndroidManifest.xml:21:19-51
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:10.2.6] C:\Users\Sterling\.android\build-cache\c6650e482e8560a65cfd869132e965a422198894\output\AndroidManifest.xml:21:52-75
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:10.2.6] C:\Users\Sterling\.android\build-cache\ff1bec2221a2459c886cb356cd35c4e14ab9dcd2\output\AndroidManifest.xml:19:9-172
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:10.2.6] C:\Users\Sterling\.android\build-cache\ff1bec2221a2459c886cb356cd35c4e14ab9dcd2\output\AndroidManifest.xml:19:146-170
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:10.2.6] C:\Users\Sterling\.android\build-cache\ff1bec2221a2459c886cb356cd35c4e14ab9dcd2\output\AndroidManifest.xml:19:86-145
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:10.2.6] C:\Users\Sterling\.android\build-cache\ff1bec2221a2459c886cb356cd35c4e14ab9dcd2\output\AndroidManifest.xml:19:19-85
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:10.2.6] C:\Users\Sterling\.android\build-cache\b22a93a06594134bcf5ce8ce50205f5fdb8c6339\output\AndroidManifest.xml:20:9-121
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:10.2.6] C:\Users\Sterling\.android\build-cache\b22a93a06594134bcf5ce8ce50205f5fdb8c6339\output\AndroidManifest.xml:20:66-119
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:10.2.6] C:\Users\Sterling\.android\build-cache\b22a93a06594134bcf5ce8ce50205f5fdb8c6339\output\AndroidManifest.xml:20:20-65

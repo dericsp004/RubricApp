@@ -140,7 +140,9 @@ public class Assignment {
         this._rubric = rubric;
         //Replace children rubrics
         for (Student student : _students) {
-            student.replaceRubric(rubric);
+            student.replaceRubric(new Rubric(_rubric));
+
+
         }
     }
 
@@ -153,9 +155,29 @@ public class Assignment {
      * @param last
      */
     public void addStudent(String first, String last) {
-        _students.add(new Student(first, last, this._rubric));
+
+        _students.add(new Student(first, last, new Rubric(_rubric)));
     }
 
+    public Student getStudent(String studentName) {
+        Log.d("ExpandableListView", "Start Get Student");
+        String[] names = studentName.split(", ");
+        Log.d("ExpandableListView", "last Name: " + names[0]);
+        Log.d("ExpandableListView", "first Name: " + names[1]);
+
+        if (names.length == 2)
+        {
+            for(Student student : _students) {
+                if (student.getLastName().equals(names[0]) && student.getFirstName().equals(names[1])) {
+                    Log.d("ExpandableListView", "Returned Student");
+
+                    return student;
+                }
+            }
+        }
+        Log.d("ExpandableListView", "Returned Null");
+        return null;
+     }
 
     /**
      * Remove a student of the provided name
@@ -166,7 +188,7 @@ public class Assignment {
     public boolean containsStudent(String firstName, String lastName) {
         boolean contains = false;
         for (Student student : _students) {
-            int result = student.compareTo(new Student(firstName, lastName, _rubric));
+            int result = student.compareTo(new Student(firstName, lastName, _rubric.clone() ));
             if (result == 1) {
                 contains = true;
             }
@@ -248,12 +270,20 @@ public class Assignment {
             assignment = gson.fromJson(temp, Assignment.class);
             assignments.add(assignment);
             Log.d("loadAllAssignments()", "Loaded: " + assignment.toString());
+            Log.d("loadAllAssignments()", "Rubric Name: " + assignment.getRubric().get_name());
+            for (Criteria criteria: assignment.getRubric().getCriteria()) {
+                Log.d("loadAllAssignments()", "Criteria Name: " + criteria.getName());
+                Log.d("loadAllAssignments()", "Max Value: " + criteria.getMaxGrade());
+                Log.d("loadAllAssignments()", "Grade Value: " + criteria.getGrade());
+            }
+
         }
         return assignments;
     }
     /*
 
     public void exportToGoogleSheets() {
+<<<<<<< HEAD
         mCredential = GoogleAccountCredential.usingOAuth2(
                 getApplicationContext(), Arrays.asList(SCOPES))
                 .setBackOff(new ExponentialBackOff());
@@ -627,6 +657,10 @@ public class Assignment {
         }
 
 
+=======
+
+    }
+>>>>>>> 28c1ddc65d478ee53a3607f2689e18d42f596049
 
     //END GOOGLE EXPORT CODE(above)
 */

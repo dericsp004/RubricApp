@@ -20,6 +20,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity android:name=".Student_Activity"
             android:parentActivityName="com.plummer.deric.rubricapp.MainActivity" >
             <!-- Parent activity meta-data to support 4.0 and lower -->
@@ -27,10 +28,27 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.plummer.deric.rubricapp.MainActivity" />
         </activity>
-        <activity android:name=".Grade_Activity" />
-        <activity android:name=".MakeRubricActivity"></activity>
-    </application>
 
+<<<<<<< HEAD
 </manifest>
 
 
+=======
+        <activity android:name=".Grade_Activity"
+            android:parentActivityName="com.plummer.deric.rubricapp.Student_Activity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.plummer.deric.rubricapp.Student_Activity" />
+        </activity>
+
+        <activity android:name=".MakeRubricActivity"
+            android:parentActivityName="com.plummer.deric.rubricapp.MainActivity" >
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.plummer.deric.rubricapp.MainActivity" />
+        </activity>
+
+    </application>
+</manifest>
+>>>>>>> 28c1ddc65d478ee53a3607f2689e18d42f596049
