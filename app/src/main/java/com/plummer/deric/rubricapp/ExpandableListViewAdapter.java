@@ -32,12 +32,16 @@ public class ExpandableListViewAdapter extends BaseExpandableListAdapter {
     Context context;
     Assignment _assignment;
     List<String> _rubricItemName;
+    String _studentName;
     HashMap<String, String> _rubricSubItem;
     HashMap<String, Integer> _CriteriaMaxGrade;
     HashMap<String, Integer> _CriteriaGrade;
 
-    public ExpandableListViewAdapter(Context context, Assignment assignment) {
+    public ExpandableListViewAdapter(Context context, Assignment assignment, String studentName) {
         Log.d("ExpandableListView", "Start Constructor");
+        Log.d("ExpandableListView", "Student Name: " + studentName);
+        Student student = assignment.getStudent(studentName);
+        Log.d("ExpandableListView", "Get Student");
 
         this.context = context;
         _assignment = assignment;
@@ -45,7 +49,8 @@ public class ExpandableListViewAdapter extends BaseExpandableListAdapter {
         _rubricSubItem = new HashMap<>();
         _CriteriaGrade = new HashMap<>();
         _CriteriaMaxGrade = new HashMap<>();
-        for (Criteria criteria : assignment.getRubric().getCriteria()) {
+        _studentName = studentName;
+        for (Criteria criteria : student.getRubric().getCriteria()) {
             Log.d("ExpandableListView", "Add Criteria Name: " + criteria.getName());
             _rubricItemName.add(criteria.getName());
             Log.d("ExpandableListView", "Add Criteria Description: " + criteria.get_description());
@@ -142,7 +147,7 @@ public class ExpandableListViewAdapter extends BaseExpandableListAdapter {
             @Override
             public void onValueChange(NumberPicker picker, int oldVal, int newVal) {
                 picker.setValue(newVal);
-                _assignment.getRubric().getCriteria().get(groupPosition).setGrade(newVal);
+                _assignment.getStudent(_studentName).getRubric().getCriteria().get(groupPosition).setGrade(newVal);
                 _assignment.save(context);
                 _CriteriaGrade.put(_rubricItemName.get(groupPosition), newVal);
             }

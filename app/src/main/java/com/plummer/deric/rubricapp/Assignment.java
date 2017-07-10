@@ -98,6 +98,25 @@ public class Assignment {
         _students.add(new Student(first, last, new Rubric(_rubric)));
     }
 
+    public Student getStudent(String studentName) {
+        Log.d("ExpandableListView", "Start Get Student");
+        String[] names = studentName.split(", ");
+        Log.d("ExpandableListView", "last Name: " + names[0]);
+        Log.d("ExpandableListView", "first Name: " + names[1]);
+
+        if (names.length == 2)
+        {
+            for(Student student : _students) {
+                if (student.getLastName().equals(names[0]) && student.getFirstName().equals(names[1])) {
+                    Log.d("ExpandableListView", "Returned Student");
+
+                    return student;
+                }
+            }
+        }
+        Log.d("ExpandableListView", "Returned Null");
+        return null;
+     }
 
     /**
      * Remove a student of the provided name
