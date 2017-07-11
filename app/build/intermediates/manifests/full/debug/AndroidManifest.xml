@@ -51,8 +51,22 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.plummer.deric.rubricapp.MainActivity" />
         </activity>
-        <activity android:name="com.plummer.deric.rubricapp.Grade_Activity" />
-        <activity android:name="com.plummer.deric.rubricapp.MakeRubricActivity" />
+        <activity
+            android:name="com.plummer.deric.rubricapp.Grade_Activity"
+            android:parentActivityName="com.plummer.deric.rubricapp.Student_Activity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.plummer.deric.rubricapp.Student_Activity" />
+        </activity>
+        <activity
+            android:name="com.plummer.deric.rubricapp.MakeRubricActivity"
+            android:parentActivityName="com.plummer.deric.rubricapp.MainActivity" >
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.plummer.deric.rubricapp.MainActivity" />
+        </activity>
         <activity
             android:name="pub.devrel.easypermissions.AppSettingsDialogHolderActivity"
             android:exported="false"

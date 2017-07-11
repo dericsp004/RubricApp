@@ -29,11 +29,6 @@
                 android:value="com.plummer.deric.rubricapp.MainActivity" />
         </activity>
 
-<<<<<<< HEAD
-</manifest>
-
-
-=======
         <activity android:name=".Grade_Activity"
             android:parentActivityName="com.plummer.deric.rubricapp.Student_Activity">
             <meta-data
@@ -51,4 +46,3 @@
 
     </application>
 </manifest>
->>>>>>> 28c1ddc65d478ee53a3607f2689e18d42f596049

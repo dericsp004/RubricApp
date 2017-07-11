@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "C:\\Users\\Sterling\\Desktop\\RubricAppRepo\\RubricApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
+        "outputFile": "/Users/Deric/AndroidStudioProjects/RubricApp/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,31 @@
                     "endOffset": 116
                 },
                 "from": {
-                    "file": "C:\\Users\\Sterling\\.android\\build-cache\\679738451aca700c60d2e112b8f45d038493f611\\output\\res\\values-v16\\values-v16.xml",
+                    "file": "/Users/Deric/.android/build-cache/b93c5546f3cec54ef60a2fef684ea73c117370ca/output/res/values-v16/values-v16.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 65,
+                        "endOffset": 116
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\Desktop\\RubricAppRepo\\RubricApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 65,
+                    "endOffset": 116
+                },
+                "from": {
+                    "file": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\.android\\build-cache\\679738451aca700c60d2e112b8f45d038493f611\\output\\res\\values-v16\\values-v16.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,

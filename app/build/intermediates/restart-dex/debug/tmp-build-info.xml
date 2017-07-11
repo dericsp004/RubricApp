@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
     abi="x86"
-    api-level="25"
+    api-level="22"
     build-mode="FULL"
-    density="xhdpi"
+    density="xxxhdpi"
     format="10"
     plugin-version="2.3.2"
-    timestamp="1499567173205"
-    token="5496155241400200339"
+    timestamp="1499802323229"
+    token="8756087696165917160"
     verifier="FULL_BUILD_REQUESTED" >
 
     <task

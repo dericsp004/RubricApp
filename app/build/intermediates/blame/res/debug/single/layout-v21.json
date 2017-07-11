@@ -1,22 +1,42 @@
 [
     {
-        "merged": "C:\\Users\\Sterling\\Desktop\\RubricAppRepo\\RubricApp\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_custom_big.xml",
-        "source": "C:\\Users\\Sterling\\.android\\build-cache\\679738451aca700c60d2e112b8f45d038493f611\\output\\res\\layout-v21\\notification_template_custom_big.xml"
+        "merged": "/Users/Deric/AndroidStudioProjects/RubricApp/app/build/intermediates/res/merged/debug/layout-v21/notification_action_tombstone.xml",
+        "source": "/Users/Deric/.android/build-cache/b93c5546f3cec54ef60a2fef684ea73c117370ca/output/res/layout-v21/notification_action_tombstone.xml"
     },
     {
-        "merged": "C:\\Users\\Sterling\\Desktop\\RubricAppRepo\\RubricApp\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action.xml",
-        "source": "C:\\Users\\Sterling\\.android\\build-cache\\679738451aca700c60d2e112b8f45d038493f611\\output\\res\\layout-v21\\notification_action.xml"
+        "merged": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\Desktop\\RubricAppRepo\\RubricApp\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_custom_big.xml",
+        "source": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\.android\\build-cache\\679738451aca700c60d2e112b8f45d038493f611\\output\\res\\layout-v21\\notification_template_custom_big.xml"
     },
     {
-        "merged": "C:\\Users\\Sterling\\Desktop\\RubricAppRepo\\RubricApp\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action_tombstone.xml",
-        "source": "C:\\Users\\Sterling\\.android\\build-cache\\679738451aca700c60d2e112b8f45d038493f611\\output\\res\\layout-v21\\notification_action_tombstone.xml"
+        "merged": "/Users/Deric/AndroidStudioProjects/RubricApp/app/build/intermediates/res/merged/debug/layout-v21/notification_template_icon_group.xml",
+        "source": "/Users/Deric/.android/build-cache/b93c5546f3cec54ef60a2fef684ea73c117370ca/output/res/layout-v21/notification_template_icon_group.xml"
     },
     {
-        "merged": "C:\\Users\\Sterling\\Desktop\\RubricAppRepo\\RubricApp\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\place_autocomplete_fragment.xml",
-        "source": "C:\\Users\\Sterling\\.android\\build-cache\\2b63e093a2858b738ee0fd08f771d9e08abd1770\\output\\res\\layout-v21\\place_autocomplete_fragment.xml"
+        "merged": "/Users/Deric/AndroidStudioProjects/RubricApp/app/build/intermediates/res/merged/debug/layout-v21/notification_template_custom_big.xml",
+        "source": "/Users/Deric/.android/build-cache/b93c5546f3cec54ef60a2fef684ea73c117370ca/output/res/layout-v21/notification_template_custom_big.xml"
     },
     {
-        "merged": "C:\\Users\\Sterling\\Desktop\\RubricAppRepo\\RubricApp\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_icon_group.xml",
-        "source": "C:\\Users\\Sterling\\.android\\build-cache\\679738451aca700c60d2e112b8f45d038493f611\\output\\res\\layout-v21\\notification_template_icon_group.xml"
+        "merged": "/Users/Deric/AndroidStudioProjects/RubricApp/app/build/intermediates/res/merged/debug/layout-v21/notification_action.xml",
+        "source": "/Users/Deric/.android/build-cache/b93c5546f3cec54ef60a2fef684ea73c117370ca/output/res/layout-v21/notification_action.xml"
+    },
+    {
+        "merged": "/Users/Deric/AndroidStudioProjects/RubricApp/app/build/intermediates/res/merged/debug/layout-v21/place_autocomplete_fragment.xml",
+        "source": "/Users/Deric/.android/build-cache/b2cbea35da7cfc2b37e5edc974680a128c736a93/output/res/layout-v21/place_autocomplete_fragment.xml"
+    },
+    {
+        "merged": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\Desktop\\RubricAppRepo\\RubricApp\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action.xml",
+        "source": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\.android\\build-cache\\679738451aca700c60d2e112b8f45d038493f611\\output\\res\\layout-v21\\notification_action.xml"
+    },
+    {
+        "merged": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\Desktop\\RubricAppRepo\\RubricApp\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action_tombstone.xml",
+        "source": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\.android\\build-cache\\679738451aca700c60d2e112b8f45d038493f611\\output\\res\\layout-v21\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\Desktop\\RubricAppRepo\\RubricApp\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\place_autocomplete_fragment.xml",
+        "source": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\.android\\build-cache\\2b63e093a2858b738ee0fd08f771d9e08abd1770\\output\\res\\layout-v21\\place_autocomplete_fragment.xml"
+    },
+    {
+        "merged": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\Desktop\\RubricAppRepo\\RubricApp\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_icon_group.xml",
+        "source": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\.android\\build-cache\\679738451aca700c60d2e112b8f45d038493f611\\output\\res\\layout-v21\\notification_template_icon_group.xml"
     }
 ]

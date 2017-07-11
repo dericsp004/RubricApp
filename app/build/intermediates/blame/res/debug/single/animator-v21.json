@@ -1,6 +1,10 @@
 [
     {
-        "merged": "C:\\Users\\Sterling\\Desktop\\RubricAppRepo\\RubricApp\\app\\build\\intermediates\\res\\merged\\debug\\animator-v21\\design_appbar_state_list_animator.xml",
-        "source": "C:\\Users\\Sterling\\.android\\build-cache\\088d701cf074372f3ab6819ce0cc7c0fbcd2dc1c\\output\\res\\animator-v21\\design_appbar_state_list_animator.xml"
+        "merged": "/Users/Deric/AndroidStudioProjects/RubricApp/app/build/intermediates/res/merged/debug/animator-v21/design_appbar_state_list_animator.xml",
+        "source": "/Users/Deric/.android/build-cache/5cb36e52a340f6131b2fd2f211034a470b4e95d6/output/res/animator-v21/design_appbar_state_list_animator.xml"
+    },
+    {
+        "merged": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\Desktop\\RubricAppRepo\\RubricApp\\app\\build\\intermediates\\res\\merged\\debug\\animator-v21\\design_appbar_state_list_animator.xml",
+        "source": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\.android\\build-cache\\088d701cf074372f3ab6819ce0cc7c0fbcd2dc1c\\output\\res\\animator-v21\\design_appbar_state_list_animator.xml"
     }
 ]

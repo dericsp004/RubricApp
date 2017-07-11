@@ -5,8 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.plummer.deric.rubricapp.Grade_Activity">
-<<<<<<< HEAD
-
     <Button
         android:id="@+id/button4"
         android:layout_width="wrap_content"
@@ -28,7 +26,7 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="collapse" />
-=======
+
     <ExpandableListView
         android:id="@+id/GradeList"
         android:layout_height="358dp"
@@ -43,7 +41,6 @@
         android:layout_marginBottom="8dp"
         tools:layout_editor_absoluteY="161dp"
         tools:layout_editor_absoluteX="108dp" />
->>>>>>> 28c1ddc65d478ee53a3607f2689e18d42f596049
 
     <TextView
         android:id="@+id/textViewStudentName"
@@ -69,19 +66,16 @@
         tools:layout_editor_absoluteX="203dp" />
 
     <TextView
-<<<<<<< HEAD
+
         android:id="@+id/textView3"
         android:layout_width="220dp"
         android:layout_height="46dp"
-=======
         android:id="@+id/textViewComments"
         android:layout_width="192dp"
         android:layout_height="37dp"
->>>>>>> 28c1ddc65d478ee53a3607f2689e18d42f596049
         android:text="Comments"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-<<<<<<< HEAD
         tools:layout_editor_absoluteY="426dp"
         tools:layout_editor_absoluteX="63dp" />
 
@@ -114,14 +108,11 @@
 
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.445" />
-=======
         android:layout_marginTop="8dp"
         app:layout_constraintTop_toBottomOf="@+id/GradeList"
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_marginBottom="8dp"
         tools:layout_editor_absoluteY="455dp"
         app:layout_constraintVertical_bias="0.521" />
->>>>>>> 28c1ddc65d478ee53a3607f2689e18d42f596049
-
 
 </android.support.constraint.ConstraintLayout>

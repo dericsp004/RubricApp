@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "C:\\Users\\Sterling\\Desktop\\RubricAppRepo\\RubricApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw720dp-v13\\values-sw720dp-v13.xml",
+        "outputFile": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\Desktop\\RubricAppRepo\\RubricApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw720dp-v13\\values-sw720dp-v13.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 119
                 },
                 "from": {
-                    "file": "C:\\Users\\Sterling\\.android\\build-cache\\795d0d5bbb1d7e026bf9bfeb64af66d7691d0d2d\\output\\res\\values-sw720dp-v13\\values-sw720dp-v13.xml",
+                    "file": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\.android\\build-cache\\795d0d5bbb1d7e026bf9bfeb64af66d7691d0d2d\\output\\res\\values-sw720dp-v13\\values-sw720dp-v13.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -30,7 +30,50 @@
                     "endOffset": 188
                 },
                 "from": {
-                    "file": "C:\\Users\\Sterling\\.android\\build-cache\\795d0d5bbb1d7e026bf9bfeb64af66d7691d0d2d\\output\\res\\values-sw720dp-v13\\values-sw720dp-v13.xml",
+                    "file": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\.android\\build-cache\\795d0d5bbb1d7e026bf9bfeb64af66d7691d0d2d\\output\\res\\values-sw720dp-v13\\values-sw720dp-v13.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 124,
+                        "endColumn": 68,
+                        "endOffset": 188
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "/Users/Deric/AndroidStudioProjects/RubricApp/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw720dp-v13/values-sw720dp-v13.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 68,
+                    "endOffset": 119
+                },
+                "from": {
+                    "file": "/Users/Deric/.android/build-cache/e46697ec2a9029f28d3aa51ccfd75f4acf2ca851/output/res/values-sw720dp-v13/values-sw720dp-v13.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 68,
+                        "endOffset": 119
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 124,
+                    "endColumn": 68,
+                    "endOffset": 188
+                },
+                "from": {
+                    "file": "/Users/Deric/.android/build-cache/e46697ec2a9029f28d3aa51ccfd75f4acf2ca851/output/res/values-sw720dp-v13/values-sw720dp-v13.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
