@@ -12,7 +12,7 @@ import static org.junit.Assert.*;
 
 public class AssignmentUnitTest {
 
-    @Test
+    /*@Test
     public void CreateNewAssignmentWithStudentsTest () {
         Assignment assignment =  new Assignment(new Rubric());
         for (int i = 0; i < 10; i++) {
@@ -55,5 +55,5 @@ public class AssignmentUnitTest {
         assertTrue(result3);
 
         System.out.println(assignment.getData());
-    }
+    }*/
 }

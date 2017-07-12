@@ -58,6 +58,7 @@ public class Assignment {
         return _students;
     }
     public Rubric getRubric() { return _rubric; }
+    public String getClassName() { return _className; }
 
     /********************************************************
      *  Setters

@@ -9,13 +9,5 @@ import static org.junit.Assert.*;
 
 public class RubricUnitTest {
 
-    @Test
-    public void CreateNewCriteriaTest() {
-        Rubric rubric = new Rubric();
-        rubric.addCriteria(new Criteria());
-
-        //Finish test
-
-    }
 
 }
