@@ -1,11 +1,11 @@
 [
     {
-        "merged": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\Desktop\\RubricAppRepo\\RubricApp\\app\\build\\intermediates\\res\\merged\\debug\\anim-v21\\design_bottom_sheet_slide_in.xml",
-        "source": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\.android\\build-cache\\088d701cf074372f3ab6819ce0cc7c0fbcd2dc1c\\output\\res\\anim-v21\\design_bottom_sheet_slide_in.xml"
-    },
-    {
         "merged": "/Users/Deric/AndroidStudioProjects/RubricApp/app/build/intermediates/res/merged/debug/anim-v21/design_bottom_sheet_slide_out.xml",
         "source": "/Users/Deric/.android/build-cache/5cb36e52a340f6131b2fd2f211034a470b4e95d6/output/res/anim-v21/design_bottom_sheet_slide_out.xml"
+    },
+    {
+        "merged": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\Desktop\\RubricAppRepo\\RubricApp\\app\\build\\intermediates\\res\\merged\\debug\\anim-v21\\design_bottom_sheet_slide_in.xml",
+        "source": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\.android\\build-cache\\088d701cf074372f3ab6819ce0cc7c0fbcd2dc1c\\output\\res\\anim-v21\\design_bottom_sheet_slide_in.xml"
     },
     {
         "merged": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\Desktop\\RubricAppRepo\\RubricApp\\app\\build\\intermediates\\res\\merged\\debug\\anim-v21\\design_bottom_sheet_slide_out.xml",

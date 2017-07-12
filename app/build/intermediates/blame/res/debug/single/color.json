@@ -1,83 +1,51 @@
 [
     {
-        "merged": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\Desktop\\RubricAppRepo\\RubricApp\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_spinner.xml",
-        "source": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\.android\\build-cache\\679738451aca700c60d2e112b8f45d038493f611\\output\\res\\color\\abc_tint_spinner.xml"
-    },
-    {
-        "merged": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\Desktop\\RubricAppRepo\\RubricApp\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_material_dark.xml",
-        "source": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\.android\\build-cache\\679738451aca700c60d2e112b8f45d038493f611\\output\\res\\color\\abc_primary_text_material_dark.xml"
-    },
-    {
-        "merged": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\Desktop\\RubricAppRepo\\RubricApp\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_btn_colored_borderless_text_material.xml",
-        "source": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\.android\\build-cache\\679738451aca700c60d2e112b8f45d038493f611\\output\\res\\color\\abc_btn_colored_borderless_text_material.xml"
+        "merged": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\Desktop\\RubricAppRepo\\RubricApp\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_secondary_text_material_light.xml",
+        "source": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\.android\\build-cache\\679738451aca700c60d2e112b8f45d038493f611\\output\\res\\color\\abc_secondary_text_material_light.xml"
     },
     {
         "merged": "/Users/Deric/AndroidStudioProjects/RubricApp/app/build/intermediates/res/merged/debug/color/abc_tint_edittext.xml",
         "source": "/Users/Deric/.android/build-cache/b93c5546f3cec54ef60a2fef684ea73c117370ca/output/res/color/abc_tint_edittext.xml"
     },
     {
-        "merged": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\Desktop\\RubricAppRepo\\RubricApp\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_secondary_text_material_light.xml",
-        "source": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\.android\\build-cache\\679738451aca700c60d2e112b8f45d038493f611\\output\\res\\color\\abc_secondary_text_material_light.xml"
-    },
-    {
-        "merged": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\Desktop\\RubricAppRepo\\RubricApp\\app\\build\\intermediates\\res\\merged\\debug\\color\\design_error.xml",
-        "source": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\.android\\build-cache\\088d701cf074372f3ab6819ce0cc7c0fbcd2dc1c\\output\\res\\color\\design_error.xml"
-    },
-    {
         "merged": "/Users/Deric/AndroidStudioProjects/RubricApp/app/build/intermediates/res/merged/debug/color/switch_thumb_material_light.xml",
         "source": "/Users/Deric/.android/build-cache/b93c5546f3cec54ef60a2fef684ea73c117370ca/output/res/color/switch_thumb_material_light.xml"
+    },
+    {
+        "merged": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\Desktop\\RubricAppRepo\\RubricApp\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_material_dark.xml",
+        "source": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\.android\\build-cache\\679738451aca700c60d2e112b8f45d038493f611\\output\\res\\color\\abc_primary_text_material_dark.xml"
     },
     {
         "merged": "/Users/Deric/AndroidStudioProjects/RubricApp/app/build/intermediates/res/merged/debug/color/abc_primary_text_disable_only_material_light.xml",
         "source": "/Users/Deric/.android/build-cache/b93c5546f3cec54ef60a2fef684ea73c117370ca/output/res/color/abc_primary_text_disable_only_material_light.xml"
     },
     {
-        "merged": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\Desktop\\RubricAppRepo\\RubricApp\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_edittext.xml",
-        "source": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\.android\\build-cache\\679738451aca700c60d2e112b8f45d038493f611\\output\\res\\color\\abc_tint_edittext.xml"
-    },
-    {
         "merged": "/Users/Deric/AndroidStudioProjects/RubricApp/app/build/intermediates/res/merged/debug/color/wallet_primary_text_holo_light.xml",
         "source": "/Users/Deric/.android/build-cache/f76b54e56af3b6b276d9d1188f2d4daae92c789e/output/res/color/wallet_primary_text_holo_light.xml"
-    },
-    {
-        "merged": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\Desktop\\RubricAppRepo\\RubricApp\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_material_light.xml",
-        "source": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\.android\\build-cache\\679738451aca700c60d2e112b8f45d038493f611\\output\\res\\color\\abc_primary_text_material_light.xml"
-    },
-    {
-        "merged": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\Desktop\\RubricAppRepo\\RubricApp\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_switch_thumb.xml",
-        "source": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\.android\\build-cache\\679738451aca700c60d2e112b8f45d038493f611\\output\\res\\color\\abc_tint_switch_thumb.xml"
     },
     {
         "merged": "/Users/Deric/AndroidStudioProjects/RubricApp/app/build/intermediates/res/merged/debug/color/abc_btn_colored_borderless_text_material.xml",
         "source": "/Users/Deric/.android/build-cache/b93c5546f3cec54ef60a2fef684ea73c117370ca/output/res/color/abc_btn_colored_borderless_text_material.xml"
     },
     {
-        "merged": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\Desktop\\RubricAppRepo\\RubricApp\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_google_signin_btn_text_light.xml",
-        "source": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\.android\\build-cache\\ff1bec2221a2459c886cb356cd35c4e14ab9dcd2\\output\\res\\color\\common_google_signin_btn_text_light.xml"
-    },
-    {
-        "merged": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\Desktop\\RubricAppRepo\\RubricApp\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_default.xml",
-        "source": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\.android\\build-cache\\679738451aca700c60d2e112b8f45d038493f611\\output\\res\\color\\abc_tint_default.xml"
-    },
-    {
         "merged": "/Users/Deric/AndroidStudioProjects/RubricApp/app/build/intermediates/res/merged/debug/color/abc_primary_text_material_light.xml",
         "source": "/Users/Deric/.android/build-cache/b93c5546f3cec54ef60a2fef684ea73c117370ca/output/res/color/abc_primary_text_material_light.xml"
-    },
-    {
-        "merged": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\Desktop\\RubricAppRepo\\RubricApp\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_disable_only_material_light.xml",
-        "source": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\.android\\build-cache\\679738451aca700c60d2e112b8f45d038493f611\\output\\res\\color\\abc_primary_text_disable_only_material_light.xml"
     },
     {
         "merged": "/Users/Deric/AndroidStudioProjects/RubricApp/app/build/intermediates/res/merged/debug/color/switch_thumb_material_dark.xml",
         "source": "/Users/Deric/.android/build-cache/b93c5546f3cec54ef60a2fef684ea73c117370ca/output/res/color/switch_thumb_material_dark.xml"
     },
     {
-        "merged": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\Desktop\\RubricAppRepo\\RubricApp\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_hint_foreground_material_light.xml",
-        "source": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\.android\\build-cache\\679738451aca700c60d2e112b8f45d038493f611\\output\\res\\color\\abc_hint_foreground_material_light.xml"
+        "merged": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\Desktop\\RubricAppRepo\\RubricApp\\app\\build\\intermediates\\res\\merged\\debug\\color\\switch_thumb_material_light.xml",
+        "source": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\.android\\build-cache\\679738451aca700c60d2e112b8f45d038493f611\\output\\res\\color\\switch_thumb_material_light.xml"
     },
     {
         "merged": "/Users/Deric/AndroidStudioProjects/RubricApp/app/build/intermediates/res/merged/debug/color/common_google_signin_btn_text_dark.xml",
         "source": "/Users/Deric/.android/build-cache/de4b65aa79cfbcb70a8dd7ce9cd8efdcff6c5337/output/res/color/common_google_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\Desktop\\RubricAppRepo\\RubricApp\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_switch_thumb.xml",
+        "source": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\.android\\build-cache\\679738451aca700c60d2e112b8f45d038493f611\\output\\res\\color\\abc_tint_switch_thumb.xml"
     },
     {
         "merged": "/Users/Deric/AndroidStudioProjects/RubricApp/app/build/intermediates/res/merged/debug/color/abc_tint_btn_checkable.xml",
@@ -96,28 +64,28 @@
         "source": "/Users/Deric/.android/build-cache/b93c5546f3cec54ef60a2fef684ea73c117370ca/output/res/color/abc_tint_switch_track.xml"
     },
     {
-        "merged": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\Desktop\\RubricAppRepo\\RubricApp\\app\\build\\intermediates\\res\\merged\\debug\\color\\switch_thumb_material_dark.xml",
-        "source": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\.android\\build-cache\\679738451aca700c60d2e112b8f45d038493f611\\output\\res\\color\\switch_thumb_material_dark.xml"
+        "merged": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\Desktop\\RubricAppRepo\\RubricApp\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_btn_colored_text_material.xml",
+        "source": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\.android\\build-cache\\679738451aca700c60d2e112b8f45d038493f611\\output\\res\\color\\abc_btn_colored_text_material.xml"
     },
     {
-        "merged": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\Desktop\\RubricAppRepo\\RubricApp\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_secondary_text_material_dark.xml",
-        "source": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\.android\\build-cache\\679738451aca700c60d2e112b8f45d038493f611\\output\\res\\color\\abc_secondary_text_material_dark.xml"
+        "merged": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\Desktop\\RubricAppRepo\\RubricApp\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_hint_foreground_material_dark.xml",
+        "source": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\.android\\build-cache\\679738451aca700c60d2e112b8f45d038493f611\\output\\res\\color\\abc_hint_foreground_material_dark.xml"
     },
     {
         "merged": "/Users/Deric/AndroidStudioProjects/RubricApp/app/build/intermediates/res/merged/debug/color/abc_hint_foreground_material_dark.xml",
         "source": "/Users/Deric/.android/build-cache/b93c5546f3cec54ef60a2fef684ea73c117370ca/output/res/color/abc_hint_foreground_material_dark.xml"
     },
     {
-        "merged": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\Desktop\\RubricAppRepo\\RubricApp\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_btn_checkable.xml",
-        "source": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\.android\\build-cache\\679738451aca700c60d2e112b8f45d038493f611\\output\\res\\color\\abc_tint_btn_checkable.xml"
+        "merged": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\Desktop\\RubricAppRepo\\RubricApp\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_default.xml",
+        "source": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\.android\\build-cache\\679738451aca700c60d2e112b8f45d038493f611\\output\\res\\color\\abc_tint_default.xml"
     },
     {
-        "merged": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\Desktop\\RubricAppRepo\\RubricApp\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_switch_track.xml",
-        "source": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\.android\\build-cache\\679738451aca700c60d2e112b8f45d038493f611\\output\\res\\color\\abc_tint_switch_track.xml"
+        "merged": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\Desktop\\RubricAppRepo\\RubricApp\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_material_light.xml",
+        "source": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\.android\\build-cache\\679738451aca700c60d2e112b8f45d038493f611\\output\\res\\color\\abc_primary_text_material_light.xml"
     },
     {
-        "merged": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\Desktop\\RubricAppRepo\\RubricApp\\app\\build\\intermediates\\res\\merged\\debug\\color\\switch_thumb_material_light.xml",
-        "source": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\.android\\build-cache\\679738451aca700c60d2e112b8f45d038493f611\\output\\res\\color\\switch_thumb_material_light.xml"
+        "merged": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\Desktop\\RubricAppRepo\\RubricApp\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_hint_foreground_material_light.xml",
+        "source": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\.android\\build-cache\\679738451aca700c60d2e112b8f45d038493f611\\output\\res\\color\\abc_hint_foreground_material_light.xml"
     },
     {
         "merged": "/Users/Deric/AndroidStudioProjects/RubricApp/app/build/intermediates/res/merged/debug/color/abc_search_url_text.xml",
@@ -132,44 +100,76 @@
         "source": "/Users/Deric/.android/build-cache/b93c5546f3cec54ef60a2fef684ea73c117370ca/output/res/color/abc_primary_text_disable_only_material_dark.xml"
     },
     {
+        "merged": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\Desktop\\RubricAppRepo\\RubricApp\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_google_signin_btn_text_light.xml",
+        "source": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\.android\\build-cache\\ff1bec2221a2459c886cb356cd35c4e14ab9dcd2\\output\\res\\color\\common_google_signin_btn_text_light.xml"
+    },
+    {
         "merged": "/Users/Deric/AndroidStudioProjects/RubricApp/app/build/intermediates/res/merged/debug/color/abc_primary_text_material_dark.xml",
         "source": "/Users/Deric/.android/build-cache/b93c5546f3cec54ef60a2fef684ea73c117370ca/output/res/color/abc_primary_text_material_dark.xml"
     },
     {
-        "merged": "/Users/Deric/AndroidStudioProjects/RubricApp/app/build/intermediates/res/merged/debug/color/abc_tint_spinner.xml",
-        "source": "/Users/Deric/.android/build-cache/b93c5546f3cec54ef60a2fef684ea73c117370ca/output/res/color/abc_tint_spinner.xml"
-    },
-    {
-        "merged": "/Users/Deric/AndroidStudioProjects/RubricApp/app/build/intermediates/res/merged/debug/color/abc_tint_default.xml",
-        "source": "/Users/Deric/.android/build-cache/b93c5546f3cec54ef60a2fef684ea73c117370ca/output/res/color/abc_tint_default.xml"
-    },
-    {
-        "merged": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\Desktop\\RubricAppRepo\\RubricApp\\app\\build\\intermediates\\res\\merged\\debug\\color\\design_tint_password_toggle.xml",
-        "source": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\.android\\build-cache\\088d701cf074372f3ab6819ce0cc7c0fbcd2dc1c\\output\\res\\color\\design_tint_password_toggle.xml"
-    },
-    {
-        "merged": "/Users/Deric/AndroidStudioProjects/RubricApp/app/build/intermediates/res/merged/debug/color/design_tint_password_toggle.xml",
-        "source": "/Users/Deric/.android/build-cache/5cb36e52a340f6131b2fd2f211034a470b4e95d6/output/res/color/design_tint_password_toggle.xml"
+        "merged": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\Desktop\\RubricAppRepo\\RubricApp\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_edittext.xml",
+        "source": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\.android\\build-cache\\679738451aca700c60d2e112b8f45d038493f611\\output\\res\\color\\abc_tint_edittext.xml"
     },
     {
         "merged": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\Desktop\\RubricAppRepo\\RubricApp\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_google_signin_btn_text_dark.xml",
         "source": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\.android\\build-cache\\ff1bec2221a2459c886cb356cd35c4e14ab9dcd2\\output\\res\\color\\common_google_signin_btn_text_dark.xml"
     },
     {
-        "merged": "/Users/Deric/AndroidStudioProjects/RubricApp/app/build/intermediates/res/merged/debug/color/abc_secondary_text_material_dark.xml",
-        "source": "/Users/Deric/.android/build-cache/b93c5546f3cec54ef60a2fef684ea73c117370ca/output/res/color/abc_secondary_text_material_dark.xml"
+        "merged": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\Desktop\\RubricAppRepo\\RubricApp\\app\\build\\intermediates\\res\\merged\\debug\\color\\design_error.xml",
+        "source": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\.android\\build-cache\\088d701cf074372f3ab6819ce0cc7c0fbcd2dc1c\\output\\res\\color\\design_error.xml"
+    },
+    {
+        "merged": "/Users/Deric/AndroidStudioProjects/RubricApp/app/build/intermediates/res/merged/debug/color/abc_tint_spinner.xml",
+        "source": "/Users/Deric/.android/build-cache/b93c5546f3cec54ef60a2fef684ea73c117370ca/output/res/color/abc_tint_spinner.xml"
+    },
+    {
+        "merged": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\Desktop\\RubricAppRepo\\RubricApp\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_btn_checkable.xml",
+        "source": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\.android\\build-cache\\679738451aca700c60d2e112b8f45d038493f611\\output\\res\\color\\abc_tint_btn_checkable.xml"
+    },
+    {
+        "merged": "/Users/Deric/AndroidStudioProjects/RubricApp/app/build/intermediates/res/merged/debug/color/abc_tint_default.xml",
+        "source": "/Users/Deric/.android/build-cache/b93c5546f3cec54ef60a2fef684ea73c117370ca/output/res/color/abc_tint_default.xml"
+    },
+    {
+        "merged": "/Users/Deric/AndroidStudioProjects/RubricApp/app/build/intermediates/res/merged/debug/color/design_tint_password_toggle.xml",
+        "source": "/Users/Deric/.android/build-cache/5cb36e52a340f6131b2fd2f211034a470b4e95d6/output/res/color/design_tint_password_toggle.xml"
+    },
+    {
+        "merged": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\Desktop\\RubricAppRepo\\RubricApp\\app\\build\\intermediates\\res\\merged\\debug\\color\\wallet_secondary_text_holo_dark.xml",
+        "source": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\.android\\build-cache\\510d958ff81e3a7ed06a9bfcc4b634fbb210faae\\output\\res\\color\\wallet_secondary_text_holo_dark.xml"
     },
     {
         "merged": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\Desktop\\RubricAppRepo\\RubricApp\\app\\build\\intermediates\\res\\merged\\debug\\color\\wallet_primary_text_holo_light.xml",
         "source": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\.android\\build-cache\\510d958ff81e3a7ed06a9bfcc4b634fbb210faae\\output\\res\\color\\wallet_primary_text_holo_light.xml"
     },
     {
-        "merged": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\Desktop\\RubricAppRepo\\RubricApp\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_google_signin_btn_tint.xml",
-        "source": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\.android\\build-cache\\ff1bec2221a2459c886cb356cd35c4e14ab9dcd2\\output\\res\\color\\common_google_signin_btn_tint.xml"
+        "merged": "/Users/Deric/AndroidStudioProjects/RubricApp/app/build/intermediates/res/merged/debug/color/abc_secondary_text_material_dark.xml",
+        "source": "/Users/Deric/.android/build-cache/b93c5546f3cec54ef60a2fef684ea73c117370ca/output/res/color/abc_secondary_text_material_dark.xml"
     },
     {
-        "merged": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\Desktop\\RubricAppRepo\\RubricApp\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_hint_foreground_material_dark.xml",
-        "source": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\.android\\build-cache\\679738451aca700c60d2e112b8f45d038493f611\\output\\res\\color\\abc_hint_foreground_material_dark.xml"
+        "merged": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\Desktop\\RubricAppRepo\\RubricApp\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_secondary_text_material_dark.xml",
+        "source": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\.android\\build-cache\\679738451aca700c60d2e112b8f45d038493f611\\output\\res\\color\\abc_secondary_text_material_dark.xml"
+    },
+    {
+        "merged": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\Desktop\\RubricAppRepo\\RubricApp\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_disable_only_material_light.xml",
+        "source": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\.android\\build-cache\\679738451aca700c60d2e112b8f45d038493f611\\output\\res\\color\\abc_primary_text_disable_only_material_light.xml"
+    },
+    {
+        "merged": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\Desktop\\RubricAppRepo\\RubricApp\\app\\build\\intermediates\\res\\merged\\debug\\color\\design_tint_password_toggle.xml",
+        "source": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\.android\\build-cache\\088d701cf074372f3ab6819ce0cc7c0fbcd2dc1c\\output\\res\\color\\design_tint_password_toggle.xml"
+    },
+    {
+        "merged": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\Desktop\\RubricAppRepo\\RubricApp\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_disable_only_material_dark.xml",
+        "source": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\.android\\build-cache\\679738451aca700c60d2e112b8f45d038493f611\\output\\res\\color\\abc_primary_text_disable_only_material_dark.xml"
+    },
+    {
+        "merged": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\Desktop\\RubricAppRepo\\RubricApp\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_btn_colored_borderless_text_material.xml",
+        "source": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\.android\\build-cache\\679738451aca700c60d2e112b8f45d038493f611\\output\\res\\color\\abc_btn_colored_borderless_text_material.xml"
+    },
+    {
+        "merged": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\Desktop\\RubricAppRepo\\RubricApp\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_google_signin_btn_tint.xml",
+        "source": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\.android\\build-cache\\ff1bec2221a2459c886cb356cd35c4e14ab9dcd2\\output\\res\\color\\common_google_signin_btn_tint.xml"
     },
     {
         "merged": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\Desktop\\RubricAppRepo\\RubricApp\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_search_url_text.xml",
@@ -180,8 +180,16 @@
         "source": "/Users/Deric/.android/build-cache/b93c5546f3cec54ef60a2fef684ea73c117370ca/output/res/color/abc_tint_switch_thumb.xml"
     },
     {
-        "merged": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\Desktop\\RubricAppRepo\\RubricApp\\app\\build\\intermediates\\res\\merged\\debug\\color\\wallet_secondary_text_holo_dark.xml",
-        "source": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\.android\\build-cache\\510d958ff81e3a7ed06a9bfcc4b634fbb210faae\\output\\res\\color\\wallet_secondary_text_holo_dark.xml"
+        "merged": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\Desktop\\RubricAppRepo\\RubricApp\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_seek_thumb.xml",
+        "source": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\.android\\build-cache\\679738451aca700c60d2e112b8f45d038493f611\\output\\res\\color\\abc_tint_seek_thumb.xml"
+    },
+    {
+        "merged": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\Desktop\\RubricAppRepo\\RubricApp\\app\\build\\intermediates\\res\\merged\\debug\\color\\switch_thumb_material_dark.xml",
+        "source": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\.android\\build-cache\\679738451aca700c60d2e112b8f45d038493f611\\output\\res\\color\\switch_thumb_material_dark.xml"
+    },
+    {
+        "merged": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\Desktop\\RubricAppRepo\\RubricApp\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_spinner.xml",
+        "source": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\.android\\build-cache\\679738451aca700c60d2e112b8f45d038493f611\\output\\res\\color\\abc_tint_spinner.xml"
     },
     {
         "merged": "/Users/Deric/AndroidStudioProjects/RubricApp/app/build/intermediates/res/merged/debug/color/common_google_signin_btn_tint.xml",
@@ -200,16 +208,8 @@
         "source": "/Users/Deric/.android/build-cache/de4b65aa79cfbcb70a8dd7ce9cd8efdcff6c5337/output/res/color/common_google_signin_btn_text_light.xml"
     },
     {
-        "merged": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\Desktop\\RubricAppRepo\\RubricApp\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_disable_only_material_dark.xml",
-        "source": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\.android\\build-cache\\679738451aca700c60d2e112b8f45d038493f611\\output\\res\\color\\abc_primary_text_disable_only_material_dark.xml"
-    },
-    {
-        "merged": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\Desktop\\RubricAppRepo\\RubricApp\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_btn_colored_text_material.xml",
-        "source": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\.android\\build-cache\\679738451aca700c60d2e112b8f45d038493f611\\output\\res\\color\\abc_btn_colored_text_material.xml"
-    },
-    {
-        "merged": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\Desktop\\RubricAppRepo\\RubricApp\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_seek_thumb.xml",
-        "source": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\.android\\build-cache\\679738451aca700c60d2e112b8f45d038493f611\\output\\res\\color\\abc_tint_seek_thumb.xml"
+        "merged": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\Desktop\\RubricAppRepo\\RubricApp\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_switch_track.xml",
+        "source": "/Users/Deric/AndroidStudioProjects/RubricApp/C:\\Users\\Sterling\\.android\\build-cache\\679738451aca700c60d2e112b8f45d038493f611\\output\\res\\color\\abc_tint_switch_track.xml"
     },
     {
         "merged": "/Users/Deric/AndroidStudioProjects/RubricApp/app/build/intermediates/res/merged/debug/color/wallet_secondary_text_holo_dark.xml",

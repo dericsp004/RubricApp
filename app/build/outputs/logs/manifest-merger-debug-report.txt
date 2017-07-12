@@ -48,10 +48,10 @@ ADDED from /Users/Deric/AndroidStudioProjects/RubricApp/app/src/main/AndroidMani
 		ADDED from /Users/Deric/AndroidStudioProjects/RubricApp/app/src/main/AndroidManifest.xml:7:22-68
 application
 ADDED from /Users/Deric/AndroidStudioProjects/RubricApp/app/src/main/AndroidManifest.xml:9:5-47:19
+MERGED from [pub.devrel:easypermissions:0.3.0] /Users/Deric/.android/build-cache/c62159c4c6ed20f8efbd9c5cf0da2fa2fb2e18fe/output/AndroidManifest.xml:11:5-17:19
 MERGED from [com.android.support.constraint:constraint-layout:1.0.0-beta5] /Users/Deric/.android/build-cache/151f0753a32e74b58e4635e4bd04f040ec75211e/output/AndroidManifest.xml:9:5-20
 MERGED from [com.android.support:design:25.3.1] /Users/Deric/.android/build-cache/5cb36e52a340f6131b2fd2f211034a470b4e95d6/output/AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:transition:25.3.1] /Users/Deric/.android/build-cache/c24619655ff5e79a60d64f2d88b29cbbce899422/output/AndroidManifest.xml:26:5-20
-MERGED from [pub.devrel:easypermissions:0.3.0] /Users/Deric/.android/build-cache/c62159c4c6ed20f8efbd9c5cf0da2fa2fb2e18fe/output/AndroidManifest.xml:11:5-17:19
 MERGED from [com.google.android.gms:play-services:10.2.6] /Users/Deric/.android/build-cache/f62f88d8022b80d190e0a2533d36594ecd223df2/output/AndroidManifest.xml:5:5-20
 MERGED from [com.google.android.gms:play-services-ads-lite:10.2.6] /Users/Deric/.android/build-cache/67125209374e81c93f12f993b7ba39f67383bbe6/output/AndroidManifest.xml:23:5-27:19
 MERGED from [com.google.android.gms:play-services-analytics:10.2.6] /Users/Deric/.android/build-cache/3a18103682cbebcb830e23d54fbf2b459d214385/output/AndroidManifest.xml:26:5-19
@@ -59,11 +59,11 @@ MERGED from [com.google.android.gms:play-services-appinvite:10.2.6] /Users/Deric
 MERGED from [com.google.android.gms:play-services-auth:10.2.6] /Users/Deric/.android/build-cache/b315759746c9d64dbfd714c1279ca57b066f5400/output/AndroidManifest.xml:19:5-25:19
 MERGED from [com.google.android.gms:play-services-cast-framework:10.2.6] /Users/Deric/.android/build-cache/4afdcfc600f45c80b7ee87311970d745689d6327/output/AndroidManifest.xml:4:5-8:19
 MERGED from [com.google.android.gms:play-services-cast:10.2.6] /Users/Deric/.android/build-cache/491b61b6e56a30d1cd5689ebf8171095fea601d9/output/AndroidManifest.xml:18:5-19
-MERGED from [com.android.support:mediarouter-v7:25.3.1] /Users/Deric/.android/build-cache/e46697ec2a9029f28d3aa51ccfd75f4acf2ca851/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:mediarouter-v7:25.2.0] /Users/Deric/.android/build-cache/4e0be84eb2384592103c5b9af6604de9175941ec/output/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/Deric/.android/build-cache/b93c5546f3cec54ef60a2fef684ea73c117370ca/output/AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/Deric/.android/build-cache/fd6fc264da7ef1dbf1dbef220a961d1ecbc487d6/output/AndroidManifest.xml:26:5-20
 MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/Deric/.android/build-cache/7c90ea21b0de63ff7233f771dab435cfd8f9472f/output/AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:palette-v7:25.3.1] /Users/Deric/.android/build-cache/8f92c87a9a905141a2f6f053fa804c13aa65d949/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:palette-v7:25.2.0] /Users/Deric/.android/build-cache/5fdc6d129b75183350081ece2e2dcfa75360d58b/output/AndroidManifest.xml:22:5-23:19
 MERGED from [com.google.android.gms:play-services-clearcut:10.2.6] /Users/Deric/.android/build-cache/0b8df0560b8a5af42d3b8db5491dd54b469b956a/output/AndroidManifest.xml:18:5-19
 MERGED from [com.google.firebase:firebase-config:10.2.6] /Users/Deric/.android/build-cache/3a60707d7e1019411fc224eddcd630e77bb79c2e/output/AndroidManifest.xml:18:5-19
 MERGED from [com.google.android.gms:play-services-awareness:10.2.6] /Users/Deric/.android/build-cache/b02a5c316f80e087b636f1cb718ed21ad8622ed7/output/AndroidManifest.xml:18:5-19
@@ -155,11 +155,11 @@ ADDED from /Users/Deric/AndroidStudioProjects/RubricApp/app/src/main/AndroidMani
 		ADDED from /Users/Deric/AndroidStudioProjects/RubricApp/app/src/main/AndroidManifest.xml:39:19-53
 uses-sdk
 INJECTED from /Users/Deric/AndroidStudioProjects/RubricApp/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [pub.devrel:easypermissions:0.3.0] /Users/Deric/.android/build-cache/c62159c4c6ed20f8efbd9c5cf0da2fa2fb2e18fe/output/AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support.constraint:constraint-layout:1.0.0-beta5] /Users/Deric/.android/build-cache/151f0753a32e74b58e4635e4bd04f040ec75211e/output/AndroidManifest.xml:5:5-7:41
 MERGED from [com.android.support:design:25.3.1] /Users/Deric/.android/build-cache/5cb36e52a340f6131b2fd2f211034a470b4e95d6/output/AndroidManifest.xml:21:5-23:62
 MERGED from [com.android.support:recyclerview-v7:25.3.1] /Users/Deric/.android/build-cache/bdfb5cdb5881f4c50a7d563475571ec4ae01b2d9/output/AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:transition:25.3.1] /Users/Deric/.android/build-cache/c24619655ff5e79a60d64f2d88b29cbbce899422/output/AndroidManifest.xml:20:5-44
-MERGED from [pub.devrel:easypermissions:0.3.0] /Users/Deric/.android/build-cache/c62159c4c6ed20f8efbd9c5cf0da2fa2fb2e18fe/output/AndroidManifest.xml:7:5-9:41
 MERGED from [com.google.android.gms:play-services:10.2.6] /Users/Deric/.android/build-cache/f62f88d8022b80d190e0a2533d36594ecd223df2/output/AndroidManifest.xml:4:5-43
 MERGED from [com.google.android.gms:play-services-ads:10.2.6] /Users/Deric/.android/build-cache/8c780d6bd9a28af2c30767622785dcaac953b136/output/AndroidManifest.xml:17:5-43
 MERGED from [com.google.android.gms:play-services-ads-lite:10.2.6] /Users/Deric/.android/build-cache/67125209374e81c93f12f993b7ba39f67383bbe6/output/AndroidManifest.xml:22:5-43
@@ -169,11 +169,11 @@ MERGED from [com.google.android.gms:play-services-auth:10.2.6] /Users/Deric/.and
 MERGED from [com.google.android.gms:play-services-auth-base:10.2.6] /Users/Deric/.android/build-cache/3c7ee07b992a6f0e450ce20ab0c22e554c0a0405/output/AndroidManifest.xml:4:5-43
 MERGED from [com.google.android.gms:play-services-cast-framework:10.2.6] /Users/Deric/.android/build-cache/4afdcfc600f45c80b7ee87311970d745689d6327/output/AndroidManifest.xml:3:5-43
 MERGED from [com.google.android.gms:play-services-cast:10.2.6] /Users/Deric/.android/build-cache/491b61b6e56a30d1cd5689ebf8171095fea601d9/output/AndroidManifest.xml:17:5-43
-MERGED from [com.android.support:mediarouter-v7:25.3.1] /Users/Deric/.android/build-cache/e46697ec2a9029f28d3aa51ccfd75f4acf2ca851/output/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:mediarouter-v7:25.2.0] /Users/Deric/.android/build-cache/4e0be84eb2384592103c5b9af6604de9175941ec/output/AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/Deric/.android/build-cache/b93c5546f3cec54ef60a2fef684ea73c117370ca/output/AndroidManifest.xml:21:5-23:78
 MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/Deric/.android/build-cache/fd6fc264da7ef1dbf1dbef220a961d1ecbc487d6/output/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/Deric/.android/build-cache/7c90ea21b0de63ff7233f771dab435cfd8f9472f/output/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:palette-v7:25.3.1] /Users/Deric/.android/build-cache/8f92c87a9a905141a2f6f053fa804c13aa65d949/output/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:palette-v7:25.2.0] /Users/Deric/.android/build-cache/5fdc6d129b75183350081ece2e2dcfa75360d58b/output/AndroidManifest.xml:20:5-43
 MERGED from [com.google.android.gms:play-services-clearcut:10.2.6] /Users/Deric/.android/build-cache/0b8df0560b8a5af42d3b8db5491dd54b469b956a/output/AndroidManifest.xml:17:5-43
 MERGED from [com.google.firebase:firebase-config:10.2.6] /Users/Deric/.android/build-cache/3a60707d7e1019411fc224eddcd630e77bb79c2e/output/AndroidManifest.xml:17:5-43
 MERGED from [com.google.android.gms:play-services-awareness:10.2.6] /Users/Deric/.android/build-cache/b02a5c316f80e087b636f1cb718ed21ad8622ed7/output/AndroidManifest.xml:17:5-43
@@ -228,25 +228,6 @@ MERGED from [com.android.support:support-compat:25.3.1] /Users/Deric/.android/bu
 	android:minSdkVersion
 		INJECTED from /Users/Deric/AndroidStudioProjects/RubricApp/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/Deric/AndroidStudioProjects/RubricApp/app/src/main/AndroidManifest.xml
-meta-data#android.support.VERSION
-ADDED from [com.android.support:design:25.3.1] /Users/Deric/.android/build-cache/5cb36e52a340f6131b2fd2f211034a470b4e95d6/output/AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:recyclerview-v7:25.3.1] /Users/Deric/.android/build-cache/bdfb5cdb5881f4c50a7d563475571ec4ae01b2d9/output/AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:transition:25.3.1] /Users/Deric/.android/build-cache/c24619655ff5e79a60d64f2d88b29cbbce899422/output/AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:mediarouter-v7:25.3.1] /Users/Deric/.android/build-cache/e46697ec2a9029f28d3aa51ccfd75f4acf2ca851/output/AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/Deric/.android/build-cache/b93c5546f3cec54ef60a2fef684ea73c117370ca/output/AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/Deric/.android/build-cache/fd6fc264da7ef1dbf1dbef220a961d1ecbc487d6/output/AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/Deric/.android/build-cache/7c90ea21b0de63ff7233f771dab435cfd8f9472f/output/AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:palette-v7:25.3.1] /Users/Deric/.android/build-cache/8f92c87a9a905141a2f6f053fa804c13aa65d949/output/AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:support-v4:25.3.1] /Users/Deric/.android/build-cache/e50512b53bc282358e66204bed24c29b06be1c05/output/AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-fragment:25.3.1] /Users/Deric/.android/build-cache/0ac2fa8ac2e5491cf093434debe7889cf4c79480/output/AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-media-compat:25.3.1] /Users/Deric/.android/build-cache/d3196dc9030f4a196772480ce6403611e21f4321/output/AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-core-ui:25.3.1] /Users/Deric/.android/build-cache/d2eda8baf01969fba32625796cc2b0b7c84f14a7/output/AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-core-utils:25.3.1] /Users/Deric/.android/build-cache/5317a61c91743b2dec80a633a674f38166cc7434/output/AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-compat:25.3.1] /Users/Deric/.android/build-cache/ac9ea2934180e0b7ec44e51296b0ff03e8082ca8/output/AndroidManifest.xml:25:5-27:34
-	android:value
-		ADDED from [com.android.support:design:25.3.1] /Users/Deric/.android/build-cache/5cb36e52a340f6131b2fd2f211034a470b4e95d6/output/AndroidManifest.xml:27:9-31
-	android:name
-		ADDED from [com.android.support:design:25.3.1] /Users/Deric/.android/build-cache/5cb36e52a340f6131b2fd2f211034a470b4e95d6/output/AndroidManifest.xml:26:9-47
 activity#pub.devrel.easypermissions.AppSettingsDialogHolderActivity
 ADDED from [pub.devrel:easypermissions:0.3.0] /Users/Deric/.android/build-cache/c62159c4c6ed20f8efbd9c5cf0da2fa2fb2e18fe/output/AndroidManifest.xml:12:9-16:66
 	android:label
@@ -257,6 +238,23 @@ ADDED from [pub.devrel:easypermissions:0.3.0] /Users/Deric/.android/build-cache/
 		ADDED from [pub.devrel:easypermissions:0.3.0] /Users/Deric/.android/build-cache/c62159c4c6ed20f8efbd9c5cf0da2fa2fb2e18fe/output/AndroidManifest.xml:16:13-63
 	android:name
 		ADDED from [pub.devrel:easypermissions:0.3.0] /Users/Deric/.android/build-cache/c62159c4c6ed20f8efbd9c5cf0da2fa2fb2e18fe/output/AndroidManifest.xml:13:13-86
+meta-data#android.support.VERSION
+ADDED from [com.android.support:design:25.3.1] /Users/Deric/.android/build-cache/5cb36e52a340f6131b2fd2f211034a470b4e95d6/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:recyclerview-v7:25.3.1] /Users/Deric/.android/build-cache/bdfb5cdb5881f4c50a7d563475571ec4ae01b2d9/output/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:transition:25.3.1] /Users/Deric/.android/build-cache/c24619655ff5e79a60d64f2d88b29cbbce899422/output/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/Deric/.android/build-cache/b93c5546f3cec54ef60a2fef684ea73c117370ca/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/Deric/.android/build-cache/fd6fc264da7ef1dbf1dbef220a961d1ecbc487d6/output/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/Deric/.android/build-cache/7c90ea21b0de63ff7233f771dab435cfd8f9472f/output/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-v4:25.3.1] /Users/Deric/.android/build-cache/e50512b53bc282358e66204bed24c29b06be1c05/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-fragment:25.3.1] /Users/Deric/.android/build-cache/0ac2fa8ac2e5491cf093434debe7889cf4c79480/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] /Users/Deric/.android/build-cache/d3196dc9030f4a196772480ce6403611e21f4321/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.1] /Users/Deric/.android/build-cache/d2eda8baf01969fba32625796cc2b0b7c84f14a7/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] /Users/Deric/.android/build-cache/5317a61c91743b2dec80a633a674f38166cc7434/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-compat:25.3.1] /Users/Deric/.android/build-cache/ac9ea2934180e0b7ec44e51296b0ff03e8082ca8/output/AndroidManifest.xml:25:5-27:34
+	android:value
+		ADDED from [com.android.support:design:25.3.1] /Users/Deric/.android/build-cache/5cb36e52a340f6131b2fd2f211034a470b4e95d6/output/AndroidManifest.xml:27:9-31
+	android:name
+		ADDED from [com.android.support:design:25.3.1] /Users/Deric/.android/build-cache/5cb36e52a340f6131b2fd2f211034a470b4e95d6/output/AndroidManifest.xml:26:9-47
 activity#com.google.android.gms.ads.AdActivity
 ADDED from [com.google.android.gms:play-services-ads-lite:10.2.6] /Users/Deric/.android/build-cache/67125209374e81c93f12f993b7ba39f67383bbe6/output/AndroidManifest.xml:25:9-232
 	android:configChanges

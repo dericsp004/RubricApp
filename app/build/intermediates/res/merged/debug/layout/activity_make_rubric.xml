@@ -7,12 +7,11 @@
     tools:context="com.plummer.deric.rubricapp.MainActivity">
     <ListView
         android:id="@+id/CriteriaList"
-<<<<<<< HEAD
         android:layout_width="248dp"
         android:layout_height="390dp"
-        app:layout_constraintLeft_toLeftOf="@+id/button"
-        app:layout_constraintRight_toRightOf="@+id/button"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintLeft_toLeftOf="@+id/button2"
+        app:layout_constraintRight_toRightOf="@+id/button2"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <TextView
@@ -25,7 +24,6 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toTopOf="@+id/CriteriaList" />
-=======
         android:layout_width="234dp"
         android:layout_height="288dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -38,7 +36,6 @@
         android:layout_marginBottom="8dp"
         tools:layout_editor_absoluteY="194dp"
         tools:layout_editor_absoluteX="75dp" />
->>>>>>> 28c1ddc65d478ee53a3607f2689e18d42f596049
 
     <Button
         android:id="@+id/criteriaButton"
@@ -48,14 +45,11 @@
         android:layout_marginTop="8dp"
         android:onClick="addCriteria"
         android:text="Add Criteria"
-<<<<<<< HEAD
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/CriteriaList" />
-=======
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+
 
     <TextView
         android:id="@+id/AssignmentName"
@@ -71,6 +65,4 @@
         android:layout_marginLeft="8dp"
         app:layout_constraintVertical_bias="0.396"
         app:layout_constraintTop_toBottomOf="@+id/criteriaButton" />
->>>>>>> 28c1ddc65d478ee53a3607f2689e18d42f596049
-
 </android.support.constraint.ConstraintLayout>
