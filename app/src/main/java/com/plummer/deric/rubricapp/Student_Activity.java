@@ -284,6 +284,12 @@ public class Student_Activity extends AppCompatActivity
         alertDialog.show();
     }
 
+    /*
+    * https://developers.google.com/sheets/api/quickstart/android
+    * Much of the set up functions that work with the Google Sheets API were obtained from the
+    * tutorial listed above
+    */
+
     /**
      * Attempt to call the API, after verifying that all the preconditions are
      * satisfied. The preconditions are: Google Play Services installed, an
@@ -640,16 +646,3 @@ public class Student_Activity extends AppCompatActivity
         }
     }
 }
-/*
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        Log.d("Student_Activity", "Start onActivityResult()");
-        if (requestCode == 1) {
-            if(resultCode == RESULT_OK) {
-                _assignmentName = data.getStringExtra("ASSIGNMENT_NAME");
-                displayStudents(_assignmentName);
-            }
-        }
-        Log.d("Student_Activity", "End onActivityResult()");
-    }*/

@@ -3,6 +3,7 @@ package com.plummer.deric.rubricapp;
 import android.content.Context;
 import android.graphics.Color;
 import android.graphics.Typeface;
+import android.text.method.ScrollingMovementMethod;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -135,6 +136,7 @@ public class ExpandableListViewAdapter extends BaseExpandableListAdapter {
 
         TextView textView = (TextView) convertView.findViewById(R.id.childtextView);
         textView.setText(criteriaDescription);
+        textView.setMovementMethod(new ScrollingMovementMethod());
         Log.d("ExpandableListView", "Created and Set TextView");
 
 
